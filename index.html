@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coursera</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="./styles/index.css">
+    
+</head>
+<body>
+    <div id="container">
+        <div id="navbar">
+<div><img id="mainlogo" src="https://images.ctfassets.net/00atxywtfxvd/2MlqAOzmHjSPtssv6HlNox/1cb35b40775835a5f574ebc5509907a1/coursera-wordmark-blue.svg"></div>
+<div id="explore">
+    <span id="extext1">Explore </span>
+    <span class="material-icons" id="arrow">
+        expand_more
+        </span>
+</div>
+<div><input id="searchinput" placeholder="What do you want to learn?" type="text">
+    <button class="material-icons" id="searchicon">
+        search
+    </button></div>
+<div id="enterPrises"><a>For Enterprises</a></div>
+<div id="forStu"><a>For Students</a></div>
+<!-- <div id="bell sign">bell sign</div> -->
+<div id="login"><a>Log In</a></div>
+<div id="jff"><a>Join for Free</a></div>
+<!-- navbar end -->
+        </div>
+<!-- hover menu start -->
+ <div id="blockremover"></div> 
+ <div id="hovermenuandinfodiv">
+<div id="hovermenu">
+    <div>Goals</div>
+    <div id="tAfC">Take a free course</div>
+    <div id="eAd">Earn a Degree</div>
+    <div id="eAc">Earn a Certificate</div>
+    <div id="lAyC">Launch or advance your career</div>
+    <div>Subjects</div>
+    <div id="dS">Data Science</div>
+    <div id="business">Business</div>
+    <div id="cS">Computer Science</div>
+    <div id="iT">Information Technology</div>
+    <div id="lL">Language Learning</div>
+    <div id="health">Health</div>
+    <div id="pD">Personal Development</div>
+    <div id="pS">Physical Sciences</div>
+    <div id="sS">Socail Sciences</div>
+    <div id="aAh">Art and Humanities</div>
+    <div id="mAl">Math and Logic</div>
+    <div id="bAs">Browse all subjects</div>
+
+    <!-- hover menu end -->
+</div> 
+<div id="infodiv">Information</div>
+<!-- hovermenuandinfodiv End -->
+ </div> 
+<!-- container end -->
+    </div>
+  
+</body>
+</html>
+<script>
+    let explore=document.getElementById("explore");
+    let hovermenu=document.getElementById("hovermenu")
+    explore.onmouseover=()=>{
+        explore.setAttribute("id","exploreJs")
+      
+       hovermenu.style.display="block"
+    }
+    var searchinput=document.getElementById("searchinput")
+explore.onmouseout=()=>{
+    explore.setAttribute("id","explore")
+  
+}
+hovermenu.onmouseover=()=>{
+    explore.setAttribute("id","exploreJs")
+}
+searchinput.onmouseover=()=>{
+    hovermenu.style.display="none"
+}
+// searchinput.onmouseover=()=>{
+//     explore.setAttribute("id","explore")
+//     hovermenu.setAttribute("id","hovermenuJs");
+// }
+
+    // async function show(){
+    // //search api
+    //     //let res = await fetch("https://api.coursera.org/api/courses.v1?q=search&query=malwar")
+    //      let res = await fetch("https://api.coursera.org/api/courses.v1?q=search&query=malwar&includes=instructorIds,photoUrl,description&fields=instructorIds,photoUrl,description,partnerLogo,certificates,startDate,workload,specializations,domainTypes")
+    //     let data =await res.json();
+    //     console.log(data)
+    // }
+    // show()
+
+</script>
