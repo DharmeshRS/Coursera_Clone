@@ -4,9 +4,25 @@
     overflow: hidden;
 }
 #promo-bar>p{
+    margin-left: 0%;
+    width: 40%;
+   display: inline-block
+    
+}
+#promo-bar>p:nth-child(1){
     margin-left: 30%;
     
 }
+#promo-bar>p>a{
+    text-decoration: underline;
+    color: #000;
+    
+}
+#promo-bar>p:nth-child(2){
+    margin-left: 25%;
+    width: 1%;
+}
+
 /* #mast-head>div{
     display: inline-block;
 } */
@@ -43,6 +59,63 @@
     text-decoration: none;
 
 }
+
+#ul_list {
+    display: block;
+    /* position: relative; */
+    position: absolute;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 100px;
+    margin-inline-end: 0px;
+    padding-inline-start:0px;
+    background-color: white;
+}
+#ul_list>li{
+   list-style-type: none;
+   padding-top: 20px;
+   padding-right: 100px;
+}
+
+#cl_list {
+    display: block;
+    /* position: relative; */
+    position: absolute;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 200px;
+    margin-inline-end: 0px;
+    padding-inline-start:0px;
+    background-color: white;
+}
+#cl_list>li{
+   list-style-type: none;
+   padding-top: 20px;
+   padding-right: 100px;
+}
+
+#rl_list {
+    display: block;
+    /* position: relative; */
+    position: absolute;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 450px;
+    margin-inline-end: 0px;
+    padding-inline-start:0px;
+    background-color: white;
+}
+#rl_list>li{
+   list-style-type: none;
+   padding-top: 20px;
+   padding-right: 100px;
+}
+
+
+
 #border-line{
     border: 0.1px solid #CFD8DC;
     opacity: .5;
@@ -101,6 +174,7 @@
 #mid_link>a{
     color: #1f1f1f;
     margin-left: -1px;
+    text-decoration: underline;
 }
 #Access-heading{
     margin-left: 15%;
@@ -163,7 +237,7 @@
 #mid_container{
     background-color:#E3F2FD;
     width: 100%;
-    height: 1000px;
+    height: 1050px;
     margin-top: 100px;
     
 }
@@ -181,12 +255,6 @@
 #cont_grid>div{
     box-shadow: -0px 15px 10px;
     background-color:white;
-}
-#cont_grid>div:nth-child(1){
- 
-}
-#cont_grid>div{
-    box-shadow: -0px 15px 10px;
 }
 #cont_grid>div>img{
    width: 100%;
