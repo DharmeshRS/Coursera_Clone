@@ -20,7 +20,7 @@
         expand_more
         </span>
 </div>
-<div><input id="searchinput" placeholder="What do you want to learn?" type="text">
+<div><input id="searchinput" placeholder="What do you want to learn?" type="text" oninput="fillPreviousSearched()">
     <button class="material-icons" id="searchicon">
         search
     </button></div>
@@ -37,64 +37,124 @@
 <div id="hovermenu">
     <div>Goals</div>
     <div id="tAfC">Take a free course</div>
-    <div id="eAd">Earn a Degree</div>
-    <div id="eAc">Earn a Certificate</div>
-    <div id="lAyC">Launch or advance your career</div>
+    <div id="eAd">Earn a Degree
+     
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+        
+    </div>
+    <div id="eAc">Earn a Certificate
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="lAyC">Launch or advance your career
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
     <div>Subjects</div>
-    <div id="dS">Data Science</div>
-    <div id="business">Business</div>
-    <div id="cS">Computer Science</div>
-    <div id="iT">Information Technology</div>
-    <div id="lL">Language Learning</div>
-    <div id="health">Health</div>
-    <div id="pD">Personal Development</div>
-    <div id="pS">Physical Sciences</div>
-    <div id="sS">Socail Sciences</div>
-    <div id="aAh">Art and Humanities</div>
-    <div id="mAl">Math and Logic</div>
-    <div id="bAs">Browse all subjects</div>
+    <div id="dS">Data Science
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="business">Business
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="cS">Computer Science
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="iT">Information Technology
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="lL">Language Learning
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="health">Health
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="pD">Personal Development
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="pS">Physical Sciences
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="sS">Socail Sciences
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="aAh">Art and Humanities
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="mAl">Math and Logic
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="bAs">Browse all subjects
+       
+    </div>
 
     <!-- hover menu end -->
 </div> 
-<div id="infodiv">Information</div>
+<!-- <div id="infodiv">Information</div> -->
 <!-- hovermenuandinfodiv End -->
  </div> 
+ <div id="debounce">
+    <p class="boldP">Recently viewed</p>
+     <div id="rV">
+        
+        
+     </div>
+     <p class="boldP">Popular right now</p>
+     <div id="pRn">
+       <div>
+        <span class="material-icons pRnSi " >
+            search
+        </span>
+           <span class="lowerP">python</span>
+       
+    </div>
+    <div>
+        <span class="material-icons pRnSi " >
+            search
+        </span>
+           <span class="lowerP">free</span>
+       
+    </div>
+    <div>
+        <span class="material-icons pRnSi " >
+            search
+        </span>
+           <span class="lowerP">sql</span>
+       
+    </div>
+     </div>
+ </div>
 <!-- container end -->
     </div>
   
 </body>
 </html>
-<script>
-    let explore=document.getElementById("explore");
-    let hovermenu=document.getElementById("hovermenu")
-    explore.onmouseover=()=>{
-        explore.setAttribute("id","exploreJs")
-      
-       hovermenu.style.display="block"
-    }
-    var searchinput=document.getElementById("searchinput")
-explore.onmouseout=()=>{
-    explore.setAttribute("id","explore")
-  
-}
-hovermenu.onmouseover=()=>{
-    explore.setAttribute("id","exploreJs")
-}
-searchinput.onmouseover=()=>{
-    hovermenu.style.display="none"
-}
-// searchinput.onmouseover=()=>{
-//     explore.setAttribute("id","explore")
-//     hovermenu.setAttribute("id","hovermenuJs");
-// }
-
-    // async function show(){
-    // //search api
-    //     //let res = await fetch("https://api.coursera.org/api/courses.v1?q=search&query=malwar")
-    //      let res = await fetch("https://api.coursera.org/api/courses.v1?q=search&query=malwar&includes=instructorIds,photoUrl,description&fields=instructorIds,photoUrl,description,partnerLogo,certificates,startDate,workload,specializations,domainTypes")
-    //     let data =await res.json();
-    //     console.log(data)
-    // }
-    // show()
+<script src="./scripts/index.js">
 
 </script>
