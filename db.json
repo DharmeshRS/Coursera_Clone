@@ -1,0 +1,243 @@
+{
+  "course_data": [
+    {
+      "id": 1,
+      "coursename": "Google UX Design",
+      "category": "course",
+      "rating": 5,
+      "backgroundimage": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/75/32388ec64444d7a2b09297c0b59c56/1200x600_UXD.png?auto=compress&dpr=1&w=268",
+      "logo": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/4a/cb36835ae3421187080898a7ecc11d/Google-G_360x360.png?auto=compress&dpr=1&w=72&h=72",
+      "certificatetype": "professional Certificate"
+    },
+    {
+      "id": 2,
+      "coursename": "Google Project Management",
+      "institute": "google",
+      "category": "course",
+      "rating": 5,
+      "backgroundimage": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/8a/f7f459f9674408947edb8e594a5da3/1200x600_PgM.png?auto=compress&dpr=1&w=268",
+      "logo": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/4a/cb36835ae3421187080898a7ecc11d/Google-G_360x360.png?auto=compress&dpr=1&w=72&h=72",
+      "certificatetype": "professional Certificate"
+    },
+    {
+      "id": 3,
+      "coursename": "Facebook Marketing Analytics",
+      "institute": "Facebook",
+      "category": "course",
+      "rating": 5,
+      "backgroundimage": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/80/73b991e66745b2bd90066bd308e8fa/MA_Specialization_Logo.png?auto=compress&dpr=1&w=268",
+      "logo": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/3bmmVE1BHvDQUFldOXgDQe/de0f26f18e27690fc7b67faa722bddb5/fblogo.png?auto=format%2Ccompress&dpr=1&w=&h=37",
+      "certificatetype": "professional Certificate"
+    },
+    {
+      "id": 4,
+      "coursename": "Facebook Social Media Marketing",
+      "institute": "Facebook",
+      "category": "course",
+      "rating": 5,
+      "backgroundimage": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/02/41460a29d744dfa39106941eae2e02/fb-specialization.png?auto=compress&dpr=1&w=268",
+      "logo": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/3bmmVE1BHvDQUFldOXgDQe/de0f26f18e27690fc7b67faa722bddb5/fblogo.png?auto=format%2Ccompress&dpr=1&w=&h=37",
+      "certificatetype": "professional Certificate"
+    },
+    {
+      "id": 5,
+      "coursename": "IBM Data Science",
+      "institute": "IBM",
+      "category": "course",
+      "rating": 4.5,
+      "backgroundimage": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/23/22bc54f77f45a2b057f4ff518d272f/iStock-1169539468.jpg?auto=compress&dpr=1&w=268",
+      "logo": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png?auto=compress&dpr=1&w=72&h=72",
+      "certificatetype": "professional Certificate"
+    },
+    {
+      "id": 6,
+      "coursename": "Google IT Support",
+      "institute": "Google",
+      "category": "course",
+      "rating": 4.5,
+      "backgroundimage": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/14/b2d530f1ad11e7ab380fc0c6c817a8/Search-Thumbnail.jpg?auto=compress&dpr=1&w=268",
+      "logo": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/4a/cb36835ae3421187080898a7ecc11d/Google-G_360x360.png?auto=compress&dpr=1&w=72&h=72",
+      "certificatetype": "professional Certificate"
+    },
+    {
+      "id": 7,
+      "coursename": "Salesforce Operations",
+      "institute": "salesforce",
+      "category": "course",
+      "rating": 4,
+      "backgroundimage": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/ed/cc8056ad69478a99cf2f5b5995b1a4/05-05.png?auto=compress&dpr=1&w=268",
+      "logo": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/72/51d0a967254363b3c2c35be6c09b99/Salesforce-Institution-Square-180px-.png?auto=compress&dpr=1&w=72&h=72",
+      "certificatetype": "professional Certificate"
+    },
+    {
+      "id": 8,
+      "coursename": "Google Data Scientist",
+      "institute": "google",
+      "category": "course",
+      "rating": 4,
+      "backgroundimage": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/ba/e14875b76f4e799e067d3551076e8c/1200x600_DA.png?auto=compress&dpr=1&w=268",
+      "logo": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/4a/cb36835ae3421187080898a7ecc11d/Google-G_360x360.png?auto=compress&dpr=1&w=72&h=72",
+      "certificatetype": "professional Certificate"
+    },
+    {
+      "id": 9,
+      "coursename": "intuit Bookkepping",
+      "institute": "Intuit",
+      "category": "course",
+      "rating": 4,
+      "backgroundimage": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/a4/0ee0209fb444a38ade1afccde6355e/option2.jpg?auto=compress&dpr=1&w=268",
+      "logo": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/5b/70c1ce54a6458da23f4efd1a0be63b/360x360.png?auto=compress&dpr=1&w=72&h=72",
+      "certificatetype": "professional Certificate"
+    },
+    {
+      "id": 10,
+      "coursename": "intuit Bookkepping",
+      "institute": "Intuit",
+      "category": "course",
+      "rating": 4,
+      "backgroundimage": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/67/6a8a23c93d424fa3a39138428681f3/Professional_Certificate_-_IBM_Cybersecurity_Analyst.png?auto=compress&dpr=1&w=268    ",
+      "logo": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png?auto=compress&dpr=1&w=72&h=72",
+      "certificatetype": "professional Certificate"
+    },
+    {
+      "id": 11,
+      "coursename": "IBM Cyber - Security",
+      "institute": "IBM",
+      "category": "course",
+      "rating": 4,
+      "backgroundimage": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/67/6a8a23c93d424fa3a39138428681f3/Professional_Certificate_-_IBM_Cybersecurity_Analyst.png?auto=compress&dpr=1&w=268",
+      "logo": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png?auto=compress&dpr=1&w=72&h=72",
+      "certificatetype": "professional Certificate"
+    },
+    {
+      "id": 12,
+      "coursename": "IBM Cyber - Security",
+      "institute": "IBM",
+      "category": "course",
+      "rating": 4,
+      "backgroundimage": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/ed/96c1a56aa14d9f80cb17f7db8ef189/Group-35.png?auto=compress&dpr=1&w=268",
+      "logo": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/72/51d0a967254363b3c2c35be6c09b99/Salesforce-Institution-Square-180px-.png?auto=compress&dpr=1&w=72&h=72",
+      "certificatetype": "professional Certificate"
+    },
+    {
+      "id": 13,
+      "coursename": "Bachelor of Science In Computer Science",
+      "institute": "University Of London",
+      "category": "degree",
+      "rating": 4,
+      "backgroundimage": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/premium_hub/bscs-uol.jpg?auto=compress&dpr=1&w=270&fit=crop",
+      "logo": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/fb/b28a301e0211e8a40e23e4176c8e4a/UoL-Logo_180x180.png?auto=compress&dpr=1&w=42&fit=crop",
+      "certificate-type": "professional degree"
+    },
+    {
+      "id": 14,
+      "coursename": "Master Of Applied Data Scienece",
+      "institute": "University Of Michigan",
+      "category": "degree",
+      "rating": 4,
+      "backgroundimage": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/premium_hub/mads-umich.jpg?auto=compress&dpr=1&w=270&fit=crop",
+      "logo": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png?auto=compress&dpr=1&w=42&fit=crop",
+      "certificatetype": "professional degree"
+    },
+    {
+      "id": 15,
+      "coursename": "Bachelor Of Aplied Arts and Sciences",
+      "institute": "University Of North Texas",
+      "category": "degree",
+      "rating": 4,
+      "backgroundimage": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/degree-assets/unt-online-bachelor-completion/banner.jpg?auto=compress&dpr=1&w=270&fit=crop",
+      "logo": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/1a/6984a02c5a45e0bc8c40b02a42bbdb/UNT-logo1.png?auto=compress&dpr=1&w=42&fit=crop",
+      "certificatetype": "professional degree"
+    },
+    {
+      "id": 16,
+      "coursename": "Master Of Bussinuss Administration(iMBA)",
+      "institute": "University Of illonois At UC",
+      "category": "degree",
+      "rating": 4,
+      "backgroundimage": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/premium_hub/mads-umich.jpg?auto=compress&dpr=1&w=270&fit=crop",
+      "logo": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/d8/42cdc0ab2011e8b910bdf80bed9f6c/CenterILblock-ISQUAREOrangeBackgrnd.png?auto=compress&dpr=1&w=42&fit=crop",
+      "certificatetype": "professional degree"
+    },
+    {
+      "id": 17,
+      "coursename": "Master Of Bussinuss Administration(MBA)",
+      "institute": "University Of fandacao",
+      "category": "degree",
+      "rating": 4,
+      "backgroundimage": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/ddp/branding/mba-fia/mba-fia-banner.jpg?auto=compress&dpr=1&w=270&fit=crop",
+      "logo": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/fa/0b3fb0640711e8b77e73d0990f7c82/180.png?auto=compress&dpr=1&w=42&fit=crop",
+      "certificatetype": "professional degree"
+    },
+    {
+      "id": 18,
+      "course-name": "Master Of Science in data Science",
+      "institute": "University Of colorado boulder",
+      "category": "degree",
+      "rating": 4,
+      "backgroundimage": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/ddp/branding/msds-boulder/header.jpg?auto=compress&dpr=1&w=270&fit=crop",
+      "logo": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/bb/16e85962a963ab3546196705d25865/CUBoulder_360x360.png?auto=compress&dpr=1&w=42&fit=crop",
+      "certificatetype": "professional degree"
+    },
+    {
+      "id": 19,
+      "coursename": "MBA In Bussiness Analytics",
+      "institute": "O.P. Jindal Global University",
+      "category": "degree",
+      "rating": 4,
+      "backgroundimage": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/ddp/branding/mba-business-analytics-jgu/mba-business-analytics-jgu-banner.jpg?auto=compress&dpr=1&w=270&fit=crop",
+      "logo": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/13/4f6741eec44e2b9e40fc79bdf15b87/360x360.png?auto=compress&dpr=1&w=42&fit=crop",
+      "certificatetype": "professional degree"
+    },
+    {
+      "id": 20,
+      "coursename": "Master in Data Science",
+      "institute": "IIIionis University",
+      "category": "degree",
+      "rating": 4,
+      "backgroundimage": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/ddp/branding/mcs-ds/header_mcsds-darkened.jpg?auto=compress&dpr=1&w=270&fit=crop",
+      "logo": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/d8/42cdc0ab2011e8b910bdf80bed9f6c/CenterILblock-ISQUAREOrangeBackgrnd.png?auto=compress&dpr=1&w=42&fit=crop",
+      "certificatetype": "professional degree"
+    },
+    {
+      "id": 21,
+      "coursename": "Master in Computer Science",
+      "institute": "IIIionis University",
+      "category": "degree",
+      "rating": 4,
+      "backgroundimage": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/ddp/branding/master-of-data-science-hse/banner.jpg?auto=compress&dpr=1&w=270&fit=crop",
+      "logo": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/d8/42cdc0ab2011e8b910bdf80bed9f6c/CenterILblock-ISQUAREOrangeBackgrnd.png?auto=compress&dpr=1&w=42&fit=crop",
+      "certificatetype": "professional degree"
+    },
+    {
+      "id": 22,
+      "coursename": "Master in Computer Science",
+      "institute": "IIIionis University",
+      "category": "degree",
+      "rating": 4,
+      "backgroundimage": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/ddp/branding/master-of-data-science-hse/banner.jpg?auto=compress&dpr=1&w=270&fit=crop",
+      "logo": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/b1/90986f87ac4cbab18d95de27255442/HSE_white.png?auto=compress&dpr=1&w=42&fit=crop",
+      "certificatetype": "professional degree"
+    },
+    {
+      "id": 23,
+      "coursename": "Master Of Bussiness Analytics",
+      "institute": "HSE University",
+      "category": "degree",
+      "rating": 4,
+      "backgroundimage": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/ddp/branding/master-of-data-science-hse/banner.jpg?auto=compress&dpr=1&w=270&fit=crop",
+      "logo": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/b1/90986f87ac4cbab18d95de27255442/HSE_white.png?auto=compress&dpr=1&w=42&fit=crop",
+      "certificatetype": "professional degree"
+    },
+    {
+      "id": 24,
+      "coursename": "Master Of Data and Network Analysis",
+      "institute": "HSE University",
+      "category": "degree",
+      "rating": 4,
+      "backgroundimage": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/ddp/branding/master-of-data-science-hse/banner.jpg?auto=compress&dpr=1&w=270&fit=crop",
+      "logo": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/b1/90986f87ac4cbab18d95de27255442/HSE_white.png?auto=compress&dpr=1&w=42&fit=crop",
+      "certificatetype": "professional degree"
+    }
+  ]
+}
