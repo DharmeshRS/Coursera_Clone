@@ -382,3 +382,136 @@
     text-decoration: none;
     margin-top: -20px;
 }
+
+#top_heading{
+    text-align: center;
+    margin-top: 50px;
+}
+#left_container{
+  display: inline-block;
+  margin-top: 3%;
+  margin-left: 22%;
+  font-family: Source Sans;
+}
+#left_container>h3{
+    font-size: x-large;
+}
+#left_container>h5{
+    margin-left: 15%;
+    font-size: 15px;
+    margin-top: 15%;
+}
+
+#left_container>ul>li{
+    line-height: 40px;
+    margin-left: -5%;
+}
+
+#contact_icon{
+    display: grid;
+    grid-template-columns: 15% 15% 15%;
+    gap: 5%;
+    margin-left: -10%;
+}
+#contact_icon>img{
+    width: 100%;
+    height: 40px;
+    margin-left: 70px;
+}
+#reich{
+    margin-top: 50px;
+    width: 450px;
+    height: 350px;
+    background-color: white;
+    box-shadow: -0px 15px 10px;
+}
+
+#reich{
+    font-size: 25px;
+    padding-top: 5px;
+    word-spacing: 2%;
+}
+
+/* #reich_icon{
+    display: grid;
+    grid-template-columns: 20% 50%;
+    gap: 3%;
+} */
+#riech_icon>span{
+    display: inline-block;
+  /* float: left; */
+}
+#reich_icon>span:nth-child(1){
+    width: 20%;
+    display: inline-block;
+    /* float: left; */
+}
+
+#reich_icon>span:nth-child(2){
+    width: 100%;
+    display: inline-block;
+    float: left;
+}
+
+#reich_icon>span>img{
+    width: 100%;
+    display: inline-block;
+    
+}
+
+#reich_icon>span>p{
+    font-size: 15px;
+    float: left;
+    margin-left: 110px;
+    margin-top: -20px;
+}
+
+#reich_icon>span>h6{
+ margin-left: 110px;
+ margin-top: -80px;
+ 
+}
+
+
+#right_container{
+ display: inline-block;
+ float: right;
+ padding-right: 365px;
+ padding-top: 70px;
+ 
+}
+#right_container>form>input{
+   width: 220%;
+   height: 40px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   
+}
+label::after{
+    content: "*";
+    color: red;
+    font-weight: bold;
+}
+ #text_div{
+     float: right;
+     margin-right: 145px;
+ }
+ #text_div>textarea{
+  margin-top: 20px;
+ }
+  #p_link{
+      margin-top: 220px;
+      float: right;
+      margin-right: -530px;
+ } 
+ #submit{
+     margin-top: 300px;
+     float: right;
+     margin-right: -350px;
+     font-size: x-large;
+     padding: 22px 100px;
+     margin-bottom: 30px;
+     background-color: #0056d2;
+     color: white;
+     
+ }

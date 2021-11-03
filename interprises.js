@@ -66,7 +66,9 @@ contact_sales.innerText="Contact sales"
 contact_sales.style.backgroundColor="blue";
 contact_sales.style.color="white";
 contact_sales.style.padding="10px"
-contact_sales.href="https://www.coursera.org/business/learn-more/?utm_campaign=website&utm_content=navbar-contact-sales&utm_medium=coursera&utm_source=enterprise"
+contact_sales.addEventListener('click',()=>{
+    window.location.href="contact.html"
+})
 
 div2.append(home,dash_line1, product,dash_line2, content, dash_line3, compare_plan,dash_line4, resorces, dash_line5, Blog,contact_sales);
 
@@ -171,7 +173,10 @@ let section1=document.getElementById('section1');
 let btn_left=document.createElement('button')
 btn_left.setAttribute('id','btn_left')
 let left_button=document.createElement('a');
-left_button.href="https://www.coursera.org/business/learn-more/?utm_campaign=website&utm_content=hero1-contact-sales&utm_medium=coursera&utm_source=enterprise"
+left_button.addEventListener('click',()=>{
+    window.location.href="contact.html"
+})
+// left_button.href="https://www.coursera.org/business/learn-more/?utm_campaign=website&utm_content=hero1-contact-sales&utm_medium=coursera&utm_source=enterprise"
 left_button.setAttribute('id','left_button')
 left_button.textContent="Contact.sales"
 btn_left.addEventListener('mouseenter',()=>{

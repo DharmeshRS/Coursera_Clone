@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="interprises.css">
+</head>
+<body>
+    <div id="mast-head"></div>
+    <div id="border-line"></div>
+    <h1 id="top_heading">Find out how Coursera powers high-impact skill development</h1>
+    <div id="left_container">
+        <h3>Learn more about how you can :</h3>
+        <ul>
+            <li>Deliver on strategic business goals by building critical skills</li>
+            <li>Understand the full value of technology investments</li>
+            <li>Build a data-driven, digitally-fluent workforce</li>
+        </ul>
+        <h5>Companies that innovate use Coursera</h5>
+        <div id="contact_icon">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="reich">
+            <p>“We love that the Coursera platform will allow us to provide a breadth of high quality programs and a learning experience that our employees can self-select into to drive their own personal development.”</p>
+         <div id="reich_icon">
+             <span style="display: inline-block;">
+                 <img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2021/03/Home_Testimonial_Reich-1.png" alt="">
+               </span>
+               <span>
+                 <h6>Laurent Reich,</h6>
+                 <p>Learning Practice International Director, <br> L’Oréal</p>
+                </span>
+         </div>
+        </div>
+    </div>
+    <div id="right_container">
+        <form action="">
+            <label for="">First Name:</label><br>
+            <input type="text" name="" id="name" required><br>
+            <label for=""> Last name:</label><br>
+            <input type="text" name="" id="lastname" required><br>
+            <label for="">Work Email Address :</label><br>
+            <input type="email" name="" id="email" required><br>
+             <label for="">Company name:</label><br>
+            <input type="text" name="" id="companyname" required placeholder="to select,begin typing."><br>
+            <label for="">Job Role:</label><br>
+            <input type="text" name="" id="jobrole" required value="Select..."><br>
+            <label for="">Job Function:</label><br>
+            <input type="text" name="" id="jobfunction" required value="Select..."><br>
+            <label for="">Phone Number:</label><br>
+            <input type="number" required name="" id="phonenumber" placeholder="Contry Code + Phone Number"><br>
+            
+            <label for="">Company Size:</label><br>
+            <input type="text" name="" id="companysize" required value="Select..."><br>
+           
+            <label for="">Country:</label><br>
+            <input type="text" name="" id="Country" value="Select..." required><br> 
+        </form>
+           </div>
+           <div id="text_div">
+           <label for="" id="label_area">please briefly describe your needs:</label><br>
+           <textarea name="" id="textarea" cols="50" rows="10"></textarea>
+        </div>
+        
+            <p id="p_link">By submitting your info in the form above, you agree to our Terms of <br> Use and Privacy Notice. We may use this info to contact you and/or use data from <br> third parties to personalize your experience.</p>
+            <input type="submit" name="" id="submit">
+            <div id="contact_button"></div>
+            <div id="footer_div" style="margin-top: 500px;"></div>
+    <script src="contacts.js"></script>
+    <script type="module">
+        import {footer} from "./footer.js"
+        let footer_div=document.getElementById('footer_div');
+        footer_div.innerHTML=footer();
+      </script>
+   
+</body>
+</html>
+
+
