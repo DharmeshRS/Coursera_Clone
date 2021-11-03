@@ -57,7 +57,7 @@ main{
     position: relative;
 }
 
-span{
+.arrowspan1,.arrowspan2{
     position: absolute;
     top:40%;
     font-size: 60px;
@@ -69,7 +69,7 @@ span{
 
 }
 
-span:nth-of-type(2){
+.arrowspan1:nth-of-type(2),.arrowspan2:nth-of-type(2){
     left:98%;
     text-align: right;
 }
@@ -112,7 +112,7 @@ section::-webkit-scrollbar{
     text-decoration: none;
     color: royalblue;
 }
-a{
+.linkd{
     text-decoration: none;
     color: #0062e4;
 }
