@@ -14,7 +14,9 @@ hovermenu.onmouseover=()=>{
 explore.setAttribute("id","exploreJs")
 }
 searchinput.onmouseover=()=>{
-hovermenu.style.display="none"
+hovermenu.style.display="none";
+var infodiv=document.getElementById("infodiv")
+infodiv.style.display="none";
 }
 // searchinput.onmouseover=()=>{
 //     explore.setAttribute("id","explore")
@@ -83,3 +85,121 @@ let elements=data.elements
     }
 
 }
+var doc=document.getElementById("iT");
+doc=doc.textContent.trim().split("\n");
+
+console.log(doc[0])
+var hoverdivs =document.getElementById("hovermenu").children;
+
+console.log(hoverdivs.tAfC)
+
+
+for(let i =1;i<hoverdivs.length;i++){
+    console.log(hoverdivs[i])
+    var infodiv=document.getElementById("infodiv")
+
+    var coursename=document.getElementById("coursename");
+    coursename.innerHTML=null;
+    
+    hoverdivs[i].onmouseover=async()=>{
+      infodiv.style.display="block"
+      var rV=document.getElementById("degreediv")
+      rV.innerHTML=null;
+      var cert=document.getElementById("certificatediv")
+      cert.innerHTML=null;
+      var popularskills=document.getElementById("popularskills")
+      popularskills.innerHTML=null;
+  if(i>=6){
+     
+          var q=hoverdivs[i].textContent.trim().split("\n");
+        //   alert(q[0]);
+        coursename.innerHTML=q[0]
+          let res = await fetch(`https://api.coursera.org/api/courses.v1?q=search&query=${q[0]}&includes=instructorIds,photoUrl,description,largeIcon,shortName,location&fields=instructorIds,partnerIds ,location,photoUrl,description,partnerLogo,certificates,startDate,workload,specializations,domainTypes`)
+    let data =await res.json();
+
+let elements=data.elements
+    console.log(elements);
+    var count=0;
+    
+   
+    elements.forEach((el)=>{
+        count++;
+        if(count<=5){
+        //    popular skills;
+        var popdiv=document.createElement("div");
+        var cTu=el.domainTypes[0].subdomainId;
+        var str=cTu[0].toUpperCase()
+        for(let j=1;j<cTu.length;j++){
+            str=str+cTu[j]
+        }
+        // cTu[0].toUpperCase()
+        popdiv.innerHTML=str
+           popularskills.append(popdiv)
+            // update the degree and certificate div;
+            var debouncediv=document.createElement("div")
+            var img=document.createElement("img")
+            img.src=el.photoUrl
+            var div1=document.createElement("div")
+            var p1=document.createElement("p")
+          p1.innerHTML=el.name;
+          p1.style.fontSize="12px"
+            var img2=document.createElement("img")
+            img2.src=el.partnerLogo;
+            img2.style.width="40px"
+            div1.append(p1,img2)
+            debouncediv.append(img,div1)
+            debouncediv.setAttribute("id","debouncediv");
+            debouncediv.onmouseover=()=>{
+                debouncediv.style.backgroundColor="white"
+            }
+            rV.append(debouncediv);
+            debouncediv.onclick=()=>{
+                alert (el.name);
+                var coursera=JSON.parse(localStorage.getItem("coursera"));
+                coursera[0]=el;
+                localStorage.setItem("coursera",JSON.stringify(coursera))
+            }
+        }
+        else if(count>5&&count<=8){
+            var cTu=el.domainTypes[0].subdomainId;
+        var str=cTu[0].toUpperCase()
+        for(let j=1;j<cTu.length;j++){
+            str=str+cTu[j]
+        }
+            var popdiv=document.createElement("div");
+            popdiv.innerHTML=str;
+               popularskills.append(popdiv)
+            var debouncediv=document.createElement("div")
+            var img=document.createElement("img")
+            img.src=el.photoUrl
+            var div1=document.createElement("div")
+            var p1=document.createElement("p")
+          p1.innerHTML=el.name;
+          p1.style.fontSize="12px"
+            var p2=document.createElement("p")
+            p2.innerHTML=el.domainTypes[0].subdomainId;
+            // p2.style.width="40px"
+            p2.style.fontSize="14px"
+            div1.append(p2,p1)
+            debouncediv.append(img,div1)
+            debouncediv.setAttribute("id","debouncediv");
+            debouncediv.onmouseover=()=>{
+                debouncediv.style.backgroundColor="white"
+            }
+            debouncediv.onclick=()=>{
+                alert (el.name);
+                var coursera=JSON.parse(localStorage.getItem("coursera"));
+                coursera[0]=el;
+                localStorage.setItem("coursera",JSON.stringify(coursera))
+            }
+            cert.append(debouncediv)
+
+        }
+    })
+      }
+  }
+}
+
+
+// console.log(hoverdivs)
+

@@ -1,3 +1,6 @@
+#container{
+    border: red;
+}
 #navbar{
     position: fixed;
     width: 100%;
@@ -167,7 +170,7 @@ color: white;
 #hovermenu>div:hover{
     background-color: white;
     color:#0056d2;  
-   
+  box-shadow: 2px 2px rgb(238, 234, 234);
 }
 #hovermenu>div:nth-child(1){
     font-weight: 800;
@@ -208,10 +211,7 @@ border: solid 1px;
 #hovermenuJs{
     display: none;
 }
-#infodiv{
-    margin-left: 365px;
-    background-color:red ;
-}
+
 #debounce{
     border: solid 1px rgb(219, 215, 215) ;
     width: 450px;
@@ -321,4 +321,87 @@ text-align: end;
 #hovermenu>div{
     display: grid;
     grid-template-columns: 80% 20%;
+}
+#infodiv{
+    margin-left: 362px;
+    background-color:#ffffff ;
+    position: fixed;
+    width: 64%;
+    height:740px ;
+    border: solid 0.1px ;
+   display: none;
+}
+#threedivs{
+  display: grid;  
+  grid-template-columns: 33% 33% 30%;
+  /* border: solid; */
+  padding: 5%;
+  gap: 3%;
+  
+}
+#threedivs>div:nth-child(3){
+    /* border: solid; */
+   margin-left: 25px;
+}
+.firsttesxt{
+    font-family:  OpenSans-Bold, OpenSans, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+.secTex{
+    color:#5e5e5e ;
+    font-size: 12px;
+    line-height: 21px;
+    font-family:  OpenSans, Arial, sans-serif;
+}
+.blueboxtex{
+  
+        font-weight: 900;
+        font-size: 16px;
+        color: #0056d2;  
+   
+        border: solid 1px;
+        width: 170px;
+        line-height: 33px;
+        margin-top: 30px;
+        padding-left: 11px;
+        border-radius: 3px;
+       margin-bottom: 70px;
+        
+}
+#coursename{
+    font-size: 24px;
+    line-height: 24px;
+    font-family: OpenSans-Bold, OpenSans, Arial, sans-serif ;
+    color:#3e3f41 ;
+    background-color: #ffffff;
+    padding-left: 6%;
+font-weight: 600;
+
+}
+#popularskills>div{
+    font-size: 14px;
+    line-height: 20px;
+    color: #1f1f1f;
+    font-family:OpenSans, Arial, sans-serif ;
+    letter-spacing: normal;
+    padding: 8px 15px  10px 10px;
+}
+.gets{
+    font-size: 16px;
+    line-height: 20px;
+    color: #504e4e;
+    font-family:OpenSans, Arial, sans-serif ;
+    letter-spacing: normal;
+    padding: 8px 15px  10px 10px;
+}
+.popular{
+    margin-top: 60px;
+}
+.firsttesxt{
+    /* padding-left: 8px; */
+}
+hr{
+    margin-top: -13px;
+    /* margin-left: 8px; */
 }
