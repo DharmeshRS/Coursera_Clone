@@ -7,13 +7,14 @@
     margin: auto;
     margin-top: -9px;
 border: solid rgb(219, 215, 215) 1px;
-   margin-left: -9px;
+   /* margin-left: -9px; */
      display: flex;
 }
 #navbar>div {
 /* display: inline-block; */
 
 }
+
 #mainlogo{
 font-family:OpenSans, Arial, sans-serif ;
 width: 127px;
@@ -160,6 +161,7 @@ color: white;
     background-color: #fafafa;
     position: fixed;
    display: none;
+   z-index: 1;
 }
 #hovermenu>div{
     font-size: 16px;
@@ -216,7 +218,7 @@ border: solid 1px;
     border: solid 1px rgb(219, 215, 215) ;
     width: 450px;
     overflow: scroll;
-    margin-left: 285px;
+    margin-left: 292px;
     margin-top: -10px;
     position: fixed;
  /* height: 470px; */
@@ -225,7 +227,9 @@ border: solid 1px;
  /* background-color: ffffff; */
  background-color: #ffffff;;
  color: 373a3c;
+ /* height: 460px; */
  display: none;
+ z-index: 1;
 }
 #rV{
     background-color: #ffffff;;
@@ -249,7 +253,7 @@ border: solid 1px;
     font-weight: 590;
     color: #373a3c;
     padding-left: 21px;
-    margin-top: 4px;
+    margin-top: 8px;
     font-family: Helvetica, sans-serif;
     margin-bottom: -8px;
 }
@@ -276,7 +280,7 @@ border-radius: 3px;
 #debouncediv>div>img{
     width: 60px;
 
-    margin-top: -6px;
+    margin-top: -1px;
     padding-left: 20px;
 }
 #debouncediv>div>p{
@@ -328,8 +332,11 @@ text-align: end;
     position: fixed;
     width: 64%;
     height:740px ;
-    border: solid 0.1px ;
+    overflow: scroll;
+    border: solid 0.1px #f0e9e9 ;
+   z-index: 1;
    display: none;
+   
 }
 #threedivs{
   display: grid;  
@@ -372,6 +379,7 @@ text-align: end;
 #coursename{
     font-size: 24px;
     line-height: 24px;
+    margin-top: 24px;
     font-family: OpenSans-Bold, OpenSans, Arial, sans-serif ;
     color:#3e3f41 ;
     background-color: #ffffff;
@@ -399,9 +407,10 @@ font-weight: 600;
     margin-top: 60px;
 }
 .firsttesxt{
-    /* padding-left: 8px; */
+    /* padding-left: -8px; */
+    /* margin-top: 2px; */
 }
 hr{
-    margin-top: -13px;
+    /* margin-top: -13px; */
     /* margin-left: 8px; */
 }
