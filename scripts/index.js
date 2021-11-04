@@ -14,6 +14,7 @@ hovermenu.onmouseover=()=>{
 explore.setAttribute("id","exploreJs")
 }
 searchinput.onmouseover=()=>{
+    container2.style.opacity="1";
 hovermenu.style.display="none";
 var infodiv=document.getElementById("infodiv")
 infodiv.style.display="none";
@@ -71,7 +72,14 @@ let elements=data.elements
     var img2=document.createElement("img")
     img2.src=el.partnerLogo
     div1.append(p1,img2)
-    debouncediv.append(img,div1)
+    debouncediv.append(img,div1);
+    debouncediv.onclick=()=>{
+        alert (el.name);
+        debouncediv.style.backgroundColor="red"
+        var coursera=JSON.parse(localStorage.getItem("coursera"));
+        coursera[0]=el;
+        localStorage.setItem("coursera",JSON.stringify(coursera))
+    }
     debouncediv.setAttribute("id","debouncediv")
     rV.append(debouncediv)
 
@@ -102,7 +110,10 @@ for(let i =1;i<hoverdivs.length;i++){
     coursename.innerHTML=null;
     
     hoverdivs[i].onmouseover=async()=>{
-      infodiv.style.display="block"
+      infodiv.style.display="block";
+      var container2=document.getElementById("container2");
+      container2.style.opacity="0.1";
+      
       var rV=document.getElementById("degreediv")
       rV.innerHTML=null;
       var cert=document.getElementById("certificatediv")
@@ -188,6 +199,7 @@ let elements=data.elements
             }
             debouncediv.onclick=()=>{
                 alert (el.name);
+                debouncediv.style.backgroundColor="red"
                 var coursera=JSON.parse(localStorage.getItem("coursera"));
                 coursera[0]=el;
                 localStorage.setItem("coursera",JSON.stringify(coursera))
@@ -200,6 +212,17 @@ let elements=data.elements
   }
 }
 
-
+container2.onmouseover=()=>{
+    container2.style.opacity="1";
+    container2.style.backgroundColor="white";
+    infodiv.style.display="none"
+  hovermenu.style.display="none";
+  explore.setAttribute("id","explore");
+ 
+}
+container2.onclick=()=>{
+    var debounce=document.getElementById("debounce");
+    debounce.style.display="none"
+}
 // console.log(hoverdivs)
 
