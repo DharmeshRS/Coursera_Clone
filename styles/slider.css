@@ -1,7 +1,37 @@
 /* @media images changes into 3 rows {
     grid
 } */
+@media screen and (min-width: 1350px) {
+    .container {
+      width: 1370px;
+    }
 
+    #explore{
+    font-family:"Source Sans Pro", Arial, sans-serif;
+    border-radius: 3px;
+    margin-left: 25px;  
+    width: 92px;
+    height: 36px;   
+    display: flex;
+    margin-top: 12px;
+    background-color:#0056d2 ;
+    color: white;
+
+}
+  }
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+
+    .collaborate_companies_pics{
+        background-color: blue;
+        display: grid;
+        grid-template-columns:auto auto auto auto;
+        grid-template-rows: auto auto;
+    
+    }
+  }
 
 
 *{
@@ -39,7 +69,8 @@
     color: #263bf7;
 }
 .collaborate_companies_pics{
-    display: flex;
+    display: grid;
+    grid-template-columns:repeat(11, minmax(0, 1fr)); ;
     margin-left: 10%;
     margin-top: 1%;
     
