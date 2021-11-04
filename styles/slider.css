@@ -1,0 +1,263 @@
+/* @media images changes into 3 rows {
+    grid
+} */
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Serif Pro', serif;
+}
+/* homepage first poster */
+.first-div{
+    margin: auto;
+    text-align: center;
+}
+.poster{
+    width: 100%;
+}
+.collaborate_companies_title{
+    width: 100%;
+    /* background-color: rosybrown; */
+    height: auto;
+    margin: auto;
+    margin-bottom: 3%;  
+    letter-spacing: 1px;
+}
+
+/* .margintop{
+    margin-top: 5px;
+} */
+.word-dark{
+    font-size: 140%;
+    font-weight: bolder;
+    /* background-color: royalblue; */
+    height:70px;
+}
+.blue{
+    color: #263bf7;
+}
+.collaborate_companies_pics{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 1%;
+    
+
+}
+.collaborate_companies_pics >div{
+     margin:1.2%;
+}
+
+main{
+    width: 95%;
+    height: 400px;
+    margin: auto;
+    overflow:hidden;
+    position: relative;
+}
+
+span{
+    position: absolute;
+    top:40%;
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    left: -0.10%;
+    z-index: 1;
+
+}
+
+span:nth-of-type(2){
+    left:98%;
+    text-align: right;
+}
+
+section{
+    width: 100%;
+    height: 500px;
+    background: rgb(255, 255, 255);
+    margin:10px auto;
+    display: flex;
+    justify-content: left;
+    overflow-x: unset;
+
+}
+section::-webkit-scrollbar{
+    visibility: hidden;
+}
+
+.item{
+    min-width: 280px;
+    height: 500px;
+    position: relative;
+    left:0;
+    text-align: center;
+    padding-top: 60px;
+    /* font-size: 100px;
+    font-weight: bold; */
+    margin: 10px 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+    
+}
+.item:hover{
+    box-shadow: 5px 5px 5px rgb(68, 68, 68);
+}
+.text-center{
+    margin: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: royalblue;
+}
+a{
+    text-decoration: none;
+    color: #0062e4;
+}
+
+.degree-item{
+    min-width: 280px;
+    height: 250px;
+    position: relative;
+    left:0;
+    text-align: center;
+    padding-top: 60px;
+    /* font-size: 100px;
+    font-weight: bold; */
+    margin: 10px 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+    
+}
+.degree-item:hover{
+    box-shadow: 5px 5px 5px rgb(68, 68, 68);
+}
+.degree-item > div {
+    border: 0px 0.2px 0.2px 0.2px solid black;
+}
+#onlineimgspan{
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.table_img{
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.buttons{
+    position:absolute;
+    margin-top: -18%;
+    margin-left: 7.3%;
+}
+
+.btn{
+    padding-top:4.5%;
+    padding-bottom:4.5%;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: center;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    /* font-size: 0%; */
+}
+.btnblue{
+    background-color: #0056D2;
+    color:white;
+}
+.btnblue:hover{
+    background-color: #00419e;
+}
+
+.colorblue{
+    color: #00419E;
+    background-color: #f9fbff;
+}
+
+.borderblue{
+    border: 0.3px solid #00419E;
+}
+.course_data{
+    margin-top: 100px;
+}
+.course_data > div{
+    margin: auto;
+    display:grid;
+    grid-template-columns:repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    box-shadow: 2px 2px 5px solid gray;
+    
+}
+.course_data > div >div{
+    height: 92%;
+    border: 0.2px solid rgb(0, 0, 0);
+    border: 0.2px solid gray;
+}
+.course_data img {
+    width: 100%;
+}
+.box{
+    /* background-color: blueviolet; */
+    display: flex;
+}
+.box:hover{
+    box-shadow: 2px 2px 5px black;
+}
+
+.box_model{
+    width: 90%;
+}
+
+.textformat{
+    margin-top: 20px;
+}
+
+/* .explore1{
+    margin-top: -100px;
+} */
+.footer_div{
+    margin-top: 100px;
+    width: 93%;
+    margin: auto;
+    background-color: #F5F5F5;
+}
+.footer_innerdiv{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.brighter{
+    font-weight: bolder;
+    font-size: 100%;
+    margin-top: 20px;
+}
+.footer_innerdiv > div >div {
+    margin: 15px;
+    font-size: 15px;
+}
+
+.footer{
+    margin-top: 40px;
+   background-color:#F5F5F5;
+   width: 100%;
+}
+
+.footer2{
+    display: flex;
+    /* grid-template-columns: auto auto; */
+    margin: 30px;
+}
+
+.footer_link{
+    display: flex;
+    float: right;
+    /* background-color: green; */
+    margin-left: 47%;
+}
+.footer_link >div{
+    margin-left: 10px;
+    
+}
