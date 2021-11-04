@@ -4,7 +4,8 @@
   "description": "this is clone website",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,6 @@
   "homepage": "https://github.com/DharmeshRS/Coursera_Clone#readme",
   "dependencies": {
     "json-server": "^0.17.0"
-  }
+  },
+  "devDependencies": {}
 }
