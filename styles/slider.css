@@ -1,7 +1,7 @@
 /* @media images changes into 3 rows {
     grid
 } */
-@media screen and (min-width: 1360px) {
+@media screen and (min-width: 1560px) {
     .container {
       width: 1370px;
     }
@@ -179,7 +179,7 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Source Serif Pro', serif;
+   
 }
 /* homepage first poster */
 .first-div{
