@@ -1,7 +1,7 @@
 // import path from 'path'
 const PORT=3000
 const path=require('path')
-//import json sercer
+//import json serVer
 const jsonServer=require('json-server')
 
 const server=jsonServer.create()
