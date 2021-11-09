@@ -41,38 +41,126 @@
         </div>
     </div>
     <div id="right_container">
-        <form action="">
+        <form action="" id="form_submit">
             <label for="">First Name:</label><br>
-            <input type="text" name="" id="name" required><br>
-            <label for=""> Last name:</label><br>
-            <input type="text" name="" id="lastname" required><br>
-            <label for="">Work Email Address :</label><br>
-            <input type="email" name="" id="email" required><br>
-             <label for="">Company name:</label><br>
-            <input type="text" name="" id="companyname" required placeholder="to select,begin typing."><br>
+            <input type="text" name="" id="name" required>
+            <label for="">Last Name:</label><br>
+            <input type="text" name="" id="name" required>
+            <label for="">Work Email Address:</label><br>
+            <input type="email" name="" id="name" required>
+            <label for="">Company Name:</label><br>
+            <input type="text" name="" id="name" required>
+
             <label for="">Job Role:</label><br>
-            <input type="text" name="" id="jobrole" required value="Select..."><br>
-            <label for="">Job Function:</label><br>
-            <input type="text" name="" id="jobfunction" required value="Select..."><br>
+            <select name="" id="">
+                <option value="">select...</option>
+                <option value="">C-level</option>
+                <option value="">VP</option>
+                <option value="">Director</option>
+                <option value="">Manager</option>
+                <option value="">Individual Contributer</option>
+                <option value="">other</option>
+            </select>
+
+            <label for="">Job Junction:</label><br>
+            <select name="" id="">
+                <option value="">select...</option>
+                <option value="">Analytics</option>
+                <option value="">business Leader</option>
+                <option value="">Data Science</option>
+                <option value="">Engineering</option>
+                <option value="">Finance</option>
+                <option value="">Human Resources</option>
+                <option value="">Information technology</option>
+                <option value="">Learning & development</option>
+                <option value="">Marketing</option>
+                <option value="">Operations</option>
+                <option value="">Security</option>
+                <option value="">other</option>
+                <option value="">Student</option>
+            </select>
             <label for="">Phone Number:</label><br>
-            <input type="number" required name="" id="phonenumber" placeholder="Contry Code + Phone Number"><br>
-            
+            <input type="number" name="" id="name" required="required" placeholder="Contry Code + Phone Number">
+
+            <label>Do you work for a government or nonprofit agency?</label><br>
+            <select name="" id="">
+                <option value="">No</option>
+                <option value="">Yes</option>
+            </select>
+
             <label for="">Company Size:</label><br>
-            <input type="text" name="" id="companysize" required value="Select..."><br>
-           
+            <select name="" id="">
+                <option value="">select...</option>
+                <option value="">1-500</option>
+                <option value="">501-1000</option>
+                <option value="">1001-5000</option>
+                <option value="">50001-15000</option>
+                <option value="">15000+</option>
+            </select>
+
+            <label for="">Expected Number of learners:</label><br>
+            <select name="" id="">
+                <option value="">select...</option>
+                <option value="">1-25</option>
+                <option value="">26-100</option>
+                <option value="">101-500</option>
+                <option value="">501-1000</option>
+                <option value="">1001-5000</option>
+                <option value="">5000+</option>
+            </select>
+
             <label for="">Country:</label><br>
-            <input type="text" name="" id="Country" value="Select..." required><br> 
-        </form>
+            <select name="" id="">
+                <option value="">select...</option>
+                <option value="">United State</option>
+                <option value="">Canada</option>
+                <option value="">Afganistan</option>
+                <option value="">Australia</option>
+                <option value="">Austria</option>
+                <option value="">Bangaladesh</option>
+                <option value="">China</option>
+                <option value="">Dominaca</option>
+                <option value="">France</option>
+                <option value="">Germany</option>
+                <option value="">India</option>
+                <option value="">other</option>
+            </select>
+
+            <label for="">Job Title</label><br>
+            <input type="text" name="" id="name" required>
+
+            <!-- < for="">First Name:</l><br>
+            <select type="text" name="" id="name" required><br>
+            < for=""> Last name:</l><br>
+            <select type="text" name="" id="lastname" required><br>
+            < for="">Work Email Address :</l><br>
+            <select type="email" name="" id="email" required><br>
+             <l for="">Company name:</l><br>
+            <select type="text" name="" id="companyname" required placeholder="to select,begin typing."><br>
+            < for="">Job Role:</l><br>
+            <select type="text" name="" id="jobrole" required value="Select..."><br>
+            < for="">Job Function:</l><br>
+            <select type="text" name="" id="jobfunction" required value="Select..."><br>
+            < for="">Phone Number:</l><br>
+            <select type="number" required name="" id="phonenumber" placeholder="Contry Code + Phone Number"><br>
+            
+            < for="">Company Size:</l><br>
+            <select type="text" name="" id="companysize" required value="Select..."><br>
+           
+            < for="">Country:</l><br>
+            <select type="text" name="" id="Country" value="Select..." required><br>  -->
+                <label for="" id="_area">please briefly describe your needs:</label><br>
+                <textarea name="" id="textarea" cols="60" rows="10"></textarea>
+                <p id="p_link">By submitting your info in the form above, you agree to our Terms of <br> Use and Privacy Notice. We may use this info to contact you and/or use data from <br> third parties to personalize your experience.</p>
+                <div>
+                    <input type="submit" name="" id="submit">
+                </div>
+            </form>
            </div>
-           <div id="text_div">
-           <label for="" id="label_area">please briefly describe your needs:</label><br>
-           <textarea name="" id="textarea" cols="50" rows="10"></textarea>
-        </div>
-        
-            <p id="p_link">By submitting your info in the form above, you agree to our Terms of <br> Use and Privacy Notice. We may use this info to contact you and/or use data from <br> third parties to personalize your experience.</p>
-            <input type="submit" name="" id="submit">
+    
+            <!-- <input type="submit" name="" id="submit"> -->
             <div id="contact_button"></div>
-            <div id="footer_div" style="margin-top: 500px;"></div>
+            <div id="footer_div" style="margin-top: 900px;"></div>
     <script src="contacts.js"></script>
     <script type="module">
         import {footer} from "./footer.js"
