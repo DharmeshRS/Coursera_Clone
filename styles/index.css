@@ -6,8 +6,9 @@
     width: 100%;
     margin: auto;
     margin-top: -9px;
+    padding-bottom: 2px;
 border: solid rgb(219, 215, 215) 1px;
-   /* margin-left: -9px; */
+   margin-left: -9px;
      display: flex;
 }
 #navbar>div {
@@ -87,6 +88,9 @@ color: whitesmoke;
 
 
 }
+#navbar>div>a{
+    text-decoration: none;
+}
 input:focus, textarea {
 outline: none !important;
 }
@@ -115,7 +119,10 @@ margin-top: 23px;
 margin-left: 29px;
 
 }
-#forStu:hover{
+/* a{
+    text-decoration: none;
+} */
+#forStu a:hover{
 text-decoration: underline;
 color: #0056d2;
 }
