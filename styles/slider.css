@@ -106,10 +106,12 @@
     font-family: "Source Sans Pro", Arial, sans-serif;
     /* line-height: 20px; */
     font-size: 13px;
+    /* text-decoration: none; */
     color: #373a3c;
     /* border: solid; */
     margin-top: 23px;
     }
+  
     #enterPrises :hover{
     text-decoration: underline;
     color: #0056d2;
@@ -172,11 +174,7 @@
 
 
 
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Source Serif Pro', serif;
-}
+
 /* homepage first poster */
 .first-div{
     margin: auto;
