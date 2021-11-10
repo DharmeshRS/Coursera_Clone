@@ -5,7 +5,7 @@
     position: fixed;
     width: 100%;
     margin: auto;
-    margin-top: -9px;
+    margin-top: -7px;
 border: solid rgb(219, 215, 215) 1px;
    /* margin-left: -9px; */
      display: flex;
@@ -99,6 +99,13 @@ color: #373a3c;
 /* border: solid; */
 margin-top: 23px;
 }
+<<<<<<< Updated upstream
+=======
+#navbar>div>a{
+    text-decoration: none;
+   
+}
+>>>>>>> Stashed changes
 #enterPrises :hover{
 text-decoration: underline;
 color: #0056d2;
@@ -112,7 +119,7 @@ margin-top: 23px;
 margin-left: 29px;
 
 }
-#forStu:hover{
+#forStu a:hover{
 text-decoration: underline;
 color: #0056d2;
 }
