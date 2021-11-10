@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursera | Online Courses</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="styles/slider.css">
+    <link rel="icon" href="https://blog.coursera.org/wp-content/uploads/2020/12/android-chrome-512x512-1.png" type="image/icon type">
+</head>
+<body>
+    <div id="container">
+        <div id="navbar">
+            <div>
+                <a href="index.html"><img id="mainlogo" src="https://images.ctfassets.net/00atxywtfxvd/2MlqAOzmHjSPtssv6HlNox/1cb35b40775835a5f574ebc5509907a1/coursera-wordmark-blue.svg"></a></div>
+                <div id="explore">
+                <span id="extext1">Explore </span>
+                <span class="material-icons" id="arrow">
+                expand_more
+                </span>
+            </div>
+            <div><input id="searchinput" placeholder="What do you want to learn?" type="text" oninput="fillPreviousSearched()">
+             <button class="material-icons" id="searchicon">
+            search
+            </button>
+    </div>
+    <div id="enterPrises"><a href="interprises.html" >For Enterprises</a></div>
+    <div id="forStu"><a href="student.html">For Students</a></div>
+    <!-- <div id="bell sign">bell sign</div> -->
+    <div id="login"><a>Log In</a></div>
+    <div id="jff"><a>Join for Free</a></div>
+    <!-- navbar end -->
+            </div>
+    <!-- hover menu start -->
+    <div id="blockremover"></div> 
+    <div id="hovermenuandinfodiv">
+    <div id="hovermenu">
+        <div>Goals</div>
+        <div id="tAfC">Take a free course</div>
+        <div id="eAd">Earn a Degree
+        
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+        
+    </div>
+    <div id="eAc">Earn a Certificate
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="lAyC">Launch or advance your career
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div>Subjects</div>
+    <div id="dS">Data Science
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="business">Business
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="cS">Computer Science
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="iT">Information Technology
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="lL">Language Learning
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="health">Health
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="pD">Personal Development
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="pS">Physical Sciences
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="sS">Socail Sciences
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="aAh">Art and Humanities
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="mAl">Math and Logic
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="bAs">Browse all subjects
+       
+    </div>
+
+    <!-- hover menu end -->
+</div> 
+<!-- <div id="infodiv">Information</div> -->
+<div id="infodiv">
+    <p id="coursename">course</p>
+    <div id="threedivs">
+        <div>
+            <p class="firsttesxt">Degrees</p>
+            <hr>
+            <p class="secTex">Breakthrough pricing on 100% online degrees<br>
+                designed to fit into your life.
+            </p>
+            <div id="degreediv"></div>
+            <div class="blueboxtex">View all degrees</div>
+        </div>
+        <div>
+            <p class="firsttesxt">Certificate programs</p>
+            <hr>
+            <p class="secTex">In 3-9 months ,gain the skills to break into a new<br>
+                career or take your career to the next level.
+            </p>
+            <div id="certificatediv"></div>
+            <div class="blueboxtex">View all Certificates</div>
+           
+        </div>
+        <div>
+            <p class="firsttesxt">Get Started</p>
+            <hr>
+            <div class="gets">Free courses</div>
+            <div class="gets">Most popular</div>
+            <div class="gets">Guided Projects under 2 hours</div>
+            <p class="firsttesxt popular">Popular Skills</p>
+            <hr>
+            <div id="popularskills"></div>
+        </div>
+    </div>
+</div>
+<!-- hovermenuandinfodiv End -->
+ </div> 
+ <div id="debounce">
+    <p class="boldP">Recently viewed</p>
+     <div id="rV">
+        
+        
+     </div>
+     <p class="boldP">Popular right now</p>
+     <div id="pRn">
+       <div>
+        <span class="material-icons pRnSi " >
+            search
+        </span>
+           <span class="lowerP">python</span>
+       
+    </div>
+    <div>
+        <span class="material-icons pRnSi " >
+            search
+        </span>
+           <span class="lowerP">free</span>
+       
+    </div>
+    <div>
+        <span class="material-icons pRnSi " >
+            search
+        </span>
+           <span class="lowerP">sql</span>
+       
+    </div>
+     </div>
+ </div>
+<!-- container end -->
+    </div>
+  
+<div id="container2">
+    <div class="first-div">
+        <!-- <div> -->
+            <div>
+                <img src="images/coursera_poster.png" alt="" class="poster">
+                <!-- <div class="buttons">
+                    <button class="primarybtn btn btnblue">Join for Free</button>
+                    <button class="btn colorblue borderblue">Try Coursera for Business</button> -->
+                <!-- </div> -->
+            </div>
+        <!-- </div> -->
+        <div class="collab_company_logo">
+            <div class="collaborate_companies_title">
+                <p class="word-dark">We Collaborate with <strong class="blue">200+ leading Universities and Companies </strong></p>
+                <div class="collaborate_companies_pics">
+                    <div class="margintop" ><img class="imgsize1" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/60SA8pGxPXMmJf4n7umK1H/ccec31bbe2358210bf8391dcba6cd2f1/umich.png?auto=format%2Ccompress&dpr=1&w=&h=55" alt="" style="margin-top: -10px;"></div>
+                    <div><img class="imgsize1" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/1c6RjBHi3Lqb9QpWxje7iA/b529f909c5230af3210ba2d47d149620/google.png?auto=format%2Ccompress&dpr=1&w=&h=37" alt=""></div>
+                    <div><img  class="imgsize1"src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/1ZeiauXe5bPProvfuIo7o2/55d005d42979ab585cdfa01f825b7d4f/penn.svg?auto=format%2Ccompress&dpr=1&w=&h=37" alt=""></div>
+                    <div><img class="imgsize1" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/9V0ZHPEeFBPLlhvvCnS0x/0310b67e486733af9c9b1ba8be8d072b/ISB_transparent_logo.png?auto=format%2Ccompress&dpr=1&w=&h=37" alt=""></div>
+                    <div><img class="imgsize1" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/a2AuMXiugp5PM6uun7iCA/4fe0cdee6bd59fec786d3feb24bacfd8/1200px-Amazon_Web_Services_Logo.svg.png?auto=format%2Ccompress&dpr=1&w=&h=37" alt=""></div>
+                    <div><img class="imgsize1" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/4adnkcJIgVKTinBB0j9GF8/5fe5eecf60bf305dd0a7ce40bb721cd9/ibm.png?auto=format%2Ccompress&dpr=1&w=&h=32" alt=""></div>
+                    <div ><img class="imgsize1" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/7vM8QjnKMPx9iWPBLDAeSI/9acdbc853fc01ce38df8fa67896a09bf/Indian_Institute_of_Technology_Roorkee_logo.png?auto=format%2Ccompress&dpr=1&w=&h=37" alt=""></div>
+                    <div><img  class="imgsize1" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/4FSFmNXuDIzTvFb7n0v4mK/704ae9e0a7981fb6415f4cb4609bbbb3/stanford.svg?auto=format%2Ccompress&dpr=1&w=&h=27" alt=""></div>
+                    <div><img  class="imgsize1" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/6intvCoriH8oDkbGSSlqm5/ceedf032a54cbc1fb7d2ab53a5b291a0/1200px-IIM_Calcutta_Logo.svg.png?auto=format%2Ccompress&dpr=1&w=&h=37"></div>
+                    <div ><img class="imgsize1" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/3bmmVE1BHvDQUFldOXgDQe/de0f26f18e27690fc7b67faa722bddb5/fblogo.png?auto=format%2Ccompress&dpr=1&w=&h=37" alt=""></div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <!-- professional certificates -->
+       <div>
+        <div class="prof_div1">
+            <div  class="prof_div2">Professional Certificates</div>
+            <div  class="prof_div3">Get job-ready for an in-demand career</div>
+            <div  class="prof_div4">Break into a new field like information technology or data science. No prior experience necessary to get started.</div>
+        </div>
+        <div class="wrapper">
+    
+            <main class="maindiv">
+                <span class="arrowspan1">&#139;</span>
+                <span class="arrowspan1">&#155;</span>
+                <section id="prof_degree" class="section_div">
+                    </section>
+            </main>
+            
+        </div> 
+        <p class="text-center"><a class="linkd" href="#">Explore Certificates &#8594;</a></p>
+       </div>
+
+       <div>
+        <div class="prof_div1">
+            <div class="prof_div2">Master's and Bachelor's Degrees</div>
+            <div class="prof_div3">Find a top degree that fits your life</div>
+            <div class="prof_div4">Find a top degree that fits your life</div>
+        </div>
+        <div class="wrapper-2">
+    
+            <main>
+                <span class="arrowspan2">&#139;</span>
+                <span class="arrowspan2">&#155;</span>
+                <section id="degree-slider">
+                </section>
+            </main>
+            
+        </div> 
+        <p class="text-center explore1"><a href="#">Explore Certificates &#8594;</a></p>
+       </div>
+       <div class="course_data">
+           <div class="box_model">
+               <div class="box">
+                   <div><img src="images/assets/data_science.jpg" alt=""></div>
+                   <div class="textformat"><h4>Data Science</h4><h4>5 Courses</h4></div>
+               </div>
+               <div class="box">
+                <div><img src="images/assets/business.jpg" alt=""></div>
+                <div class="textformat"><h4>Business</h4><h4>15 Courses</h4></div>
+            </div>
+            <div class="box">
+                <div><img src="images/assets/computer_science.jpg" alt=""></div>
+                <div class="textformat"><h4>Computer Science</h4><h4>15 Courses</h4></div>
+            </div>
+            <div class="box">
+                <div><img src="images/assets/health.jpg" alt=""></div>
+                <div class="textformat"><h4>Health</h4><h4>2 Courses</h4></div>
+            </div>
+            <div class="box">
+                <div><img src="images/assets/social_sciences.jpg" alt=""></div>
+                <div class="textformat"><h4>Social Sciences</h4><h4>5 Courses</h4></div>
+            </div>
+            <div class="box">
+                <div><img src="images/assets/personal_development.jpg" alt=""></div>
+                <div class="textformat"><h4>Personal Dev.</h4><h4>5 Courses</h4></div>
+            </div>
+            <div class="box">
+                <div><img src="images/assets/arts_and_humanities.jpg" alt=""></div>
+                <div class="textformat"><h4>Arts And Humanities</h4><h4>5 Courses</h4></div>
+            </div>
+            <div class="box">
+                <div><img src="images/assets/physical_science_and_engineering.jpg" alt=""></div>
+                <div class="textformat"><h4>Physical Science</h4><h4>5 Courses</h4></div>
+            </div>
+            <div class="box">
+                <div><img src="images/assets/language_learning.jpg" alt=""></div>
+                <div class="textformat"><h4>Language Learning</h4><h4>4 Courses</h4></div>
+            </div>
+            <div class="box">
+                <div><img src="images/assets/information_technology.jpg" alt=""></div>
+                <div class="textformat"><h4>Info. Tech.</h4><h4>5 Courses</h4></div>
+            </div>
+            <div class="box">
+                <div><img src="images/assets/math_and_logic.jpg" alt=""></div>
+                <div class="textformat"><h4>Math and Logic</h4><h4>5 Courses</h4></div>
+            </div>
+           </div>
+       </div>
+
+
+
+       <!-- footer -->
+<div class="footer">
+       <div class="footer_div">
+           <div class="footer_innerdiv">
+               <div>
+                <div class="brighter"><h2>Coursera</h2></div>
+                <div>About</div>
+                <div>What We Offer</div>
+                <div>Leadership</div>
+                <div>Careers</div>
+                <div>Catalog</div>
+                <div>Coursera Plus</div>
+                <div>Professional Cerificates</div>
+                <div>MasterTrack Certificates</div>
+                <div>Degrees</div>
+                <div>For Enterprises</div>
+                <div>For Goverment</div>
+                <div>For Campus</div>
+            </div>
+               <div> 
+                   <div class="brighter"><h2>Community</h2></div>
+                    <div>Learners</div>
+                    <div>Partners</div>
+                    <div>Developers</div>
+                    <div>Beta Testers</div>
+                    <div>Translators</div>
+                    <div>Blog</div>
+                    <div>Tech Blogs</div>
+                    <div>Teaching Center</div>
+                </div>
+               <div>
+                   <div class="brighter"><h2>More</h2></div>
+                   <div>Press</div>
+                   <div>Investors</div>
+                   <div>Terms</div>
+                   <div>Privacy</div>
+                   <div>Help</div>
+                   <div>Accessibility</div>
+                   <div>Contact</div>
+                   <div>Articles</div>
+                   <div>Directory</div>
+                   <div>Affiliates</div>
+
+               </div>
+               <div>
+                   <div style="margin-top: 20px;">
+                       <img src="https://d3njjcbhbojbot.cloudfront.net/web/images/icons/download_on_the_app_store_badge_en.svg" style="width: 50%;" alt="">
+                   </div>
+                   <div>
+                       <img src="https://d3njjcbhbojbot.cloudfront.net/web/images/icons/en_generic_rgb_wo_45.png" style="width: 50%;" alt="">
+                   </div>
+                   <div>
+                       <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d3njjcbhbojbot.cloudfront.net/web/images/icons/2018-B-Corp-Logo-Black-S.png?auto=format%2Ccompress&dpr=1&w=151&h=120&q=40" alt="">
+                   </div>
+               </div>
+
+           </div>
+           <hr>
+           <div class="footer2">
+                <div>
+                    © 2021 Coursera Inc. All rights reserved.
+            </div>
+            <div class="footer_link">
+                    <div><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/footer/facebook.png?auto=format%2Ccompress&dpr=1&w=28&h=28&q=40" alt=""></div>
+                    <div><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/footer/linkedin.png?auto=format%2Ccompress&dpr=1&w=28&h=28&q=40" alt=""></div>
+                    <div><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/footer/twitter.png?auto=format%2Ccompress&dpr=1&w=28&h=28&q=40" alt=""></div>
+                    <div><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/footer/youtube.png?auto=format%2Ccompress&dpr=1&w=28&h=28&q=40" alt=""></div>
+                    <div><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/footer/youtube.png?auto=format%2Ccompress&dpr=1&w=28&h=28&q=40" alt=""></div>
+                </div>
+           </div>
+           
+       </div>
+</div>
+
+
+<!-- container 2 end -->
+</div>
+
+</body>
+<script src="slider.js"></script>
+<script src="search.js"></script>
+</html>
+<script src="./scripts/index.js">
+
+
+</script>
