@@ -1,0 +1,37 @@
+#imgbox{
+    width: 100%;
+    background-color: blanchedalmond;
+    height: 408px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #0a143b;
+    margin-top: 5px;
+    font-family: OpenSans, Arial, sans-serif;
+    color: white;
+}
+#courseimg{
+    width: 100%;
+    height: 407px;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%)
+    /* clip-path: polygon(0% 100%, 100% 100%, 0% 0%); */
+}
+#textwitharrow{
+    line-height: 21px;
+    font-size: 14px;
+   
+    font-weight: 600;
+    width: 90%;
+    margin-left: 130px;
+    padding-top: 40px;
+}
+#uniname{
+    width: 190px;
+    background-color: tomato;
+    margin-left: 130px;
+    font-weight: 600;
+    height: 44px;
+    margin-top: 70px;
+    
+    display: flex;
+    padding: 12px;
+}

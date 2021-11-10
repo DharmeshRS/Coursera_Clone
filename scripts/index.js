@@ -32,7 +32,7 @@ async function show(){
 //search api
 var input=document.getElementById("searchinput").value
     //let res = await fetch("https://api.coursera.org/api/courses.v1?q=search&query=malwar")
-     let res = await fetch(`https://api.coursera.org/api/courses.v1?q=search&query=${input}&includes=instructorIds,photoUrl,description&fields=instructorIds,photoUrl,description,partnerLogo,certificates,startDate,workload,specializations,domainTypes`)
+     let res = await fetch(`https://api.coursera.org/api/courses.v1?q=search&query=${input}&includes=instructorIds,photoUrl,description&fields=instructorIds,photoUrl,description,partnerLogo,certificates,partnerIds,startDate,workload,specializations,domainTypes`)
     let data =await res.json();
     console.log(data)
 }
@@ -47,7 +47,7 @@ var q="java script"
 else{
 q=input
 }
-let res = await fetch(`https://api.coursera.org/api/courses.v1?q=search&query=${q}&includes=instructorIds,photoUrl,description,largeIcon&fields=instructorIds,photoUrl,description,partnerLogo,certificates,startDate,workload,specializations,domainTypes`)
+let res = await fetch(`https://api.coursera.org/api/courses.v1?q=search&query=${q}&includes=instructorIds,photoUrl,description,largeIcon&fields=instructorIds,photoUrl,description,partnerLogo,certificates,startDate,partnerIds,workload,specializations,domainTypes`)
     let data =await res.json();
 let elements=data.elements
     console.log(elements);
@@ -79,6 +79,7 @@ let elements=data.elements
         var coursera=JSON.parse(localStorage.getItem("coursera"));
         coursera[0]=el;
         localStorage.setItem("coursera",JSON.stringify(coursera))
+        window.location.href="courseDescription.html"
     }
     debouncediv.setAttribute("id","debouncediv")
     rV.append(debouncediv)
@@ -125,7 +126,7 @@ for(let i =1;i<hoverdivs.length;i++){
           var q=hoverdivs[i].textContent.trim().split("\n");
         //   alert(q[0]);
         coursename.innerHTML=q[0]
-          let res = await fetch(`https://api.coursera.org/api/courses.v1?q=search&query=${q[0]}&includes=instructorIds,photoUrl,description,largeIcon,shortName,location&fields=instructorIds,partnerIds ,location,photoUrl,description,partnerLogo,certificates,startDate,workload,specializations,domainTypes`)
+          let res = await fetch(`https://api.coursera.org/api/courses.v1?q=search&query=${q[0]}&includes=instructorIds,photoUrl,partnerIds,description,largeIcon,shortName,location&fields=instructorIds,partnerIds ,location,photoUrl,description,partnerLogo,certificates,startDate,workload,specializations,domainTypes`)
     let data =await res.json();
 
 let elements=data.elements
@@ -165,10 +166,11 @@ let elements=data.elements
             }
             rV.append(debouncediv);
             debouncediv.onclick=()=>{
-                alert (el.name);
+                alert (el.name+"fa");
                 var coursera=JSON.parse(localStorage.getItem("coursera"));
                 coursera[0]=el;
                 localStorage.setItem("coursera",JSON.stringify(coursera))
+                window.location.href="courseDescription.html"
             }
         }
         else if(count>5&&count<=8){
@@ -198,11 +200,12 @@ let elements=data.elements
                 debouncediv.style.backgroundColor="white"
             }
             debouncediv.onclick=()=>{
-                alert (el.name);
+                alert (el.name+"fa");
                 debouncediv.style.backgroundColor="red"
                 var coursera=JSON.parse(localStorage.getItem("coursera"));
                 coursera[0]=el;
-                localStorage.setItem("coursera",JSON.stringify(coursera))
+                localStorage.setItem("coursera",JSON.stringify(coursera));
+                window.location.href="courseDescription.html"
             }
             cert.append(debouncediv)
 
