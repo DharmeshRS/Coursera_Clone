@@ -1,7 +1,7 @@
 /* @media images changes into 3 rows {
     grid
 } */
-@media screen and (min-width: 1360px) {
+@media screen and (min-width: 1460px) {
     .container {
       width: 1370px;
     }
