@@ -1,8 +1,8 @@
+let search=JSON.parse(localStorage.getItem("coursera_search"));
 
 
-async function showlist(){
-    let search=JSON.parse(localStorage.getItem("coursera_search"));
-
+async function showlist(search){
+    
     localStorage.removeItem("coursera_search")
 
     // alert(search)
@@ -14,7 +14,7 @@ async function showlist(){
     displaydata(data)
 }
 
-showlist()
+showlist(search)
 let parent=document.getElementById("displaydiv")
 function displaydata(data){
     console.log("display",data)
@@ -73,18 +73,60 @@ function displaydata(data){
     })
 }
 
-// elements: Array(89)
-// 0:
-// certificates: ['VerifiedCert']
-// courseType: "v2.ondemand"
-// description: "By the end of this project, you will be able to apply statistics to perform an A/B Test for an ad campaign using python. A/B Testing is widely used by digital marketing agencies as it is the  most effective mean to determine the best content to convert visits into sign-ups and purchases. Throughout the project, you will be able to set up hypothesis testing to advise a digital marketing agency that designed a new ad for their client on whether they should go for the new ad or not. \n\nNote: This course works best for learners who are based in the North America region. We’re currently working on providing the same experience in other regions."
-// domainTypes: (2) [{…}, {…}]
-// id: "Qr6QVXnSEeuIrRIFuaY2iw"
-// instructorIds: ['2388082']
-// name: " perform an A/B Test for an ad campaign using python"
-// partnerLogo: "http://coursera-university-assets.s3.amazonaws.com/37/fa0d14d281428bb2f111ab5a67974a/coursera-projectnetwork-full-rgb.png"
-// photoUrl: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/bd/5fc3f47d454392a5b268126b4b9c98/Creating-Accounting-Statements-Using-Accounting-Fundamentals-37-.png"
-// slug: "perform-abtest-python"
-// specializations: []
-// startDate: 1617680699128
-// workload: "2 hours"
+async function lang_select(){
+    empty()
+    let lang_form=document.getElementById("formid1")
+    let  lang_name=lang_form.languages[lang_form.languages.selectedIndex].text
+    let res = await fetch(`https://api.coursera.org/api/courses.v1?q=search&query=${search}&index=prod_all_launched_products_term_optimization&allLanguages=${lang_name}}&includes=instructorIds,photoUrl,description,largeIcon&fields=instructorIds,photoUrl,description,partnerLogo,certificates,startDate,workload,specializations,domainTypes
+    `)
+    let data =await res.json();
+    
+    displaydata(data)
+   
+ }
+
+ function empty(){
+     let box=document.getElementById("displaydiv")
+     box.innerHTML=null;
+     alert("clear")
+ }
+// https://api.coursera.org/api/courses.v1?q=search&query=${search}&index=prod_all_launched_products_term_optimization&allLanguages=english&includes=instructorIds,photoUrl,description,largeIcon&fields=instructorIds,photoUrl,description,partnerLogo,certificates,startDate,workload,specializations,domainTypes
+// &productDifficultyLevel=Beginner
+// &entityTypeDescription=Courses => learning products
+
+
+async function level_select(){
+    empty()
+    let lang_form=document.getElementById("formid2")
+    let  level_name=lang_form.level[lang_form.level.selectedIndex].text
+    alert(level_name)
+    let res = await fetch(`https://api.coursera.org/api/courses.v1?query=${search}&index=prod_all_launched_products_term_optimization&productDifficultyLevel=${level_name}`)
+    let data =await res.json();
+    
+    displaydata(data)
+   
+ }
+
+async function duration_select(){
+    empty()
+    let lang_form=document.getElementById("formid3")
+    let  duration_name=lang_form.duration[lang_form.duration.selectedIndex].value
+    alert(duration_name)
+    let res = await fetch(`https://api.coursera.org/api/courses.v1?query=${search}&index=prod_all_launched_products_term_optimization&productDifficultyLevel=${level_name}`)
+    let data =await res.json();
+    
+    displaydata(data)
+   
+ }
+
+ async function subject_select(){
+    empty()
+    let lang_form=document.getElementById("formid4")
+    let  duration_name=lang_form.duration[lang_form.duration.selectedIndex].value
+    alert(duration_name)
+    let res = await fetch(`https://api.coursera.org/api/courses.v1?query=${search}&index=prod_all_launched_products_term_optimization&productDifficultyLevel=${level_name}`)
+    let data =await res.json();
+    
+    displaydata(data)
+   
+ }
