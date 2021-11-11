@@ -90,12 +90,55 @@ font-weight: 600;
 }
 #menudiv>div{
     padding-top: 25px;
-   padding-left: 10px;
+   /* padding-left: 10px; */
     width: 100%;
     /* border-bottom: solid; */
     text-align: center;
+    /* border: solid; */
+    width: 100%;
 }
+#upperbluebox{
+  background-color: #263674;
+  color: white;
+  font-size: OpenSans, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  height: 29px;
+  margin-bottom: -6px;
+margin-top: 4px;
+text-align: center;
+padding-top: 9px;
+padding-bottom: 9px;
+font-weight: 600;
+}
+.infoicon{
+  transform: rotate(180deg);
+ 
 
+  vertical-align: top;
+  padding-top: 5px;
+  font-size: 30px;
+  color: #9badec;
+}
+#bluete{
+  padding-bottom: 20px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+#desContent{
+  width: 86%;
+  margin: auto;
+  background-color: #656565;
+  display: grid;
+  grid-template-columns: 50% 43%;
+  gap: 7%;
+}
+#changeingContent{
+  background-color: aliceblue;
+}
+#fixContent{
+  background-color: aqua;
+}
 /* footer css */
 
 .banner {

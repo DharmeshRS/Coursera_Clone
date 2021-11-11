@@ -189,4 +189,20 @@ for(let i =0;i<fatborders.length;i++){
       
    }
 }
-
+changeingContent=document.getElementById("changeingContent");
+// changeingContent.textContent=mydata.description
+ var min = Math.ceil(10);
+ var max = Math.floor(30);
+ var random=Math.floor(Math.random() * (max - min) + min);
+var money =document.getElementById("money")
+money.innerHTML=random;
+var min = Math.ceil(10);
+var max = Math.floor(20);
+var random=Math.floor(Math.random() * (max - min) + min);
+var month1 =document.getElementById("month1")
+month1.innerHTML=random;
+var min = Math.ceil(20);
+var max = Math.floor(30);
+var random=Math.floor(Math.random() * (max - min) + min);
+var month2 =document.getElementById("month2")
+month2.innerHTML=random;
