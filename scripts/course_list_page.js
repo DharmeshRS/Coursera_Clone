@@ -154,22 +154,15 @@ function  show_server_data_level(data,level_name){
         img.src=el.img
         imgdiv.append(img)
         //description
-
         let title=document.createElement("p")
         let institute=document.createElement("p")
         let type=document.createElement("p")
         let studenttotal=document.createElement("p")
         let studenttype=document.createElement("p")
-
         title.innerText=el.coursename;
         institute.innerText=el.institute;
         type.innerText=el.category;
-
-        
-
-
         studenttotal.innerText=el.student_enroll+" Students"
-
         studenttype.innerText=el.level
         let hr=document.createElement("hr")
         descdiv.append(title,institute,type,studenttotal,studenttype)
@@ -208,7 +201,6 @@ function show_server_data_duration(data,duration_name){
         img.src=el.img
         imgdiv.append(img)
         //description
-
         let title=document.createElement("p")
         let institute=document.createElement("p")
         let type=document.createElement("p")
@@ -219,9 +211,6 @@ function show_server_data_duration(data,duration_name){
         institute.innerText=el.institute;
         type.innerText=el.category;
 
-        
-
-
         studenttotal.innerText=el.student_enroll+" Students"
 
         studenttype.innerText=el.level
@@ -229,7 +218,6 @@ function show_server_data_duration(data,duration_name){
         descdiv.append(title,institute,type,studenttotal,studenttype)
         maindiv.append(imgdiv,descdiv)
         maindiv.onclick=function(){
-            alert("go to desc page")
             document.location.href="course_ldesc_page.html";
         }
         parent.append(maindiv,hr)
