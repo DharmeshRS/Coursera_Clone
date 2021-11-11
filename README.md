@@ -12,7 +12,7 @@
 * Login Page.
 * Debouncing in search
 * Dynamic Searching 
-* Enterprice page
+* Enterprise page
 * student page
 * etc.
 
