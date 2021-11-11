@@ -17,9 +17,9 @@
 * etc.
 
 # Used In :
-## debouncing
-## fetch API
-## JSON Mock Server
+### debouncing
+### fetch API
+### JSON Mock Server
 
 
 
@@ -41,8 +41,8 @@
 
 ## Contributors :
 * [Dharmesh Sonar](https://github.com/DharmeshRS)
-* [Anmol ](https://github.com/)
-* [Surendra](https://github.com/)
-* [Ashwarya](https://github.com/)
-* [Vishwaraj](https://github.com/)
-* [Abhishek](https://github.com/)
+* [Anmol Kumar](https://github.com/Anmolroan)
+* [Surendra Yadav](https://github.com/Surendra9129)
+* [aishwarya Jadhav](https://github.com/aishwaryaj20)
+* [Vishwaraj Patil](https://github.com/PatilVishwaraj)
+* [Abhishek Silawat](https://github.com/abhishek-0607)
