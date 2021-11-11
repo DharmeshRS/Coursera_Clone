@@ -1,6 +1,6 @@
-# Coursera_Clone ##[for Education Purpose]
+# Coursera_Clone 
 ## https://www.coursera.org/in
-
+### [for Learning Purpose]
 
 ## Technologies Used :
 <img src="https://p92.com/binaries/content/gallery/p92website/technologies/htmlcssjs-details.png"  title="hover text" height="100px">
