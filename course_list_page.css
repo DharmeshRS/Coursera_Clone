@@ -1,0 +1,28 @@
+.displaybox{
+    width: 1024px;
+    margin: auto;
+}
+#displaydiv  img {
+    width: 84%;
+    margin:auto;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+#displaydiv >div {
+    /* background-color: blueviolet; */
+    display: grid;
+    grid-template-columns: 20% auto;
+    gap: 10px;
+}
+#displaydiv >div:hover{
+    /* border: 1px solid rgb(0, 0, 0); */
+    /* background-color: rgb(214, 213, 213); */
+    box-shadow: 2px 2px 5px black;
+}
+#displaydiv p:nth-child(2){
+    margin-top: -5px;
+} 
+#displaydiv >div>div>p:nth-of-type(1){
+    font-weight: 900;
+    font-size: large;
+}

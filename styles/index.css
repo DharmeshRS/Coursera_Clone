@@ -6,9 +6,11 @@
     width: 100%;
     margin: auto;
     margin-top: -9px;
+    padding-bottom: 2px;
 border: solid rgb(219, 215, 215) 1px;
-   /* margin-left: -9px; */
+   margin-left: -9px;
      display: flex;
+     background-color: #FFFFFF;
 }
 #navbar>div {
 /* display: inline-block; */
@@ -87,6 +89,9 @@ color: whitesmoke;
 
 
 }
+#navbar>div>a{
+    text-decoration: none;
+}
 input:focus, textarea {
 outline: none !important;
 }
@@ -97,10 +102,13 @@ font-family: "Source Sans Pro", Arial, sans-serif;
 font-size: 13px;
 color: #373a3c;
 /* border: solid; */
+
+
 margin-top: 23px;
 }
+
 #enterPrises :hover{
-text-decoration: underline;
+text-decoration:underline;
 color: #0056d2;
 }
 #forStu{
@@ -112,7 +120,10 @@ margin-top: 23px;
 margin-left: 29px;
 
 }
-#forStu:hover{
+/* a{
+    text-decoration: none;
+} */
+#forStu a:hover{
 text-decoration: underline;
 color: #0056d2;
 }

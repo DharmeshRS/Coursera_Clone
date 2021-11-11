@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/courseDescription.css">
+  
+</head>
+<body>
+    <div id="container">
+        <div id="navbar">
+            <div>
+                <a href="index.html"><img id="mainlogo" src="https://images.ctfassets.net/00atxywtfxvd/2MlqAOzmHjSPtssv6HlNox/1cb35b40775835a5f574ebc5509907a1/coursera-wordmark-blue.svg"></a></div>
+                <div id="explore">
+                <span id="extext1">Explore </span>
+                <span class="material-icons" id="arrow">
+                expand_more
+                </span>
+            </div>
+            <div><input id="searchinput" placeholder="What do you want to learn?" type="text" oninput="fillPreviousSearched()" style="width: 450px; height: 35px ;">
+             <button class="material-icons" id="searchicon">
+            search
+            </button>
+    </div>
+    <div id="enterPrises" style="margin-left: 200px;"><a href="interprises.html" >For Enterprises</a></div>
+    <div id="forStu"><a href="student.html">For Students</a></div>
+    <!-- <div id="bell sign">bell sign</div> -->
+    <div id="login"><a>Log In</a></div>
+    <div id="jff"><a>Join for Free</a></div>
+    <!-- navbar end -->
+            </div>
+    <!-- hover menu start -->
+    <div id="blockremover"></div> 
+    <div id="hovermenuandinfodiv">
+    <div id="hovermenu">
+        <div>Goals</div>
+        <div id="tAfC">Take a free course</div>
+        <div id="eAd">Earn a Degree
+        
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+        
+    </div>
+    <div id="eAc">Earn a Certificate
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="lAyC">Launch or advance your career
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div>Subjects</div>
+    <div id="dS">Data Science
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="business">Business
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="cS">Computer Science
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="iT">Information Technology
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="lL">Language Learning
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="health">Health
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="pD">Personal Development
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="pS">Physical Sciences
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="sS">Socail Sciences
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="aAh">Art and Humanities
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="mAl">Math and Logic
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="bAs">Browse all subjects
+       
+    </div>
+
+    <!-- hover menu end -->
+</div> 
+<!-- <div id="infodiv">Information</div> -->
+<div id="infodiv">
+    <p id="coursename">course</p>
+    <div id="threedivs">
+        <div>
+            <p class="firsttesxt">Degrees</p>
+            <hr>
+            <p class="secTex">Breakthrough pricing on 100% online degrees<br>
+                designed to fit into your life.
+            </p>
+            <div id="degreediv"></div>
+            <div class="blueboxtex">View all degrees</div>
+        </div>
+        <div>
+            <p class="firsttesxt">Certificate programs</p>
+            <hr>
+            <p class="secTex">In 3-9 months ,gain the skills to break into a new<br>
+                career or take your career to the next level.
+            </p>
+            <div id="certificatediv"></div>
+            <div class="blueboxtex">View all Certificates</div>
+           
+        </div>
+        <div>
+            <p class="firsttesxt">Get Started</p>
+            <hr>
+            <div class="gets">Free courses</div>
+            <div class="gets">Most popular</div>
+            <div class="gets">Guided Projects under 2 hours</div>
+            <p class="firsttesxt popular">Popular Skills</p>
+            <hr>
+            <div id="popularskills"></div>
+        </div>
+    </div>
+</div>
+<!-- hovermenuandinfodiv End -->
+ </div> 
+ <div id="debounce">
+    <p class="boldP">Recently viewed</p>
+     <div id="rV">
+        
+        
+     </div>
+     <p class="boldP">Popular right now</p>
+     <div id="pRn">
+       <div>
+        <span class="material-icons pRnSi " >
+            search
+        </span>
+           <span class="lowerP">python</span>
+       
+    </div>
+    <div>
+        <span class="material-icons pRnSi " >
+            search
+        </span>
+           <span class="lowerP">free</span>
+       
+    </div>
+    <div>
+        <span class="material-icons pRnSi " >
+            search
+        </span>
+           <span class="lowerP">sql</span>
+       
+    </div>
+     </div>
+ </div>
+<!-- container end -->
+    </div>
+    <div id="container2">
+
+    
+<div id="descriptionbox">
+    <!-- descriptionbox end -->
+    <div id="imgbox">
+        <div id="textLeftToimg">
+            <div id="textwitharrow">
+                <span>Online Degrees  &nbsp; >  &nbsp;</span>
+                <span>Business &nbsp; >  &nbsp;</span>
+                <span>Master of Business Administration  &nbsp;> &nbsp; </span>
+                <span>About the University</span>
+                
+            </div>
+            <div id="uniname">
+                <img id="univImg">
+                
+            </div>
+            <div id="coursename1"></div>
+            <div id="universityname"></div>
+           <div id="sharimgdiv"> <img src="./images/share icon.png" id="shareimg"><div id="spanS">Share</div></div>
+           
+        </div>
+<img id="courseimg">
+
+    </div>
+    <div id="menudiv">
+<div class="fatborder">Overview</div>
+<div class="fatborder">Admisson</div>
+<div class="fatborder">Academics</div>
+<div class="fatborder">Tution & Financing</div>
+<div class="fatborder">Student Experience</div>
+<div class="fatborder">Careers</div>
+<div class="fatborder">About the University</div>
+    </div>
+</div>
+<!-- container2 end -->
+</div>
+<div id="footer"><div class="bluebox">
+    <h2 class="faq">Frequently Asked Questions</h2>
+    <div class="c">
+        <button class="collapsible">What is the Coursera for Campus Student plan?</button>
+        <div class="content">
+          <p class="textcontcollapsible">The Coursera for Campus Student plan allows individual university and college students to sign up for unlimited Guided Projects and one free course per year.</p>
+        </div></div>
+        <div class="c">
+        <button class="collapsible">How do I take more courses and Guided Projects? </button>
+        <div class="content">
+          <p class="textcontcollapsible">Your university will need to sign up for a Coursera for Campus Institution plan to provide you with access to more courses and Guided Projects. We suggest that you reach out to your university administration. You can still visit Coursera.org as a general learner and sign up to audit courses for free.</p>
+        </div></div>
+
+        <div class="c">
+        <button class="collapsible">If I’m a current student who signed up Initiative, what will happen to my account? </button>
+        <div class="content">
+          <p class="textcontcollapsible">Starting on October 1, 2020, and over the following week, your student account will migrate to a free Coursera for Campus Student plan account, which provides access to unlimited Guided Projects and one free course per year along with online support. You will have two months to finish any courses that you had enrolled in on or prior to September 30, 2020, after which you will be unenrolled from any courses you have not completed. If you are interested in getting full access to all courses, please reach out to your University administration.</p>
+        </div></div>
+        <div class="c">
+        <button class="collapsible">How do I know if I am eligible for the Coursera for Campus Student plan?  </button>
+        <div class="content">
+          <p class="textcontcollapsible">The Coursera for Campus Student plan is available to full-time, part-time, community college, and university students. To verify eligibility, we are using a database of publicly available college and university email domains. To gain access, sign up with your university or college-issued email address. If your email domain is included on Coursera’s list of universities and colleges, you will be granted access to the Student plan. If not, please provide your school information so we can work to grant access to students at your school. Once we validate the information provided and launch a program we inform you by email. Due to the volume of students, this may take a few weeks. We appreciate your patience.</p>
+        </div></div>
+        <div class="c">
+        <button class="collapsible">What if I don’t have a university email address? </button>
+        <div class="content">
+          <p class="textcontcollapsible">Unfortunately, we are unable to verify email addresses from non-university domains such as Gmail, Hotmail, and Yahoo. If you do not have an email address with your university domain, please reach out to your university administration to get an email account issued. If we’re unable to recognize the university email domain that you’ve entered, you’ll be prompted to provide more information about your university. If we’re able to validate your status as a student with that information, you’ll receive an email notifying you of your eligibility. As you wait for your request to be processed, you can start learning with free courses for college students.</p>
+        </div></div>
+        <div class="c">
+        <button class="collapsible">I am a student with a university-issued email address but I’m not able to join the program. Why can’t I join? </button>
+        <div class="content">
+          <p class="textcontcollapsible">You may not be able to join if we weren’t able to validate your university-issued email address with our database, or if you’re a student at a Coursera partner institution that needs to approve access. Please fill out the form when you’re prompted during the enrollment flow and you’ll receive an email if we’re able to confirm your eligibility for the program. In the meantime, you can start learning with free courses for college students.</p>
+        </div></div>
+        <div class="c">
+        <button class="collapsible">Is there a way to see if anything in Coursera’s catalog matches the courses that my university offers?</button>
+        <div class="content">
+          <p class="textcontcollapsible">Yes! Coursera recently launched CourseMatch. This machine learning tool automatically matches your college or university catalog to the most relevant courses on Coursera.</p>
+        </div></div>
+        <div class="c">
+        <button class="collapsible">Will my college or university have access to what I learn on Coursera?</button>
+        <div class="content">
+          <p class="textcontcollapsible">After you enroll in the Coursera for Campus Student plan, your college or university may receive anonymized information about what you’re learning if university leaders are considering bringing Coursera to your institution through Coursera for Campus. If your college or university decides to participate in Coursera for Campus, your learning information from Coursera for Campus Student plan will be visible to the administrators from your college or university that are managing the Coursera for Campus program.</p>
+        </div></div>
+        
+        <div class="c">
+        <button class="collapsible">Are there any international restrictions?</button>
+        <div class="content">
+          <p class="textcontcollapsible">This offering is available to students around the world. We value our global community immensely and we deeply regret the need to withhold services from anyone in certain sanctioned regions in order to remain in compliance with U.S. law. Our team is continually exploring options to expand access and we hope one day to offer unrestricted access throughout the world. For more information, please go here.</p>
+        </div></div>
+        
+        
+        
+        <div class="c">
+        <button class="collapsible">Where do I go for customer support questions? </button>
+        <div class="content">
+          <p class="textcontcollapsible"> We are pleased to offer online help centers for students using the Coursera for Campus Student plan here. </p>
+        </div></div>
+</div>
+    <div class="footer">
+      <div class="career">
+        <h3 class="h33">
+          &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;Start or advance your career
+        </h3>
+        <ul>
+          <li class="list">Google Data Analyst</li>
+          <li class="list">Google Project Management</li>
+          <li class="list">Google UX Design</li>
+          <li class="list">Google IT Support</li>
+          <li class="list">IBM Data Science</li>
+          <li class="list">IBM Data Analyst</li>
+          <li class="list">IBM Data Analytics with Excel and R</li>
+          <li class="list">IBM Cybersecurity Analyst</li>
+          <li class="list">Salesforce Sales Operations</li>
+          <li class="list">
+            Certificado profesional de Suporte em TI do Google
+          </li>
+          <li class="list">Popular SQL Certifications</li>
+          <li class="list">Popular IT Certifications</li>
+          <li class="list">See all certificates</li>
+        </ul>
+      </div>
+
+      <div class="career1">
+        <h3 class="h33">
+          &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;Browse popular topics
+        </h3>
+        <ul>
+          <li class="list">Free Courses</li>
+          <li class="list">Learn java</li>
+          <li class="list">Php</li>
+          <li class="list">Python</li>
+          <li class="list">Web Design</li>
+          <li class="list">SQL</li>
+          <li class="list">Microsoft Excel</li>
+          <li class="list">Cyber Security</li>
+          <li class="list">Human Resources</li>
+          <li class="list">
+            Certificado profesional de Suporte em TI do Google
+          </li>
+          <li class="list">Speaking English</li>
+          <li class="list">Content Writing</li>
+          <li class="list">See all Courses</li>
+        </ul>
+      </div>
+
+      <div class="career2">
+        <h3 class="h33">
+          &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;Upskill your team
+        </h3>
+        <ul>
+          <li class="list">Skills for Data Science Teams</li>
+          <li class="list">Data Driven Decision Making</li>
+          <li class="list">Software Engineering Skills</li>
+          <li class="list">Soft Skills for Engineering Teams</li>
+          <li class="list">Management Skills</li>
+          <li class="list">Marketing Skills</li>
+          <li class="list">Android Development Projects</li>
+          <li class="list">Deep Learning</li>
+          <li class="list">Machine Learning</li>
+          <li class="list">Data Engineering Foundations</li>
+          <li class="list">Data Analyst Skills</li>
+          <li class="list">Skills for UX Designers</li>
+          <li class="list">Product Manager Skills</li>
+        </ul>
+      </div>
+
+      <div class="career3">
+        <h3 class="h33">
+          &nbsp;&nbsp; Earn a degree or certificate &nbsp;&nbsp;&nbsp;online
+        </h3>
+        <ul>
+          <li class="list">MasterTrack® Certificates</li>
+          <li class="list">Professional Certificates</li>
+          <li class="list">University Certificates</li>
+          <li class="list">Computer Science Degrees</li>
+          <li class="list">Social Sciences Degrees</li>
+          <li class="list">Management Degrees</li>
+          <li class="list">What is a Bachelor's Degree?</li>
+          <li class="list">7 Ways to Pay for Graduate School</li>
+          <li class="list">Salesforce Sales Operations</li>
+          <li class="list">
+            Certificado profesional de Suporte em TI do Google
+          </li>
+          <li class="list">How Long Does a Master's Degree Take?</li>
+          <li class="list">Is an Online MBA Worth It?</li>
+          <li class="list">See all degrees</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="career21">
+        <h3 class="h33">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; Coursera</h3>
+        <ul>
+          <li class="list">About</li>
+          <li class="list">What We Offer</li>
+          <li class="list">Leadership</li>
+          <li class="list">Careers</li>
+          <li class="list">Catalog</li>
+          <li class="list">Coursera Plus</li>
+          <li class="list">Professional Certificates</li>
+          <li class="list">MasterTrack® Certificates</li>
+          <li class="list">Degrees</li>
+          <li class="list">For Enterprise</li>
+          <li class="list">For Government</li>
+          <li class="list">For Campus</li>
+        </ul>
+      </div>
+
+      <div class="career31">
+        <h3 class="h33">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; Community</h3>
+        <ul>
+          <li class="list">Learners</li>
+          <li class="list">Partners</li>
+          <li class="list">Developers</li>
+          <li class="list">Beta Testers</li>
+          <li class="list">Translators</li>
+          <li class="list">Blog</li>
+          <li class="list">Tech Blog</li>
+          <li class="list">Teaching Center</li>
+        </ul>
+      </div>
+
+      <div class="careera">
+        <h3 class="h33">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; More</h3>
+        <ul>
+          <li class="list">Press</li>
+          <li class="list">Investors</li>
+          <li class="list">Terms</li>
+          <li class="list">Privacy</li>
+          <li class="list">Help</li>
+          <li class="list">Accessibility</li>
+          <li class="list">Contact</li>
+          <li class="list">Articles</li>
+          <li class="list">Directory</li>
+          <li class="list">Affiliates</li>
+        </ul>
+      </div>
+      <div class="careeraa">
+        <img
+          class="apple"
+          src="https://d3njjcbhbojbot.cloudfront.net/web/images/icons/download_on_the_app_store_badge_en.svg"
+          alt="Download on the App Store"
+          height="45"
+        />
+        <br />
+        <br />
+        <img
+          class="google"
+          src="https://d3njjcbhbojbot.cloudfront.net/web/images/icons/en_generic_rgb_wo_45.png"
+          alt="Get it on Google Play"
+          height="45"
+        />
+
+        <br />
+        <br />
+        <br />
+        <img
+          class="bim"
+          src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d3njjcbhbojbot.cloudfront.net/web/images/icons/2018-B-Corp-Logo-Black-S.png?auto=format%2Ccompress&amp;dpr=1&amp;w=151&amp;h=120&amp;q=40"
+        />
+        <ul></ul>
+      </div>
+    </div>
+
+    <hr />
+    <span class="copy">© 2021 Coursera Inc. All rights reserved.</span>
+
+    <span class="logo">
+      <img
+        class="fb"
+        src="https://www.logo.wine/a/logo/Facebook/Facebook-f_Logo-Black-Logo.wine.svg"
+      />
+      <img
+        class="link"
+        src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png"
+      />
+      <img
+        class="link"
+        src="data:image/png;base64,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"
+      />
+      <img
+        class="link"
+        src="data:image/png;base64,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"
+      />
+      <img
+        class="link"
+        src="https://www.transparentpng.com/thumb/logo-instagram/mrG45j-instagram-black-logo-free-download.png"
+      />
+    </span></div>
+</body>
+</html>
+<script src="./scripts/index.js">
+
+</script>
+<script src="./scripts/courseDescription.js">
+
+</script>
+<script>
+       var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+         // content.style.display = 'block';
+        // content.style.display = 'none';
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        //  content.style.display = 'block';
+        } 
+      });
+    }
+</script>
