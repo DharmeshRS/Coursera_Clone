@@ -20,5 +20,6 @@
   "dependencies": {
     "json-server": "^0.17.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "keywords": []
 }
