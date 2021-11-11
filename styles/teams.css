@@ -249,7 +249,7 @@ body {
 }
 #Management_tools {
   width: 81.34%;
-  padding: 72px 9.33%;
+  padding: 72px 10% 109px;
   /* margin: 72px auto; */
   justify-content: center;
 }
@@ -260,6 +260,9 @@ body {
   color: rgb(31, 31, 31);
   margin-bottom: 0px;
   line-height: 48px !important;
+}
+.tools_slides {
+  margin-top: 42px;
 }
 .tools_slides {
   margin-top: 42px;
@@ -354,4 +357,7 @@ body {
 .last_add :nth-child(5) {
   font-size: 20px;
   line-height: 32px;
+}
+.ans {
+  display: none;
 }
