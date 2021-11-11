@@ -9,6 +9,7 @@
 border: solid rgb(219, 215, 215) 1px;
    /* margin-left: -9px; */
      display: flex;
+     background-color: #FFFFFF;
 }
 #navbar>div {
 /* display: inline-block; */
