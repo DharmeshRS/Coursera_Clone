@@ -18,7 +18,7 @@
     <!-- Navbar -->
     <div id="navbar_div"></div>
     <!-- 1st add poster -->
-    <div class="poster" style="background-image: url('images/team_poster.png'); background-position: right; background-repeat: no-repeat;">
+    <div class="poster" style="background-image: url('images/teams/team_poster.png'); background-position: right; background-repeat: no-repeat;">
       <!--  -->
       <div>
         <div class="poster_content">
@@ -180,15 +180,15 @@
       <div id="Management_tools">
         <div class="tools_titles">Drive business outcomes with our learning management tools</div>
         <div class="tools_slides">
-          <div></div>
-          <div></div>
-          <div></div>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+          <div id="lLeft_btn"></div>
+          <div id="slides"></div>
+          <div id="Right_btn"></div>
         </div>
+        <ul id="Ul_dots">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
       </div>
     </div>
     <!-- FAQ's -->
@@ -198,7 +198,7 @@
       </div>
       <div class="faq_questions">
         <div class="query">
-          <div id="Quest1" class="quest">
+          <div id="Quest1" onclick="hideAns(`Ans1`)" class="quest">
             <div class="symb"></div>
             <h3 class="question">What is Coursera for Teams?</h3>
           </div>
@@ -210,7 +210,7 @@
           </div>
         </div>
         <div class="query">
-          <div id="Quest2" class="quest">
+          <div id="Quest2"  onclick="hideAns(`Ans2`)"class="quest">
             <div class="symb"></div>
             <h3 class="question">What content is available for my team?</h3>
           </div>
@@ -223,7 +223,7 @@
           </div>
         </div>
         <div class="query">
-          <div id="Quest3" class="quest">
+          <div id="Quest3"  onclick="hideAns(`Ans3`)"class="quest">
             <div class="symb"></div>
             <h3 class="question">What is included in Coursera for Teams?</h3>
           </div>
@@ -234,7 +234,7 @@
           </div>
         </div>
         <div class="query">
-          <div id="Quest4" class="quest">
+          <div id="Quest4"  onclick="hideAns(`Ans4`)"class="quest">
             <div class="symb"></div>
             <h3 class="question">What is the learning experience?</h3>
           </div>
@@ -245,7 +245,7 @@
           </div>
         </div>
         <div class="query">
-          <div id="Quest5" class="quest">
+          <div id="Quest5"  onclick="hideAns(`Ans5`)"class="quest">
             <div class="symb"></div>
             <h3 class="question">What is the difference between Coursera Plus and Coursera for Teams?</h3>
           </div>
@@ -257,7 +257,7 @@
           </div>
         </div>
         <div class="query">
-          <div id="Quest6" class="quest">
+          <div id="Quest6"  onclick="hideAns(`Ans6`)"class="quest">
             <div class="symb"></div>
             <h3 class="question">How are other businesses using Coursera for Teams?</h3>
           </div>
@@ -266,7 +266,7 @@
           </div>
         </div>
         <div class="query">
-          <div id="Quest7" class="quest">
+          <div id="Quest7"  onclick="hideAns(`Ans7`)"class="quest">
             <div class="symb"></div>
             <h3 class="question">How can I receive budget approval from my organization?</h3>
           </div>
@@ -277,7 +277,7 @@
           </div>
         </div>
         <div class="query">
-          <div id="Quest8" class="quest">
+          <div id="Quest8"  onclick="hideAns(`Ans8`)"class="quest">
             <div class="symb"></div>
             <h3 class="question">Can I get a refund for Coursera for Teams if it’s not right for my team?</h3>
           </div>
@@ -290,7 +290,7 @@
           </div>
         </div>
         <div class="query">
-          <div id="Quest9" class="quest">
+          <div id="Quest9"  onclick="hideAns(`Ans9`)"class="quest">
             <div class="symb"></div>
             <h3 class="question">How can I pay?</h3>
           </div>
@@ -300,7 +300,7 @@
           </div>
         </div>
         <div class="query">
-          <div id="Quest10" class="quest">
+          <div id="Quest10" onclick="hideAns(`Ans10`)" class="quest">
             <div class="symb"></div>
             <h3 class="question">What resources are available to engage my team?</h3>
           </div>
@@ -325,17 +325,17 @@
      <div id="footer_div"></div>
   </body>
 </html>
-<script type="module">
+ <script type="module">
 // Navbar
   import {navbar} from "/components/navbar.js"
   let navbar_div=document.getElementById('navbar_div');
   // console.log(navbar_div)
   navbar_div.innerHTML=navbar();
 
-// Footer
+// // Footer
   import {footer} from "./footer.js"
   let footer_div=document.getElementById('footer_div');
   // console.log(footer_div)
   footer_div.innerHTML=footer();
 </script>
-<script src=""></script>
+<script src="/scripts/teams.js"></script>

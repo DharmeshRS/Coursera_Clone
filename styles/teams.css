@@ -249,7 +249,7 @@ body {
 }
 #Management_tools {
   width: 81.34%;
-  padding: 72px 9.33%;
+  padding: 72px 10% 109px;
   /* margin: 72px auto; */
   justify-content: center;
 }
@@ -263,6 +263,26 @@ body {
 }
 .tools_slides {
   margin-top: 42px;
+  display: flex;
+}
+.tools_slides {
+  margin-top: 42px;
+}
+#Ul_dots {
+  /* display: flex; */
+}
+#slides{
+  width: 1056px;
+  height: 396px;
+  border: 1px solid orangered;
+  align-self: center;
+
+}
+#lLeft_btn,
+#Right_btn {
+  width: 60px;
+  height: 60px;
+  border: 1px solid green;
 }
 #Faq_section {
   width: 88%;
@@ -354,4 +374,7 @@ body {
 .last_add :nth-child(5) {
   font-size: 20px;
   line-height: 32px;
+}
+.ans {
+  display: none;
 }
