@@ -128,16 +128,77 @@ font-weight: 600;
 #desContent{
   width: 86%;
   margin: auto;
-  background-color: #656565;
+  background-color: #ffffff;
   display: grid;
-  grid-template-columns: 50% 43%;
+  grid-template-columns: 60% 33%;
   gap: 7%;
+  padding-bottom: 100px;
 }
 #changeingContent{
-  background-color: aliceblue;
+
+ margin-top: 80px;
+ color: #373a3c;
+ font-family: OpenSans, Arial, sans-serif;
 }
 #fixContent{
-  background-color: aqua;
+  background-color: white;
+}
+#advance{
+  color: #373a3c;
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+}
+#blueInfoBox{
+  width: 62%;
+  background-color: rgb(25, 0, 255);
+  /* height: 200px; */
+  color: #373a3c;
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 15px;
+  margin-top: 36px;
+  background-color: #f5f7fa;
+  border: 1px solid #373a3c;
+  padding: 24px;
+}
+.icon{
+  color: white;
+  border-radius: 50%;
+  font-size: 26px;
+  vertical-align: top;
+  background-color: #2a73cc;
+  outline: #2a73cc;
+  border: solid ;
+}
+.fixtex{
+ 
+ vertical-align: bottom;
+ font-size: 18px;
+/* padding-top: 8px; */
+
+ height: 40px;
+}
+.fix{
+margin-top: 17px;
+}
+.hata{
+  margin-left: 40px;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 5px;
+  font-family: OpenSans, Arial, sans-serif;
+}
+#overview{
+  
+}
+#master{
+  color: #373a3c;
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+}
+#admission{
+  display: none;
 }
 /* footer css */
 
@@ -723,3 +784,39 @@ font-size: 16px;
   color: #656565;
   margin-left: 27px;
 }
+/* changing contents */
+#curriculam{
+  color: #373a3c;
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+}
+#academics{
+  display: none;
+}
+#tuition{
+  color: #373a3c;
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+}
+#financial-aid{
+  color: #373a3c;
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+}
+#tution-main{
+  display: none;
+}
+#stu_exp{
+  display: none;
+}
+#careersd{
+  display: none;
+}
+#about_the_university{
+  display: none;
+}
+/* c
+hanging contentsend */
