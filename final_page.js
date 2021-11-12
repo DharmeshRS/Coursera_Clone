@@ -12,6 +12,7 @@ div1.append(heading);
 
 let div2=document.createElement('div')
 let home=document.createElement('a');
+home.style.marginLeft="50px"
 home.innerText="Home"
 home.href="#"
 let dash_line1=document.createElement('a')
@@ -68,7 +69,7 @@ contact_sales.style.color="white";
 contact_sales.style.padding="10px"
 contact_sales.href="https://www.coursera.org/business/learn-more/?utm_campaign=website&utm_content=navbar-contact-sales&utm_medium=coursera&utm_source=enterprise"
 
-div2.append(home,dash_line1, product,dash_line2, content, dash_line3, compare_plan,dash_line4, resorces, dash_line5, Blog,contact_sales);
+div2.append(home,dash_line1, product,dash_line2, content, dash_line3, compare_plan,dash_line4, resorces, dash_line5, Blog);
 
 mast_head.append(div1,div2);
 
@@ -156,54 +157,74 @@ function  resources_list(){
 
 }
 
-function resources_leave(){
-     let r=document.getElementById('drop_down_resources');
-     r.innerText="Resources";  
+// function resources_leave(){
+//      let r=document.getElementById('drop_down_resources');
+//      r.innerText="Resources";  
   
-}
+// }
 
-let contact_data=[
-    "https://149362230.v2.pressablecdn.com/wp-content/uploads/2018/02/Home_CustomerLogo_Tata-3.png",
-    "https://149362230.v2.pressablecdn.com/wp-content/uploads/2019/04/danone.png",
-    "https://149362230.v2.pressablecdn.com/wp-content/uploads/2021/07/GE-Logo-1-e1626191342716.png",
-    "https://149362230.v2.pressablecdn.com/wp-content/uploads/2019/04/pg.png",
-    "https://149362230.v2.pressablecdn.com/wp-content/uploads/2018/02/Home_CustomerLogo_Loreal-1.png",
-    "https://149362230.v2.pressablecdn.com/wp-content/uploads/2018/11/SignifyLogo-1.png"
-]
+// let contact_data=[
+//     "https://149362230.v2.pressablecdn.com/wp-content/uploads/2018/02/Home_CustomerLogo_Tata-3.png",
+//     "https://149362230.v2.pressablecdn.com/wp-content/uploads/2019/04/danone.png",
+//     "https://149362230.v2.pressablecdn.com/wp-content/uploads/2021/07/GE-Logo-1-e1626191342716.png",
+//     "https://149362230.v2.pressablecdn.com/wp-content/uploads/2019/04/pg.png",
+//     "https://149362230.v2.pressablecdn.com/wp-content/uploads/2018/02/Home_CustomerLogo_Loreal-1.png",
+//     "https://149362230.v2.pressablecdn.com/wp-content/uploads/2018/11/SignifyLogo-1.png"
+// ]
 
-contact_data.forEach((el)=>{
-    let contact_icon=document.getElementById('contact_icon');
-    let contact_image=document.createElement('img');
-    contact_image.src=el;
-    contact_icon.append(contact_image);
-})
-
-// let contact_button=document.getElementById('contact_button');
-// let btn=document.createElement('button');
-// btn.innerText=""
-
-
-
-//  <label for="">Do you work for nonprofit agency ?</label><br>
-// <input type="text" name="" id="agency?"><br> 
-// <label for="">Company Size:</label><br>
-// <input type="text" name="" id="companysize"><br>
-//  <label for="">Expected number of learners:</label><br>
-// <input type="number" name="" id="learners"><br> 
-
- let submit=document.getElementById('submit');
-submit.addEventListener('click',()=>{
-  
-        window.location.href="final_page.html"
-   
-})
-
-// let form_submit=document.getElementById('form_submit');
-//     form_submit.addEventListener('submit',()=>{
-//         let submit=document.getElementById('submit');
-// submit.addEventListener('click',()=>{
-//     window.location.href="https://www.coursera.org/business/thank_you/"
+// contact_data.forEach((el)=>{
+//     let contact_icon=document.getElementById('contact_icon');
+//     let contact_image=document.createElement('img');
+//     contact_image.src=el;
+//     contact_icon.append(contact_image);
 // })
-//     })
+
+let final_data=[
+    {
+        final_image:"https://149362230.v2.pressablecdn.com/wp-content/uploads/2021/11/On-Demand-webinar-tiles_Transform_old-style.png",
+        final_heading:"'Transform a vertual event from cosera for bussiness'",
+        final_link:"https://www.coursera.org/business/webcast/gs-transform-your-business-sept-event/?utm_term=website-resource",
+         text:"Watch Now"
+    },
+    {
+        final_image:"https://149362230.v2.pressablecdn.com/wp-content/uploads/2021/01/2021_FactSheet_ResourceTile.png",
+        final_heading:"2021 Data Sheet about cosera for bussiness",
+        final_link:"https://pages.coursera-for-business.org/rs/748-MIV-116/images/C4B%20Fact%20Sheet%202021%20%E2%80%94%2001.20.20%20%23redchoco.pdf?utm_campaign=website&utm_content=2020-fact-sheet-ty-page&utm_medium=coursera&utm_source=enterprise",
+         text:"Get Data Sheet"
+    },
+    {
+        final_image:"https://149362230.v2.pressablecdn.com/wp-content/uploads/2021/05/Integrations-Fact-Sheet-resource-tile-1.png",
+        final_heading:"Integration Fact Sheet",
+        final_link:"https://pages.coursera-for-business.org/rs/748-MIV-116/images/integrations%20pdf.pdf",
+        text:"Get Fact Sheet"
+    },
+    {
+        final_image:"https://149362230.v2.pressablecdn.com/wp-content/uploads/2021/09/ISR2021_Resource-Tile.png",
+        final_heading:"Industry Skill report 2021",
+        final_link:"https://pages.coursera-for-business.org/rs/748-MIV-116/images/Coursera-Industry-Skills-Report-2021.pdf",
+        text:"Get Report"
+    }
+];
 
 
+final_data.forEach((el)=>{
+    let final_grid=document.getElementById('final_grid')
+    let final_div=document.createElement('div');
+    let final_img=document.createElement('img');
+    final_img.src=el.final_image;
+    let final_head=document.createElement('h2');
+    final_head.innerText=el.final_heading
+    let final_links=document.createElement('a');
+    final_links.href=el.final_link;
+    final_links.innerText=el.text;
+    final_div.append(final_img,final_head,final_links);
+    final_grid.append(final_div);
+})
+
+let buy_now=document.getElementById('buy_now');
+let buy_now_button=document.createElement('button');
+buy_now_button.innerText="Buy now for teams";
+buy_now_button.addEventListener('click',()=>{
+    window.location.href="https://www.coursera.org/purchase/plan?billingType=1&utm_campaign=website&utm_content=new-thank-you-wes-purchase-courses&utm_medium=coursera&utm_source=enterprise"
+})
+buy_now.append(buy_now_button);

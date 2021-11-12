@@ -496,35 +496,51 @@
  
  
 }
+
 #right_container>form>input{
-   width: 480px;
+   width: 480px
    height: 40px;
    margin-top: 10px;
    margin-bottom: 10px;
    margin-right: 100px;
    
-}
+} */
+
 label::after{
     content: "*";
     color: red;
     font-weight: bold;
+} 
+label{
+    font-size: large;
+}
+#right_container>form{
+    margin-right: -280px;
+    margin-top: -850px;
+}
+#right_container>form>input,select{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
  #text_div{
      float: right;
-     margin-right: 145px;
+     margin-right: 15px;
+     
  }
  #text_div>textarea{
   margin-top: 20px;
  }
   #p_link{
-      margin-top: 220px;
+      margin-top: 175px;
       float: right;
-      margin-right: -530px;
+      margin-left: -380px;
  } 
  #submit{
-     margin-top: 300px;
-     float: right;
-     margin-right: -350px;
+     margin-top: 150px; 
+      float: right;
+     margin-right: 100px;
      font-size: x-large;
      padding: 22px 100px;
      margin-bottom: 30px;
@@ -532,3 +548,50 @@ label::after{
      color: white;
      
  }
+  
+ #final_heading{
+     margin-left: 200px;
+     margin-top: 50px;
+ }
+ #second_heading{
+    margin-left: 200px;
+    font-size: larger;
+    margin-top: 50px;
+ }
+ #final_grid{
+     display: grid;
+     margin-left: 200px;
+     grid-template-columns: 20% 20% 20% 20%;
+     gap: 30px;
+ }
+ #final_grid>div{
+    box-shadow: -0px 0px 10px;
+    width: 100%;
+ }
+ #final_grid>div>img{
+     width: 100%;
+ }
+ #buy_now{
+     margin-top: 70px;
+     margin-left: 200px;
+
+ }
+ #buy_now>button{
+     font-size: larger;
+     padding: 20px 50px;
+     background-color: #0056d2;
+     color: white;
+ }
+
+ #view{
+     margin-top: 50px;
+     margin-left: 125px;
+     font-weight: 400;
+     font-size: large;
+
+ }
+ #view>a{
+    color: #007bff;
+ }
+
+ 

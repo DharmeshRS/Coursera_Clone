@@ -24,9 +24,9 @@ home.href="#"
 let dash_line1=document.createElement('a')
 dash_line1.innerText=" |"
 let product=document.createElement('a');
-product.setAttribute('id','products');
 product.innerText="Products";
-product.href="https://www.coursera.org/business/learn-more/?utm_campaign=website&utm_content=navbar-contact-sales&utm_medium=coursera&utm_source=enterpri"
+product.href="teams.html"
+//product.href="https://www.coursera.org/business/learn-more/?utm_campaign=website&utm_content=navbar-contact-sales&utm_medium=coursera&utm_source=enterpri"
 product.setAttribute('id','pro')
 product.addEventListener('mouseover',()=>{
     product_list();
@@ -90,6 +90,9 @@ function product_list(){
     for_interprises.innerText="For_interprises";
     let for_team=document.createElement('li');
     for_team.innerText="For Team";
+    // for_team.addEventListener('click',()=>{
+    //     window.location.href="teams.html"
+    // })
     let for_compus=document.createElement('li')
     for_compus.innerText="For-compus";
     let for_government=document.createElement('li')
