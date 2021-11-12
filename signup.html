@@ -5,9 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
     <style>
+        *{
+        font-family: 'Source Sans Pro', sans-serif;
+        
+    }
+
         label{
-            margin: 10px;
+            margin: 0px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        .regdiv{
+            width:35%;
+            border: 1px solid black;
+            margin: auto;
+            border-radius: 10px;
+            height:auto;
+            
+        }
+        .text{
+            text-align: center;
+        }
+        .innerdiv{
+            text-align: justify;
+            margin-left: 100px;
+        }
+        label{
+            font-size: 12px;
+            font-weight: bold;
+        }
+        input{
+            padding-top:10px ;
+            padding-bottom:10px;
+            padding-right:150px;
+            padding-left:0px;
+            font-size: 16px;
+        }
+        .regbtn{
+            padding-top:13px ;
+            padding-bottom:13px;
+            padding-right:130px;
+            padding-left:135px;
+            background-color: #0056d2;
+            color: white;
+            font-weight: bolder;
+            border-radius: 5px;
+            font-size: 15px;
+            
+        }
+
+        .regbtn1{
+            padding-top:13px ;
+            padding-bottom:13px;
+            padding-right:100px;
+            padding-left:105px;
+            /* background-color: #0056d2; */
+            /* color: white; */
+            background-color: white;
+            font-weight: bolder;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        .regbtn2{
+            padding-top:13px ;
+            padding-bottom:13px;
+            padding-right:92px;
+            padding-left:97px;
+            /* background-color: #0056d2; */
+            /* color: white; */
+            background-color: white;
+            font-weight: bolder;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        .margint{
+            margin-top: 20px;
+        }
+        .btndiv{
+            margin-top: -85px;
+
+        }
+        .gbtn{
+            margin-top: 28px;
+            margin-bottom: 10px;
+        }
+        button:hover{
+            background-color: rgb(0, 89, 255);
+            color: white;
+        }
+        .mart{
+            margin-top: -20px;
         }
     </style>
 </head>
@@ -17,26 +108,51 @@
 
     <div>
         
-        <div>
-            <h1>Sign Up</h1>
-            <div>
-                <form action="" onsubmit="register(event)" id="signup_form">
-                    <label for="">name</label>
-                    <input type="text" id="name"><br>
-                    <label for="">email</label>
-                    <input type="email" id="email"><br>
-                    <label for="">Password</label>
-                    <input type="text" id="password"><br>
-                    <label for="">Username</label>
-                    <input type="text" id="username"><br>
-                    <label for="" hidden>mobile</label>
-                    <input type="text" id="mobile" hidden><br>
-                    <label for="" hidden>Description</label>
+        <div class="regdiv">
+            <h1 class="text">Sign Up</h1>
+            <p class="text mart">Learn on Your Own Time</p>
+            <div class="innerdiv">
+                <form action="" onsubmit="register(event)" id="signup_form" autocomplete="off">
+                    <div class="margint">
+                        <label for="">FULL NAME</label><br>
+                        <input type="text" id="name" placeholder="Enter Your Full Name" autocomplete="off"><br>
+                    </div>
+                    <div class="margint">
+                        <label for="">EMAIL</label><br>
+                        <input type="email" id="email" placeholder="Enter Valid Email" autocomplete="off"><br></div>
+                    <div class="margint">
+                        <label for="">PASSWORD</label><br>
+                        <input type="password" id="password" placeholder="Enter Carefully" autocomplete="off"><br></div>
+                    <div class="margint">
+                        <label for="">USERNAME</label><br>
+                        <input type="text" id="username" placeholder="Username Must Unique" autocomplete="off"><br>
+                    </div>
+                    <div class="margint">
+                        <label for="" hidden>mobile</label><br>
+                        <input type="text" id="mobile" hidden><br>
+                    </div>
+                    <div class="margint">
+                        <label for="" hidden>Description</label><br>
                     <input type="text" id="description" value="project" hidden><br>
-    
-                    <button>register</button>
+                    </div>
+                    
+                    <div class="btndiv">
+                        <button class="regbtn">Join for Free</button>
+                    </div>
+                    
+                    
                 </form>
+                <div>
+                    <div>
+                        <button class="regbtn1 gbtn">Continue With Google</button>
+                    </div>
+                    <div>
+                        <button class="regbtn2 gbtn">Continue With Facebook</button>
+                    </div>
+                </div>
+                
             </div>
+            
         </div>
     </div>
 </body>
@@ -84,7 +200,7 @@
         }
         
     })
-    
+
 }
 </script>
 </html>
