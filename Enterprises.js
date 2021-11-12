@@ -80,14 +80,14 @@ function product_list(){
     let product_drop_down_list=document.createElement("ul");
     product_drop_down_list.setAttribute('id','ul_list')
     let for_interprises=document.createElement('li');
-    for_interprises.innerText="For_interprises";
+    for_interprises.innerText="For Enterprises";
     let for_team=document.createElement('li');
     for_team.innerText="For Team";
     // for_team.addEventListener('click',()=>{
     //     window.location.href="teams.html"
     // })
     let for_compus=document.createElement('li')
-    for_compus.innerText="For-compus";
+    for_compus.innerText="For Campus";
     let for_government=document.createElement('li')
      for_government.innerText="For Govenment"
     product_drop_down_list.append(for_interprises,for_team,for_compus,for_government);
