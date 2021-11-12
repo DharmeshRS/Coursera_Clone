@@ -5,22 +5,24 @@
 }
 #promo-bar>p{
     margin-left: 0%;
-    width: 40%;
+    width: 50%;
    display: inline-block
     
 }
 #promo-bar>p:nth-child(1){
     margin-left: 30%;
-    
+   
 }
 #promo-bar>p>a{
     text-decoration: underline;
     color: #000;
     
+    
 }
 #promo-bar>p:nth-child(2){
-    margin-left: 25%;
+     margin-left: 16%;
     width: 1%;
+  
 }
 
 /* #mast-head>div{
@@ -28,9 +30,11 @@
 } */
 
 #mast-head>div:nth-child(1){
-    margin-left: 5%;
-    /* margin-top: 20px; */
-   padding-top: 2%;
+    /* margin-left: 0%; */
+    /* margin-top: 10px; */
+    vertical-align: middle;
+    
+   
    display: inline-block;
 }
 #mast-head>div:nth-child(1)>a>:nth-child(1){
@@ -38,18 +42,28 @@
    font-weight: 650;
 }
 #heading{
-    text-decoration: none;
-    padding-top: 50px
+    height: 100px;
+    /* padding-bottom: 20px; */
+    /* padding-top:10px ; */
+   
+    /* text-decoration: none; */
+    /* padding-top: 50px */
+}
+#heading>img{
+    
+    margin-top: 20px;
+    vertical-align: middle;
 }
 #mast-head>div:nth-child(1)>a>:nth-child(2){
     font-size: 27px;
     margin-left: 2px;
+   
  }
 
 #mast-head>div:nth-child(2){
     display: inline-block;
-    margin-left: 27%;
-    
+    margin-left: 45%;
+    margin-top: -15px;
     
 }
 #mast-head>div:nth-child(2)>a{
@@ -389,8 +403,9 @@
 }
 #left_container{
   display: inline-block;
+
   margin-top: 3%;
-  margin-left: 22%;
+  margin-left: 9%;
   font-family: Source Sans;
 }
 #left_container>h3{
@@ -420,7 +435,7 @@
 }
 #reich{
     margin-top: 50px;
-    width: 450px;
+    width: 410px;
     height: 350px;
     background-color: white;
     box-shadow: -0px 15px 10px;
@@ -428,7 +443,7 @@
 
 #reich{
     font-size: 25px;
-    padding-top: 5px;
+    padding: 20px;
     word-spacing: 2%;
 }
 
@@ -476,15 +491,18 @@
 #right_container{
  display: inline-block;
  float: right;
- padding-right: 365px;
+ /* padding-right: 365px; */
  padding-top: 70px;
  
+ 
 }
- /* #right_container>form>select{
-   width: 220%;
+
+#right_container>form>input{
+   width: 480px
    height: 40px;
    margin-top: 10px;
    margin-bottom: 10px;
+   margin-right: 100px;
    
 } */
 
