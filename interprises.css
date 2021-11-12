@@ -419,7 +419,7 @@
 
 #left_container>ul>li{
     line-height: 40px;
-    margin-left: -5%;
+    /* margin-left: -5%; */
 }
 
 #contact_icon{
@@ -492,13 +492,15 @@
  display: inline-block;
  float: right;
  /* padding-right: 365px; */
- padding-top: 70px;
+ /* padding-top: 70px; */
+ /* margin-right: 200px; */
+ /* border: solid; */
  
  
 }
 
 #right_container>form>input{
-   width: 480px
+   /* width: 480px; */
    height: 40px;
    margin-top: 10px;
    margin-bottom: 10px;
@@ -515,8 +517,9 @@ label{
     font-size: large;
 }
 #right_container>form{
-    margin-right: -280px;
-    margin-top: -850px;
+    /* margin-right: 80px; */
+    /* margin-top: -850px; */
+    
 }
 #right_container>form>input,select{
     width: 100%;
