@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+
+
+    <div>
+        
+        <div>
+            <h1>Sign Up</h1>
+            <div>
+                <form action="" onsubmit="register(event)" id="signup_form">
+                    <label for="">name</label>
+                    <input type="text" id="name"><br>
+                    <label for="">email</label>
+                    <input type="email" id="email"><br>
+                    <label for="">Password</label>
+                    <input type="text" id="password"><br>
+                    <label for="">Username</label>
+                    <input type="text" id="username"><br>
+                    <label for="" hidden>mobile</label>
+                    <input type="text" id="mobile" hidden><br>
+                    <label for="" hidden>Description</label>
+                    <input type="text" id="description" value="project" hidden><br>
+    
+                    <button>register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function register(e){
+        e.preventDefault()
+        let form=document.getElementById("signup_form")
+        let aname=form.name.value
+        let aemail=form.email.value
+        let apass=form.password.value
+        let desc=form.description.value
+        function mobile(){
+           let no=Math.floor(Math.pow(10, 10-1) + Math.random() * 9 * Math.pow(10, 10-1))
+           return String(no)
+        }
+        
+    var user_data={
+        name:aname,
+        email:aemail,
+        password:apass,
+        username:form.username.value,
+        mobile:mobile(),
+        description:desc
+
+    };
+    console.log(user_data)
+    
+    user_data=JSON.stringify(user_data)
+    fetch("https://masai-api-mocker.herokuapp.com/auth/register",{
+        method:"POST",
+        body:user_data,
+        headers:{
+            "Content-Type":"application/json"
+        }
+    })
+
+    .then((res)=>{
+        return res.json()
+    })
+    .then((res)=>{
+        console.log(res)
+        alert(res.message)
+        if(res.error==false){
+            window.location.href="signin.html"
+        }
+        
+    })
+    
+}
+</script>
+</html>

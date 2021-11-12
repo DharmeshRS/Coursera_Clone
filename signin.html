@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+            font-size: larger;
+            font-weight: bolder;
+            display: flex;
+            
+        }
+        .navbar >div{
+            padding-right: 100px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Login</h1>
+        <div>
+            <form action="" onsubmit="login(event)" id="login_form">
+                <label for="">Username</label>
+                <input type="text" id="username"><br>
+                <label for="">Password</label>
+                <input type="text" id="password"><br>
+
+                <button>Login</button>
+            </form>
+        </div>
+    </div>
+    </body>
+    <script>
+        function login(e){
+         e.preventDefault()
+        let form=document.getElementById("login_form")
+    var user_data={
+       
+        password:form.password.value,
+        username:form.username.value,
+        
+    };
+    console.log(user_data)
+    var uname=user_data.username
+    user_data=JSON.stringify(user_data)
+    fetch("https://masai-api-mocker.herokuapp.com/auth/login",{
+        method:"POST",
+        body:user_data,
+        headers:{
+            "Content-Type":"application/json"
+        }
+    }) 
+    .then((res)=>{
+        return res.json()
+    })
+    .then((res)=>{
+        console.log(res)
+        if(res.error==false){
+            alert("logged In Successful")
+                // window.location.href="index.html"
+            console.log(uname,res.token)
+            fetchdata(uname,res.token)
+            
+        }if(res.error==true){
+            alert(res.message)
+           
+        }
+        
+    })
+}
+
+function fetchdata(username,token){
+    
+    let res=fetch(`https://masai-api-mocker.herokuapp.com/user/${username}`,{
+        headers:{
+        "Content-Type":"application/json",
+        Authorization: `Bearer ${token}`
+    },
+    })
+    .then((res)=>{
+        return res.json()
+    })
+    .then((res)=>{
+        console.log(res)
+        // setTimeout(function(){
+        //     if(res.error="true"){
+        //         var msg=document.getElementById("msgdiv")
+        //         msg.innerText="Login Successful"
+        //         msg.style.backgroundColor="green"
+        //         var profile=document.getElementById("profile")
+        //         profile.innerText=res.username
+        //         var userdiv=document.getElementById("userdiv")
+        //         userdiv.innerHTML=null;
+        //         f()
+
+        //     }
+        // },2000);
+    })
+    .catch((res)=>{
+        console.log(res)
+    })
+    
+
+}
+    </script>
+
+</html>
