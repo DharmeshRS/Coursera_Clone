@@ -238,4 +238,14 @@ putthecoursename.innerHTML=mydata.name;
 var putthecoursename2=document.getElementById("putcoursename2");
 putthecoursename2.innerHTML=mydata.name;
 var putthecoursename3=document.getElementById("put3");
-putthecoursename3.innerHTML=mydata.name
+putthecoursename3.innerHTML=mydata.name;
+var colorarr=["#34568B","#FF6F61","#6B5B95","#88B04B","#F7CAC9","#92A8D1",
+"#955251","#009B77","#DD4124","#45B8AC","#EFC050"];
+var imgbox=document.getElementById("imgbox");
+var min = Math.ceil(1);
+var max = Math.floor(10);
+var random=Math.floor(Math.random() * (max - min) + min);
+imgbox.style.backgroundColor=colorarr[random];
+takemetoapply=()=>{
+    window.location.href="contact.html"
+}

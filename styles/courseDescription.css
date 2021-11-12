@@ -124,6 +124,12 @@ font-weight: 600;
   padding-bottom: 20px;
   display: inline-block;
   vertical-align: bottom;
+
+}
+#uplink{
+  color: white;
+  text-decoration: none;
+  text-decoration: underline;
 }
 #desContent{
   width: 86%;
@@ -820,3 +826,60 @@ font-size: 16px;
 }
 /* c
 hanging contentsend */
+/* fix info div */
+#fixinfodiv{
+ 
+  width: 320px;
+  height: 230px;
+  background-color: #ffffff;
+  position: absolute;
+  box-shadow: rgb(0, 0, 0, 0.5) 0px 2px 4px 0px;
+  border-top: solid #2a73cc 13px;
+  margin-top: 40px;
+  margin-left: 920px;
+  z-index: 1;
+  color: #1f1f1f;
+  padding: 15px;
+
+  font-size: 14px;
+ 
+  font-family: OpenSans, Arial, sans-serif;
+}
+#getstarted{
+  font-size: 18px;
+
+}
+#fixinfodiv>button{
+  width: 90%;
+  margin: auto;
+  margin-left: 12px;
+
+border: solid #2a73cc;
+outline: none;
+margin-top: 12px;
+padding: 15px;
+
+}
+#applybtn{
+  color: white;
+  font-size: 15px;
+ font-weight: 600;
+  font-family: OpenSans, Arial, sans-serif;
+  background-color: #2a73cc;
+}
+#applybtn:hover{
+  background-color: #1d579e;
+  border: solid #1d579e;
+}
+#requestInfo{
+  font-weight: 600;
+  font-size: 15px;
+  font-family: OpenSans, Arial, sans-serif;
+  background-color: white;
+  color: #2a73cc;
+}
+#requestInfo:hover{
+  background-color: #2a73cc;
+  color: white;
+  
+}
