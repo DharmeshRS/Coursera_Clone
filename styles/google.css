@@ -1,0 +1,391 @@
+.navbartop {
+    padding-top: 21px;
+    padding-bottom: 15px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 92px;
+  }
+
+  .sidebox {
+    width: 432px;
+    height: 400px;
+    margin-top: 61px;
+  
+    margin-left: 92px;
+    display: inline-block;
+  }
+
+  .label {
+    margin: 0 0 10px;
+    background: #ebf3ff;
+    color: #0056d2;
+    display: table;
+    margin: 0;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    clear: both;
+    padding: 3px 3px;
+  }
+
+  .headline {
+    margin-top: 24px;
+    line-height: 52px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 42px;
+    letter-spacing: -0.1px;
+  }
+
+  .gain {
+    line-height: 28px;
+    font-size: 20px;
+    letter-spacing: -0.1px;
+    margin-bottom: inherit;
+  }
+
+  .iim {
+    vertical-align: middle;
+    border-style: none;
+    width: 23%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 100px;
+    height: 35px;
+    max-width: 33.333%;
+  }
+
+  .bigimg {
+    width: 709px;
+    height: 499px;
+  
+    margin-left: 92px;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+
+  .container {
+    width: 100%;
+  
+    background-color: #f5f7f8;
+    height: 996px;
+  }
+  .row {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+  }
+
+  .row > div {
+    height: 378px;
+    flex-basis: 340px;
+    background: #382d8b;
+    color: #fff;
+    margin-top: 84px;
+    margin-left: 33px;
+  }
+  .find {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 52px;
+    display: block;
+    width: 80%;
+    text-align: left;
+    padding: 30px 20px;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .rowbox {
+    font-size: 18px;
+    padding: 1px 20px 2px;
+  
+    background-color: white;
+    min-height: 75px;
+    margin-top: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: #1f1f1f;
+    font-weight: 600;
+  }
+
+  .h5text > p {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .paragraph {
+   
+    background-color: white;
+    font-family: "Open Sans", sans-serif;
+    color: #1f1f1f;
+    padding: 0px 20px 0px;
+    font-weight: 400;
+    color: #1f1f1f;
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+
+  .btn {
+    border-radius: 2px;
+    padding: 12px;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    background-color: #0056d2;
+    color: #fff;
+    min-width: auto;
+    display: inline-block;
+    margin: 0 23px 15px;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .bottombox {
+    background-color: white;
+    border: none;
+    padding-top: 33px;
+    height: 100px;
+  }
+
+  .lastbox {
+      width: 100%;
+      height: 852px;
+      background-color: white;  
+  }
+
+  .benefits {    font-size: 38px;
+  line-height: 48px;
+  margin-bottom: 25px;
+
+  text-align: center;}
+
+  .ico {
+      width: 350px;
+      height: 334px;
+   
+      margin-left: 92px;
+      float: left;
+  }
+
+  .ico1 {
+      width: 350px;
+      height: 334px;
+  
+      margin-left: 28px;
+      float: left;
+  }
+
+  .ico2 {
+      width: 350px;
+      height: 334px;
+  
+      margin-left: 28px;
+      float: left;
+  }
+  .ico4 {
+      width: 350px;
+      height: 334px;
+   
+      margin-left: 278px;
+  float: left;
+  margin-top: 59px;
+  }
+
+  .ico5 {
+      width: 350px;
+      height: 334px;
+
+      margin-left: 28px;
+      float: left;margin-top: 59px;
+  }
+  .iconimg {width: auto;
+  margin-left: 115px;
+  max-width: 120px;
+
+  vertical-align: middle;
+  border-style: none;}
+
+  .title {
+      font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 22px;
+  margin-left: 22px;
+  line-height: 24px;
+  }
+
+  .lear {
+      margin-top: 0;
+  margin-bottom: 1rem;font-size: 18px;
+  line-height: 24px;text-align: center!important;
+  font-family: "Source Sans Pro",sans-serif;
+  font-weight: 300;
+  color: #1f1f1f;text-align: center!important;
+  }
+
+  .icobox {
+    
+      width: 1336px;
+      height: 400px;
+  }
+
+  .bigbox {
+      width: 100%;
+      height: 720px;
+  
+  }
+
+  .benefitss {
+      font-size: 38px;
+  line-height: 48px;
+  text-align: center!important;
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-family: "Source Sans Pro",sans-serif;
+
+}
+.icocircle {
+  width: 350px;
+      height: 555px;
+   
+      margin-left: 92px;
+      float: left;
+}
+.cirimg{
+
+  min-height: 195px;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.round {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 225px;
+  margin: 0 auto;
+  transform: translate(-50%,-50%);
+  max-height: 100%;
+}
+
+.quote {
+  font-size: 1.3rem;
+  margin: 2rem 0;
+  display: block;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: #1f1f1f;
+  padding: 0 32px;
+}
+
+.name {
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  padding: 0 32px;
+  font-size: 19px;
+}
+
+.aa {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  margin-left: 37px;
+  font-size: 19px;
+}
+
+.footerbox {
+  width: 100%;
+  height: 451px;
+
+  background-color: #f5f7f8;
+}
+
+.courbox {
+  width: 344px;
+  text-align: left;
+  height: 400px;
+
+  margin-left: 92px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.logo {
+  text-align: left;
+  width: 109px;
+  opacity: .7;
+}
+
+img.logo {
+  margin-top: 56px;
+}
+
+.about {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 20px 0 10px;
+}
+
+.copyright {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.app {
+max-width: 100px;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+  display: inline-block;
+}
+
+
+.goog {
+height: 31px;
+  width: auto;
+  vertical-align: middle;
+}
+.longbox {
+width: 210px;
+display: inline-block;
+height: 400px;
+
+vertical-align: top;
+}
+
+
+.cor {
+margin-top: 44px;
+text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+li.lis>a{
+color: #333;
+text-decoration: none;
+}
+
+div.paragraph>p {
+margin-top: 0px;
+margin-bottom: 0px;
+}
+.lis{
+
+
+  background-color: transparent;
+  text-align: left;
+  color: #333;
+  list-style-type: none;
+  margin-left: 27px;
+  margin-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 14px;
+  line-height: 21px;
+}

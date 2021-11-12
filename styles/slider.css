@@ -354,7 +354,7 @@ section::-webkit-scrollbar{
 }
 
 .course_data > div >div{
-    height: 80%;
+    height: 94%;
     border: 0.2px solid rgb(0, 0, 0);
     border: 0.2px solid gray;
 }
@@ -375,8 +375,7 @@ section::-webkit-scrollbar{
 }
 
 .textformat{
-    margin-top: 15px;
-    padding-top: -10px;
+    margin-top: 20px;
 }
 
 /* .explore1{
