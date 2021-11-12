@@ -5,9 +5,11 @@
     position: fixed;
     width: 100%;
     margin: auto;
-    margin-top: -9px;
+    margin-top: -1px;
     padding-bottom: 2px;
+   
 border: solid rgb(219, 215, 215) 1px;
+border-right: none;
    margin-left: -9px;
      display: flex;
      background-color: #FFFFFF;
@@ -424,4 +426,36 @@ font-weight: 600;
 hr{
     /* margin-top: -13px; */
     /* margin-left: 8px; */
+}
+/* putting name and dummy image */
+#bellsign{
+    display: none;
+}
+#bellsign>img{
+    width: 29px;
+  
+margin-left: 10px;
+margin-top: 17px;
+margin-right: 15px;
+ 
+}
+#hiddenfig{
+    width: 50px;
+  
+    margin-left: 3px;
+    display: none
+}
+#hiddenfig>img{
+    margin-top:10px ;
+    width: 100%;
+    margin-left: 10px;
+   border-radius: 50%;
+}
+#verticalline{
+    width: 3px;
+    background-color: rgb(184, 180, 180);
+    height: 40px;
+    margin-right:10px ;
+    margin-top: 15px;
+    display: none;
 }

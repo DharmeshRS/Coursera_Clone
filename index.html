@@ -10,10 +10,18 @@
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="styles/slider.css">
     <link rel="icon" href="https://blog.coursera.org/wp-content/uploads/2020/12/android-chrome-512x512-1.png" type="image/icon type">
+    <style>
+        #container{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: 1;
+            }
+    </style>
 </head>
 <body>
     <div id="container">
-        <div id="navbar">
+        <div id="navbar" style="margin-top: -1px;">
             <div>
                 <a href="index.html"><img id="mainlogo" src="https://images.ctfassets.net/00atxywtfxvd/2MlqAOzmHjSPtssv6HlNox/1cb35b40775835a5f574ebc5509907a1/coursera-wordmark-blue.svg"></a></div>
                 <div id="explore">
@@ -29,9 +37,13 @@
     </div>
     <div id="enterPrises"><a href="interprises.html" >For Enterprises</a></div>
     <div id="forStu"><a href="student.html">For Students</a></div>
-    <!-- <div id="bell sign">bell sign</div> -->
-    <div id="login"><a>Log In</a></div>
-    <div id="jff"><a>Join for Free</a></div>
+    <div id="bellsign">
+        <img src="./images/bell.png" alt="">
+    </div>
+    <div id="verticalline"></div>
+   <div id="hiddenfig"><img src="./images/dummy.png" alt="" "></div>
+    <div id="login"><a href="signin.html">Log In</a></div>
+    <div id="jff"><a href="signup.html" style="color: white;">Join for Free</a></div>
     <!-- navbar end -->
             </div>
     <!-- hover menu start -->
@@ -262,47 +274,47 @@
            <div class="box_model">
                <div class="box">
                    <div><img src="images/assets/data_science.jpg" alt=""></div>
-                   <div class="textformat"><h4>Data Science</h4><h4>5 Courses</h4></div>
+                   <div class="textformat"><strong>Data Science</strong><br><strong>5 Courses</strong></div>
                </div>
                <div class="box">
                 <div><img src="images/assets/business.jpg" alt=""></div>
-                <div class="textformat"><h4>Business</h4><h4>15 Courses</h4></div>
+                <div class="textformat"><strong>Business</strong><br><strong>15 Courses</strong></div>
             </div>
             <div class="box">
                 <div><img src="images/assets/computer_science.jpg" alt=""></div>
-                <div class="textformat"><h4>Computer Science</h4><h4>15 Courses</h4></div>
+                <div class="textformat"><strong>Computer Science</strong><br><strong>15 Courses</strong></div>
             </div>
             <div class="box">
                 <div><img src="images/assets/health.jpg" alt=""></div>
-                <div class="textformat"><h4>Health</h4><h4>2 Courses</h4></div>
+                <div class="textformat"><strong>Health</strong><br><strong>2 Courses</strong></div>
             </div>
             <div class="box">
                 <div><img src="images/assets/social_sciences.jpg" alt=""></div>
-                <div class="textformat"><h4>Social Sciences</h4><h4>5 Courses</h4></div>
+                <div class="textformat"><strong>Social Sciences</strong><br><strong4>5 Courses</strong></div>
             </div>
             <div class="box">
                 <div><img src="images/assets/personal_development.jpg" alt=""></div>
-                <div class="textformat"><h4>Personal Dev.</h4><h4>5 Courses</h4></div>
+                <div class="textformat"><strong>Personal Dev.</strong><br><strong>5 Courses</strong></div>
             </div>
             <div class="box">
                 <div><img src="images/assets/arts_and_humanities.jpg" alt=""></div>
-                <div class="textformat"><h4>Arts And Humanities</h4><h4>5 Courses</h4></div>
+                <div class="textformat"><strong>Arts And Humanities</strong><br><strong>5 Courses</strong></div>
             </div>
             <div class="box">
                 <div><img src="images/assets/physical_science_and_engineering.jpg" alt=""></div>
-                <div class="textformat"><h4>Physical Science</h4><h4>5 Courses</h4></div>
+                <div class="textformat"><strong>Physical Science</strong><br><strong>5 Courses</strong></div>
             </div>
             <div class="box">
                 <div><img src="images/assets/language_learning.jpg" alt=""></div>
-                <div class="textformat"><h4>Language Learning</h4><h4>4 Courses</h4></div>
+                <div class="textformat"><strong>Language Learning</strong><br><strong>4 Courses</strong></div>
             </div>
             <div class="box">
                 <div><img src="images/assets/information_technology.jpg" alt=""></div>
-                <div class="textformat"><h4>Info. Tech.</h4><h4>5 Courses</h4></div>
+                <div class="textformat"><strong>Info. Tech.</strong><br><strong>5 Courses</strong></div>
             </div>
             <div class="box">
                 <div><img src="images/assets/math_and_logic.jpg" alt=""></div>
-                <div class="textformat"><h4>Math and Logic</h4><h4>5 Courses</h4></div>
+                <div class="textformat"><strong>Math and Logic</strong><br><strong>5 Courses</strong></div>
             </div>
            </div>
        </div>

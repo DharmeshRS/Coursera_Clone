@@ -228,4 +228,23 @@ container2.onclick=()=>{
     debounce.style.display="none"
 }
 // console.log(hoverdivs)
+// putting name and dummy image;
+if(localStorage.getItem("logindata")!=null){
+    var logindata=JSON.parse( localStorage.getItem("logindata"));
+    console.log((logindata[0].name));
+    var jff=document.getElementById("jff");
+    jff.innerHTML=logindata[0].name;
+    jff.style.color="black";
+    jff.style.backgroundColor="white"
+// hid;
+var login=document.getElementById("login");
+login.style.display="none";
+var bellsign=document.getElementById("bellsign");
+bellsign.style.display="block";
+var hiddenfig=document.getElementById("hiddenfig");
+hiddenfig.style.display="block";
+var verticalline=document.getElementById("verticalline");
+verticalline.style.display="block";
+}
+
 

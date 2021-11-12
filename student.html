@@ -29,9 +29,13 @@
   </div>
   <div id="enterPrises"><a href="interprises.html" >For Enterprises</a></div>
   <div id="forStu"><a href="student.html">For Students</a></div>
-  <!-- <div id="bell sign">bell sign</div> -->
-  <div id="login"><a>Log In</a></div>
-  <div id="jff"><a>Join for Free</a></div>
+  <div id="bellsign">
+      <img src="./images/bell.png" alt="">
+  </div>
+  <div id="verticalline"></div>
+ <div id="hiddenfig"><img src="./images/dummy.png" alt="" "></div>
+  <div id="login"><a href="signin.html">Log In</a></div>
+  <div id="jff"><a href="signup.html" style="color: white;">Join for Free</a></div>
   <!-- navbar end -->
           </div>
   <!-- hover menu start -->
@@ -691,5 +695,22 @@ Share
         } 
       });
     }
+    if(localStorage.getItem("logindata")!=null){
+    var logindata=JSON.parse( localStorage.getItem("logindata"));
+    console.log((logindata[0].name));
+    var jff=document.getElementById("jff");
+    jff.innerHTML=logindata[0].name;
+    jff.style.color="black";
+    jff.style.backgroundColor="white"
+// hid;
+var login=document.getElementById("login");
+login.style.display="none";
+var bellsign=document.getElementById("bellsign");
+bellsign.style.display="block";
+var hiddenfig=document.getElementById("hiddenfig");
+hiddenfig.style.display="block";
+var verticalline=document.getElementById("verticalline");
+verticalline.style.display="block";
+}
     </script>
 <!-- <script src="./scripts/index.js"></script> -->
