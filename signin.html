@@ -192,7 +192,8 @@
             alert("logged In Successful")
                 // window.location.href="index.html"
             console.log(uname,res.token)
-            fetchdata(uname,res.token)
+            fetchdata(uname,res.token);
+            // window.location.href="index.html";
             
         }if(res.error==true){
             alert(res.message)
@@ -214,7 +215,15 @@ function fetchdata(username,token){
         return res.json()
     })
     .then((res)=>{
-        console.log(res)
+        console.log(res.name);
+        if( localStorage.getItem("logindata")===null){
+            localStorage.setItem("logindata",JSON.stringify([]))
+        }
+        var logindata=JSON.parse(localStorage.getItem("logindata"));
+        logindata[0]=res;
+        localStorage.setItem("logindata",JSON.stringify(logindata))
+       console.log(logindata);
+       window.location.href="index.html"
         // setTimeout(function(){
         //     if(res.error="true"){
         //         var msg=document.getElementById("msgdiv")
