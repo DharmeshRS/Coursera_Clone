@@ -46,3 +46,40 @@ body {
     font-size: 20px;
     line-height: 30px;
 }
+#Buy_navbar {
+  height: 49px;
+  border-bottom: 1px solid gray;
+}
+.second {
+  height: 65px;
+  margin: -8px;
+  /* background-color: #fff; */
+}
+.logo_3rdpage {
+  float: left;
+  width: 250px;
+  height: auto;
+  padding: 20px 0 20px 55px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.option_3rdpage {
+  padding: 0px 20px 0px 20px;
+  height: 20px;
+  font-family: "Source Sans Pro",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin-top: 7px;
+
+}
+.right_optionbar {
+  display: flex;
+  height: 32px;
+  margin: 16px 55px 16px auto;
+  width: 45%;
+}
+.side_bar {
+  border-left: 1px solid black  
+}
