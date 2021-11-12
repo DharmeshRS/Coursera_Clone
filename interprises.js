@@ -3,11 +3,18 @@ let div1=document.createElement('div');
 let heading=document.createElement('a');
 heading.setAttribute('id','heading')
 heading.href="#"
-let cousera=document.createElement('a');
-cousera.innerText="cousera";
-let for_bussiness=document.createElement('a');
-for_bussiness.innerText="for.bussiness";
- heading.append(cousera,for_bussiness);
+// let cousera=document.createElement('a');
+// cousera.innerText="cousera";
+// let for_bussiness=document.createElement('a');
+// for_bussiness.innerText="for.bussiness";
+//  heading.append(cousera,for_bussiness);
+let img=document.createElement("img");
+
+img.src="https://www.coursera.org/business/wp-content/themes/c4b/images/logos/c4b-h-blue.svg"
+heading.append(img);
+img.style.width="280px";
+// img.style.marginTop="10px"
+
 div1.append(heading);
 
 let div2=document.createElement('div')
@@ -63,7 +70,7 @@ Blog.innerText="Blog"
 Blog.href="#";
 let contact_sales=document.createElement('a');
 contact_sales.innerText="Contact sales"
-contact_sales.style.backgroundColor="blue";
+contact_sales.style.backgroundColor="#2a73cc";
 contact_sales.style.color="white";
 contact_sales.style.padding="10px"
 contact_sales.addEventListener('click',()=>{
@@ -183,7 +190,7 @@ btn_left.addEventListener('mouseenter',()=>{
     btn_left.style.backgroundColor="#1A237E"
 })
 btn_left.addEventListener('mouseleave',()=>{
-    btn_left.style.backgroundColor="blue";
+    btn_left.style.backgroundColor="#2a73cc";
 })
 let link_div=document.createElement('div')
 link_div.style.marginTop="50px"
@@ -474,3 +481,10 @@ items.forEach((el)=>{
     l_div.append(l_images,l_headings,l_parras,l_links);
     last_grid.append(l_div);
 })
+// changed by anmol;
+
+var cut=document.getElementById("cut");
+cut.onclick=()=>{
+    var  promo_bar=document.getElementById("promo-bar");
+    promo_bar.style.height="0px"
+}
