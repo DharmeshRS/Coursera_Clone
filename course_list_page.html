@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/course_list_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div>
@@ -14,7 +18,7 @@
             <div class="filter_div1">
                 <form action="" id="formid1">
                     <select class="size1"  id="languages" onchange="lang_select()">
-                        <option>Languages</option>
+                        <option aria-readonly="true">Languages</option>
                         <!-- <option value="English">English(54)</option> -->
                         <option  value="English">English</option>
                         <option value="Russian">Russian</option>
@@ -28,7 +32,7 @@
             <div  class="filter_div1">
                 <form action="" id="formid2" >
                     <select class="size1"  id="level" onchange="level_select()">
-                        <option >Level</option>
+                        <option aria-readonly="true">Level</option>
                         <option value="Beginner">Beginner</option>
                         <option value="Intermediate">Intermediate</option>
                         <option value="Advanced">Advanced</option>
@@ -41,7 +45,7 @@
                 <form action="" id="formid3">
 
                 <select class="size1" id="duration" onchange="duration_select()">
-                    <option>Duration</option>
+                    <option aria-readonly="true">Duration</option>
                     <option value="90">1-3 months</option>
                     <option value="30">1-4 weeks</option>
                     <option value="2">Less than 2 hours</option>
@@ -52,15 +56,15 @@
             <div  class="filter_div1">
                 <form action="" id="formid4">
                     <select class="size1"  id="subject" onchange="subject_select()">
-                        <option value="">Subject</option>
-                        <option value="">Bussiness</option>
-                        <option value="">Computer Science</option>
-                        <option value="">Data Science</option>
-                        <option value=" ">IT</option>
-                        <option value=" ">Health</option>
-                        <option value=" ">Pysical Science</option>
-                        <option value=" ">Social Sciences</option>
-                        <option value=" ">Art And Humanities</option>
+                        <option value="" aria-readonly="true">Subject</option>
+                        <option value="Bussiness">Bussiness</option>
+                        <option value="computer Science">Computer Science</option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="IT">IT</option>
+                        <option value="Health">Health</option>
+                        <option value="Pysical Science">Pysical Science</option>
+                        <option value="Social Sciences">Social Sciences</option>
+                        <option value="Art And Humanities">Art And Humanities</option>
     
                   </select>
                 </form>
@@ -70,15 +74,15 @@
                 <form action="" id="formid5">
 
                 <select class="size1"  id="skill" onchange="skill_select()">
-                    <option value="">Skills</option>
-                    <option value=" ">Programmimg</option>
-                    <option value=" ">Communication</option>
-                    <option value=" ">Leadership</option>
-                    <option value=" ">Entrepreneurship</option>
+                    <option>Skills</option>
+                    <option value="Programming">Programming</option>
+                    <option value="Communication">Communication</option>
+                    <option value="Leadership">Leadership</option>
+                    <option value="Entrepreneurship">Entrepreneurship</option>
               </select>
               </form>
             </div>
-              <div  class="filter_div1">
+              <!-- <div  class="filter_div1">
                 <form action="" id="formid6">
 
                   <select class="size1"  id="partner" onchange="partner_select()">
@@ -89,18 +93,22 @@
                     <option value=" ">IBM</option>
                 </select>
                 </form>
-            </div>
+            </div> -->
             <div  class="filter_div1">
                 <form action="" id="formid7">
 
                 <select class="size1"  id="learning" onchange="learning_select()">
-                    <option>Learning Products</option>
-                    <option value=" ">Guided Project</option>
-                    <option value=" ">Courses</option>
-                    <option value=" ">Specialization</option>
-                    <option value=" ">Professional Certi.</option>
+                    <option aria-readonly="true">Learning Products</option>
+                    <option style="line-height: 0100%;" value="Guided Project">Guided Project</option>
+                    <option value="Courses">Courses</option>
+                    <option value="Specialization">Specialization</option>
+                    <option value="Professional Certification">Professional Certi.</option>
                   </select>
                   </form>
+            </div>
+
+            <div class="filter_div1">
+                <button class="buttonsize">Clear</button>
             </div>
         </div>
     </div>

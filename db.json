@@ -249,7 +249,7 @@
   "data": [
     {
       "id": 100,
-      "coursename": "Machine Learning",
+      "coursename": "Machine Learning With Pandas",
       "institute": "Standford University",
       "category": "Course",
       "rating": 5,
@@ -274,10 +274,10 @@
       "student_enroll": "4.5m",
       "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera/topics/ml/large-icon.png?auto=format%2Ccompress&dpr=1&w=150&h=150&fit=fill&bg=FFF&q=25",
       "level": "Mixed",
-      "Language1": "English",
+      "Language1": "Arabic",
       "duration":90,
       "duration1":"1-4 Months",
-      "subject":"computer Science",
+      "subject":"Data Science",
       "skill":"programming",
       "partner":"coursera Project",
       "learning product":"Courses"
@@ -294,7 +294,7 @@
       "Language1": "English",
       "duration":90,
       "duration1":"1-4 Months",
-      "subject":"computer Science",
+      "subject":"Data Science",
       "skill":"programming",
       "partner":"coursera Project",
       "learning product":"Courses"
@@ -313,7 +313,7 @@
       "duration1":"1-4 Week",
       "subject":"computer Science",
       "skill":"programming",
-      "partner":"coursera Project",
+      "partner":"Data Science",
       "learning product":"Courses"
     },
     {
@@ -328,7 +328,7 @@
       "Language1": "English",
       "duration":90,
       "duration1":"1-4 Months",
-      "subject":"computer Science",
+      "subject":"Data Science",
       "skill":"programming",
       "partner":"coursera Project",
       "learning product":"Courses"

@@ -1,9 +1,14 @@
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 .displaybox{
     width: 1024px;
     margin: auto;
+    font-weight: 900;
 }
 #displaydiv  img {
-    width: 84%;
+    width: 80%;
     margin:auto;
     margin-top: 3%;
     margin-left: 3%;
@@ -32,7 +37,8 @@
     display: grid;
     grid-template-columns: repeat(7,1fr);
     margin: auto;
-    margin-left: 16.50%;
+    margin-left: 15.50%;
+    margin-bottom: 2rem;
 }
 
 .filter_div1{
@@ -46,9 +52,32 @@
     /* margin: 10px; */
     font-size: 17px;
     padding:7px;
+    margin-right: 5px;
 }
 option{
     /* padding: 7px; */
     font-size: 15px;
     
 }
+.yellow-color{
+    color:rgb(247, 207, 49);
+    border: black;
+}
+
+#displaydiv >div >div>p:nth-child(2){
+    /* background-color: aqua; */
+    margin-top: -13px;
+    font-weight: 700;
+
+}
+
+#displaydiv >div >div>p:nth-child(3){
+    margin-top: -5px;
+    background-color: #d8d8d8;
+}
+
+.buttonsize{
+    font-size: 17px;
+    padding:5.5px;
+}
+
