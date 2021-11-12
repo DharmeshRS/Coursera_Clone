@@ -26,3 +26,29 @@
     font-weight: 900;
     font-size: large;
 }
+
+.filter_div{
+    width: 1024px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    margin: auto;
+    margin-left: 16.50%;
+}
+
+.filter_div1{
+    /* padding-top: 4px;
+    padding-bottom: 4px; */
+    margin: auto;
+}
+
+.size1{
+    
+    /* margin: 10px; */
+    font-size: 17px;
+    padding:7px;
+}
+option{
+    /* padding: 7px; */
+    font-size: 15px;
+    
+}

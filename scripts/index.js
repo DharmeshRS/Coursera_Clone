@@ -74,7 +74,7 @@ let elements=data.elements
     div1.append(p1,img2)
     debouncediv.append(img,div1);
     debouncediv.onclick=()=>{
-        alert (el.name);
+        
         debouncediv.style.backgroundColor="red"
         var coursera=JSON.parse(localStorage.getItem("coursera"));
         coursera[0]=el;
@@ -124,7 +124,7 @@ for(let i =1;i<hoverdivs.length;i++){
   if(i>=6){
      
           var q=hoverdivs[i].textContent.trim().split("\n");
-        //   alert(q[0]);
+    
         coursename.innerHTML=q[0]
           let res = await fetch(`https://api.coursera.org/api/courses.v1?q=search&query=${q[0]}&includes=instructorIds,photoUrl,partnerIds,description,largeIcon,shortName,location&fields=instructorIds,partnerIds ,location,photoUrl,description,partnerLogo,certificates,startDate,workload,specializations,domainTypes`)
     let data =await res.json();
@@ -166,7 +166,7 @@ let elements=data.elements
             }
             rV.append(debouncediv);
             debouncediv.onclick=()=>{
-                alert (el.name+"fa");
+                
                 var coursera=JSON.parse(localStorage.getItem("coursera"));
                 coursera[0]=el;
                 localStorage.setItem("coursera",JSON.stringify(coursera))
@@ -200,7 +200,7 @@ let elements=data.elements
                 debouncediv.style.backgroundColor="white"
             }
             debouncediv.onclick=()=>{
-                alert (el.name+"fa");
+              
                 debouncediv.style.backgroundColor="red"
                 var coursera=JSON.parse(localStorage.getItem("coursera"));
                 coursera[0]=el;
