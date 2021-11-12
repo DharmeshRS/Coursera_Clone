@@ -11,8 +11,9 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="1.css" /> -->
-    <link rel="stylesheet" href="/styles/teams.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./styles/teams.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -161,7 +162,7 @@
       <div class="course_searchbar">
         <form action="" class="popular_search">
           <input type="text" placeholder="e.g. Data Science"/>
-          <button>
+          <button class="material-icons">search
           </button>
         </form>
       </div>
@@ -180,15 +181,29 @@
       <div id="Management_tools">
         <div class="tools_titles">Drive business outcomes with our learning management tools</div>
         <div class="tools_slides">
-          <div id="lLeft_btn"></div>
-          <div id="slides"></div>
-          <div id="Right_btn"></div>
+          <div id="lLeft_btn" class="material-icons" onclick="plusSlides(-1)">
+            navigate_before
+          </div>
+          <div id="slides">
+            <div id="My_slide1" class="mySlides" style="display: none;">
+              <img id="Poster_image" src="images/teams/teams1.png" />
+            </div>
+            <div id="My_slide2" class="mySlides" style="display: none;">
+              <img id="Poster_image" src="images/teams/teams2.png" />
+            </div>
+            <div id="My_slide3" class="mySlides" style="display: none;">
+              <img id="Poster_image" src="images/teams/teams3.png" />
+            </div>
+          </div>
+          <div id="Right_btn" class="material-icons" onclick="plusSlides(1)">
+            navigate_next
+          </div>
         </div>
-        <ul id="Ul_dots">
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+        <div id="Ul_dots">
+          <span id="Dot1" class="dot" onclick="currentSlide(1)"></span>
+          <span id="Dot2" class="dot" onclick="currentSlide(2)"></span>
+          <span id="Dot3" class="dot" onclick="currentSlide(3)"></span>
+        </div>
       </div>
     </div>
     <!-- FAQ's -->
@@ -199,7 +214,7 @@
       <div class="faq_questions">
         <div class="query">
           <div id="Quest1" onclick="hideAns(`Ans1`)" class="quest">
-            <div class="symb"></div>
+            <div id="symb1" class="symb material-icons">navigate_next</div>
             <h3 class="question">What is Coursera for Teams?</h3>
           </div>
           <div id="Ans1" class="ans">
@@ -211,7 +226,7 @@
         </div>
         <div class="query">
           <div id="Quest2"  onclick="hideAns(`Ans2`)"class="quest">
-            <div class="symb"></div>
+            <div id="symb2" class="symb material-icons">navigate_next</div>
             <h3 class="question">What content is available for my team?</h3>
           </div>
           <div id="Ans2" class="ans">
@@ -224,7 +239,7 @@
         </div>
         <div class="query">
           <div id="Quest3"  onclick="hideAns(`Ans3`)"class="quest">
-            <div class="symb"></div>
+            <div id="symb3" class="symb material-icons">navigate_next</div>
             <h3 class="question">What is included in Coursera for Teams?</h3>
           </div>
           <div id="Ans3" class="ans">
@@ -235,7 +250,7 @@
         </div>
         <div class="query">
           <div id="Quest4"  onclick="hideAns(`Ans4`)"class="quest">
-            <div class="symb"></div>
+            <div id="symb4" class="symb material-icons">navigate_next</div>
             <h3 class="question">What is the learning experience?</h3>
           </div>
           <div id="Ans4" class="ans">
@@ -246,7 +261,7 @@
         </div>
         <div class="query">
           <div id="Quest5"  onclick="hideAns(`Ans5`)"class="quest">
-            <div class="symb"></div>
+            <div id="symb5" class="symb material-icons">navigate_next</div>
             <h3 class="question">What is the difference between Coursera Plus and Coursera for Teams?</h3>
           </div>
           <div id="Ans5" class="ans">
@@ -258,7 +273,7 @@
         </div>
         <div class="query">
           <div id="Quest6"  onclick="hideAns(`Ans6`)"class="quest">
-            <div class="symb"></div>
+            <div id="symb6" class="symb material-icons">navigate_next</div>
             <h3 class="question">How are other businesses using Coursera for Teams?</h3>
           </div>
           <div id="Ans6" class="ans">
@@ -267,7 +282,7 @@
         </div>
         <div class="query">
           <div id="Quest7"  onclick="hideAns(`Ans7`)"class="quest">
-            <div class="symb"></div>
+            <div id="symb7" class="symb material-icons">navigate_next</div>
             <h3 class="question">How can I receive budget approval from my organization?</h3>
           </div>
           <div id="Ans7" class="ans">
@@ -278,7 +293,7 @@
         </div>
         <div class="query">
           <div id="Quest8"  onclick="hideAns(`Ans8`)"class="quest">
-            <div class="symb"></div>
+            <div id="symb8" class="symb material-icons">navigate_next</div>
             <h3 class="question">Can I get a refund for Coursera for Teams if it’s not right for my team?</h3>
           </div>
           <div id="Ans8" class="ans">
@@ -291,7 +306,7 @@
         </div>
         <div class="query">
           <div id="Quest9"  onclick="hideAns(`Ans9`)"class="quest">
-            <div class="symb"></div>
+            <div id="symb9" class="symb material-icons">navigate_next</div>
             <h3 class="question">How can I pay?</h3>
           </div>
           <div id="Ans9" class="ans">
@@ -301,7 +316,7 @@
         </div>
         <div class="query">
           <div id="Quest10" onclick="hideAns(`Ans10`)" class="quest">
-            <div class="symb"></div>
+            <div id="symb10" class="symb  material-icons">navigate_next</div>
             <h3 class="question">What resources are available to engage my team?</h3>
           </div>
           <div id="Ans10" class="ans">
@@ -325,17 +340,18 @@
      <div id="footer_div"></div>
   </body>
 </html>
+<script src="./scripts/teams.js"></script>
  <script type="module">
 // Navbar
-  import {navbar} from "/components/navbar.js"
+  import {navbar} from "./components/navbar.js"
   let navbar_div=document.getElementById('navbar_div');
-  // console.log(navbar_div)
+  console.log(navbar_div)
   navbar_div.innerHTML=navbar();
 
 // // Footer
-  import {footer} from "./footer.js"
-  let footer_div=document.getElementById('footer_div');
+  // import {footer} from "/footer.js"
+  // console.log(footer)
+  // let footer_div=document.getElementById('footer_div');
   // console.log(footer_div)
-  footer_div.innerHTML=footer();
+  // footer_div.innerHTML=footer();
 </script>
-<script src="/scripts/teams.js"></script>
