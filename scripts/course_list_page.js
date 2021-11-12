@@ -1,8 +1,8 @@
-let search=JSON.parse(localStorage.getItem("coursera_search"));
+var search=JSON.parse(localStorage.getItem("coursera_search"));
 
 
 async function showlist(search){
-    localStorage.removeItem("coursera_search")
+    // localStorage.removeItem("coursera_search")
     let res = await fetch(`https://api.coursera.org/api/courses.v1?q=search&query=${search}&includes=instructorIds,photoUrl,description,largeIcon&fields=instructorIds,photoUrl,description,partnerLogo,certificates,startDate,workload,specializations,domainTypes`)
     let data =await res.json();
     displaydata(data)
@@ -13,7 +13,6 @@ let parent=document.getElementById("displaydiv")
 
 function displaydata(data){
     data.elements.forEach((el) => {
-        console.log(el)
         let maindiv=document.createElement("div")
         let imgdiv=document.createElement("div")
         let descdiv=document.createElement("div")
@@ -116,7 +115,6 @@ function show_server_data(data,lang_name){
         descdiv.append(title,institute,type,studenttotal,studenttype)
         maindiv.append(imgdiv,descdiv)
         maindiv.onclick=function(){
-            alert("go to desc page")
             document.location.href="courseDescription.html";
         }
         parent.append(maindiv,hr)
@@ -134,7 +132,6 @@ async function level_select(){
     empty()
     let lang_form=document.getElementById("formid2")
     let  level_name=lang_form.level[lang_form.level.selectedIndex].text
-    alert(level_name)
     let res = await fetch(`http://localhost:3000/api/data`)
     let data =await res.json();
     
@@ -170,7 +167,6 @@ function  show_server_data_level(data,level_name){
         descdiv.append(title,institute,type,studenttotal,studenttype)
         maindiv.append(imgdiv,descdiv)
         maindiv.onclick=function(){
-            alert("go to desc page")
             document.location.href="courseDescription.html";
         }
         parent.append(maindiv,hr)
@@ -183,7 +179,6 @@ async function duration_select(){
     empty()
     let lang_form=document.getElementById("formid3")
     let  duration_name=lang_form.duration[lang_form.duration.selectedIndex].value
-    alert(duration_name)
     let res = await fetch(`http://localhost:3000/api/data`)
     let data =await res.json();
     
@@ -233,10 +228,8 @@ async function subject_select(){
     empty()
     let lang_form=document.getElementById("formid4")
     let subject_name=lang_form.subject[lang_form.subject.selectedIndex].value
-    console.log(subject_name)
     let res = await fetch(`http://localhost:3000/api/data`)
     let data =await res.json();
-    console.log(data)
     show_server_data_subject(data,subject_name)
 }
 
@@ -281,20 +274,17 @@ function show_server_data_subject(data,subject_name){
 async function skill_select(){
     empty()
     let lang_form=document.getElementById("formid5")
-    // let  duration_name=lang_form.duration[lang_form.duration.selectedIndex].value
-    let skill_name=lang_form.skill[lang_form.skill.selectedIndex].value
-    alert(skill_name)
+    let subject_name=lang_form.skill[lang_form.skill.selectedIndex].value
     let res = await fetch(`http://localhost:3000/api/data`)
     let data =await res.json();
-    show_server_data_subject(data,skill_name)
+    show_server_data_skill(data,subject_name)
 }
 
-
-function show_server_data_subject(data,skill_name){
+function show_server_data_skill(data,subject_name){
     empty()
     data.forEach((el) => {
-    if(el.skill==skill_name){
-        let maindiv=document.createElement("div")
+    if(el.skill==subject_name){
+    let maindiv=document.createElement("div")
     let imgdiv=document.createElement("div")
     let descdiv=document.createElement("div")
 
@@ -310,7 +300,7 @@ function show_server_data_subject(data,skill_name){
 
     title.innerText=el.coursename;
     institute.innerText=el.institute;
-    studenttotal.innerHTML=`<div><i class="fa fa-star yellow-color " ></i>&nbsp;<i class="fa fa-star yellow-color " ></i>&nbsp;<i class="fa fa-star yellow-color " ></i>&nbsp;<i class="fa fa-star yellow-color " ></i>&nbsp;<i class="fa fa-star yellow-color " ></i>&nbsp;| ${el.student_enroll}  Students</div>`
+    studenttotal.innerHTML=`<div><i class="fa fa-star yellow-color" ></i>&nbsp;<i class="fa fa-star yellow-color " ></i>&nbsp;<i class="fa fa-star yellow-color " ></i>&nbsp;<i class="fa fa-star yellow-color " ></i>&nbsp;<i class="fa fa-star yellow-color " ></i>&nbsp;| ${el.student_enroll}  Students</div>`
     type.style.width="100px";
 
     
@@ -319,10 +309,61 @@ function show_server_data_subject(data,skill_name){
     descdiv.append(title,institute,type,studenttotal,studenttype)
     maindiv.append(imgdiv,descdiv)
     maindiv.onclick=function(){
-        document.location.href="courseDescription.html";
+        document.location.href="course_ldesc_page.html";
     }
     parent.append(maindiv,hr)
     }
     
 })
+}
+
+async function learning_select(){
+    empty()
+    let lang_form=document.getElementById("formid7")
+    let learning_name=lang_form.learning[lang_form.learning.selectedIndex].value
+    let res = await fetch(`http://localhost:3000/api/data`)
+    let data =await res.json();
+    show_server_data_learning(data,learning_name)
+}
+
+
+function show_server_data_learning(data,learning_name){
+    empty()
+    data.forEach((el) => {
+    if(el.learning==learning_name){
+    let maindiv=document.createElement("div")
+    let imgdiv=document.createElement("div")
+    let descdiv=document.createElement("div")
+
+    let img=document.createElement("img")
+    img.src=el.img
+    imgdiv.append(img)
+    //description
+    let title=document.createElement("p")
+    let institute=document.createElement("p")
+    let type=document.createElement("p")
+    let studenttotal=document.createElement("p")
+    let studenttype=document.createElement("p")
+
+    title.innerText=el.coursename;
+    institute.innerText=el.institute;
+    studenttotal.innerHTML=`<div><i class="fa fa-star yellow-color" ></i>&nbsp;<i class="fa fa-star yellow-color " ></i>&nbsp;<i class="fa fa-star yellow-color " ></i>&nbsp;<i class="fa fa-star yellow-color " ></i>&nbsp;<i class="fa fa-star yellow-color " ></i>&nbsp;| ${el.student_enroll}  Students</div>`
+    type.style.width="100px";
+
+    
+    studenttype.innerText=el.level  
+    let hr=document.createElement("hr")
+    descdiv.append(title,institute,type,studenttotal,studenttype)
+    maindiv.append(imgdiv,descdiv)
+    maindiv.onclick=function(){
+        document.location.href="course_ldesc_page.html";
+    }
+    parent.append(maindiv,hr)
+    }
+    
+})
+}
+
+async function clearsearch(){
+    window.location.reload()
 }

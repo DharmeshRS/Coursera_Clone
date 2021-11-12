@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <div id="navbar">
+        
+    </div>
     <div>
         <div class="filter_div">
             <div class="filter_div1">
@@ -75,10 +78,10 @@
 
                 <select class="size1"  id="skill" onchange="skill_select()">
                     <option>Skills</option>
-                    <option value="Programming">Programming</option>
-                    <option value="Communication">Communication</option>
-                    <option value="Leadership">Leadership</option>
-                    <option value="Entrepreneurship">Entrepreneurship</option>
+                    <option value="programming">Programming</option>
+                    <option value="communication">Communication</option>
+                    <option value="leadership">Leadership</option>
+                    <option value="entrepreneurship">Entrepreneurship</option>
               </select>
               </form>
             </div>
@@ -99,7 +102,7 @@
 
                 <select class="size1"  id="learning" onchange="learning_select()">
                     <option aria-readonly="true">Learning Products</option>
-                    <option style="line-height: 0100%;" value="Guided Project">Guided Project</option>
+                    <option value="Guided Project">Guided Project</option>
                     <option value="Courses">Courses</option>
                     <option value="Specialization">Specialization</option>
                     <option value="Professional Certification">Professional Certi.</option>
@@ -108,7 +111,7 @@
             </div>
 
             <div class="filter_div1">
-                <button class="buttonsize">Clear</button>
+                <button class="buttonsize" onclick="clearsearch()">Clear</button>
             </div>
         </div>
     </div>
