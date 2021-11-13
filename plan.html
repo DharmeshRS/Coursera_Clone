@@ -64,6 +64,7 @@
       <p class="teamcon">Number of users</p>
 
       <p class="teamcon1">Total</p>
+      <div id="hrline"></div>
       <hr />
 
       <p class="item">Annual Payment</p>
@@ -102,6 +103,8 @@
         type="text"
         data-e2e="learner-count-input"
         value=""
+        id="noU"
+        oninput="showprice()"
       />
       <br /><br />
       <label class="user" for="learnerCount-input">Payment Option</label>
@@ -134,8 +137,23 @@
       <br />
       <br />
 
-      <button class="primary" type="submit">Continue</button>
+      <button class="primary" type="submit" id="cont_btn">Continue</button>
     </div>
   </div>
   </body>
 </html>
+<script>
+   showprice=()=>{
+    var hrline=document.getElementById("hrline");
+    var noU=document.getElementById("noU").value;
+
+    hrline.textContent=(+noU)*399
+  }
+ 
+  var cont_btn=document.getElementById("cont_btn");
+  cont_btn.onclick=()=>{
+  
+    alert("Have a nice carrer, Thanku ");
+    window.location.href="index.html"
+  }
+</script>
