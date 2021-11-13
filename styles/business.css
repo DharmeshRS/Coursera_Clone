@@ -1,0 +1,85 @@
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: #000000;
+  background-color: #fff;
+}
+#Business_box {
+  margin: 60px auto;
+  width: 74.66%;
+}
+.head_line {
+  font-size: 35px;
+  line-height: 48px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  text-align: left!important;
+  font-family: 'Source Sans Pro',sans-serif!important;
+}
+.line_1 {
+    
+    font-family: 'Source Sans Pro',sans-serif!important;
+    font-size: 20px;
+    text-align: left!important;
+    line-height: 1.5;
+}
+.button {
+    border-radius: 2px;
+    padding: 23px 48px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #0056d2;
+    width: 184px;
+    height: 24px;
+    margin-top: 15px;
+}
+.button > a{
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 24px;
+    font-weight: 700;
+}
+.line_2 {
+    font-family: 'Source Sans Pro',sans-serif!important;
+    margin: 30px 0 45px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+}
+#Buy_navbar {
+  height: 49px;
+  border-bottom: 1px solid gray;
+}
+.second {
+  height: 65px;
+  margin: -8px;
+  /* background-color: #fff; */
+}
+.logo_3rdpage {
+  float: left;
+  width: 250px;
+  height: auto;
+  padding: 20px 0 20px 55px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.option_3rdpage {
+  padding: 0px 20px 0px 20px;
+  height: 20px;
+  font-family: "Source Sans Pro",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin-top: 7px;
+
+}
+.right_optionbar {
+  display: flex;
+  height: 32px;
+  margin: 16px 55px 16px auto;
+  width: 45%;
+}
+.side_bar {
+  border-left: 1px solid black  
+}

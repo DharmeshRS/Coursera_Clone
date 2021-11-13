@@ -72,7 +72,7 @@ function displaydata(data){
     data.forEach((el)=>{
         if (el.category=="course"){
             let div=document.createElement("div")
-        div.innerHTML=`<div class="item" id="elements">
+        div.innerHTML=`<div class="item" id="elements" style="font-size:20px">
         <div style="margin-top:-60px;"><img src="${el.backgroundimage}"></div>
         <div style="background-color: #046082;height: 42%;margin-top: -130px;position: relative;">
             <div>
@@ -82,7 +82,7 @@ function displaydata(data){
             
                 
             </div>
-            <div style="background-color: #046082;;">
+            <div style="background-color: #046082;margin-top:-20px;position:relative;font-size:20px">
                 Professional Certificate
             </div>
             

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <style>
+        *{
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+    .txt_size{
+        font-size: 25px;
+    }
+        label{
+            margin: 0px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        .regdiv{
+            width:35%;
+            border: 1px solid black;
+            margin: auto;
+            border-radius: 10px;
+            height:auto;
+            
+        }
+        .text{
+            text-align: center;
+        }
+        .innerdiv{
+            text-align: justify;
+            margin-left: 100px;
+        }
+        label{
+            font-size: 12px;
+            font-weight: bold;
+        }
+        input{
+            padding-top:10px ;
+            padding-bottom:10px;
+            padding-right:155px;
+            padding-left:0px;
+            font-size: 16px;
+        }
+        .regbtn{
+            padding-top:13px ;
+            padding-bottom:13px;
+            padding-right:152px;
+            padding-left:155px;
+            background-color: #0056d2;
+            color: white;
+            font-weight: bolder;
+            border-radius: 5px;
+            font-size: 15px;
+            
+        }
+
+        .regbtn1{
+            padding-top:13px ;
+            padding-bottom:13px;
+            padding-right:100px;
+            padding-left:105px;
+            /* background-color: #0056d2; */
+            /* color: white; */
+            background-color: white;
+            font-weight: bolder;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        .regbtn2{
+            padding-top:13px ;
+            padding-bottom:13px;
+            padding-right:92px;
+            padding-left:97px;
+            /* background-color: #0056d2; */
+            /* color: white; */
+            background-color: white;
+            font-weight: bolder;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        .regbtn3{
+            padding-top:13px ;
+            padding-bottom:13px;
+            padding-right:105px;
+            padding-left:110px;
+            background-color: white;
+            /* color: white; */
+            font-weight: bolder;
+            border-radius: 5px;
+            font-size: 15px;
+            
+        }
+        .margint{
+            margin-top: 20px;
+        }
+        .btndiv{
+            margin-top: 30px;
+
+        }
+        .gbtn{
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        .bluecolor{
+            color: rgb(0, 119, 255);
+        }
+        span{
+            margin-top: -10px;
+        }
+        .mt{
+            margin-top: 0.50px;
+        }
+        button:hover{
+            background-color: rgb(0, 89, 255);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="regdiv">
+        <h1 class="text">Welcome Back!</h1>
+        <!-- <p class="text">Login</p> -->
+        <div class="innerdiv">
+            <form action="" onsubmit="login(event)" id="login_form" autocomplete="on">
+                <div class="margint"> 
+                    <label for="">USERNAME</label><br>
+                    <input type="text" id="username" placeholder="Enter Valid Username"><br>
+                </div>
+                <div class="margint">
+                    <label for="">PASSWORD</label><br>
+                    <input type="password" id="password" placeholder="Enter Valid Password"><br>
+                    <p class="mt"><span class="bluecolor">Reset Password</span> or <span class="bluecolor">Email me a login link</span></p>
+                </div>
+                
+               
+                <div class="btndiv">
+                    <button class="regbtn">Login</button>
+                </div>
+                
+            </form>
+            <div>
+                <div>
+                    <button class="regbtn1 gbtn">Continue With Google</button>
+                </div>
+                <div>
+                    <button class="regbtn2 gbtn">Continue With Facebook</button>
+                </div>
+                <div>
+                    <button class="regbtn3 gbtn">Continue With Apple</button>
+                </div>
+                <div class="innerdiv">
+                    <p>New to Coursera?<strong class="bluecolor">Sign up</strong></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    <script>
+        function login(e){
+         e.preventDefault()
+        let form=document.getElementById("login_form")
+    var user_data={
+       
+        password:form.password.value,
+        username:form.username.value,
+        
+    };
+    console.log(user_data)
+    var uname=user_data.username
+    user_data=JSON.stringify(user_data)
+    fetch("https://masai-api-mocker.herokuapp.com/auth/login",{
+        method:"POST",
+        body:user_data,
+        headers:{
+            "Content-Type":"application/json"
+        }
+    }) 
+    .then((res)=>{
+        return res.json()
+    })
+    .then((res)=>{
+        console.log(res)
+        if(res.error==false){
+            alert("logged In Successful")
+                // window.location.href="index.html"
+            console.log(uname,res.token)
+            fetchdata(uname,res.token);
+            // window.location.href="index.html";
+            
+        }if(res.error==true){
+            alert(res.message)
+           
+        }
+        
+    })
+}
+
+function fetchdata(username,token){
+    
+    let res=fetch(`https://masai-api-mocker.herokuapp.com/user/${username}`,{
+        headers:{
+        "Content-Type":"application/json",
+        Authorization: `Bearer ${token}`
+    },
+    })
+    .then((res)=>{
+        return res.json()
+    })
+    .then((res)=>{
+        console.log(res.name);
+        if( localStorage.getItem("logindata")===null){
+            localStorage.setItem("logindata",JSON.stringify([]))
+        }
+        var logindata=JSON.parse(localStorage.getItem("logindata"));
+        logindata[0]=res;
+        localStorage.setItem("logindata",JSON.stringify(logindata))
+       console.log(logindata);
+       window.location.href="index.html"
+        // setTimeout(function(){
+        //     if(res.error="true"){
+        //         var msg=document.getElementById("msgdiv")
+        //         msg.innerText="Login Successful"
+        //         msg.style.backgroundColor="green"
+        //         var profile=document.getElementById("profile")
+        //         profile.innerText=res.username
+        //         var userdiv=document.getElementById("userdiv")
+        //         userdiv.innerHTML=null;
+        //         f()
+
+        //     }
+        // },2000);
+    })
+    .catch((res)=>{
+        console.log(res)
+    })
+    
+
+}
+    </script>
+
+</html>

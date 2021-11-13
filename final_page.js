@@ -225,6 +225,6 @@ let buy_now=document.getElementById('buy_now');
 let buy_now_button=document.createElement('button');
 buy_now_button.innerText="Buy now for teams";
 buy_now_button.addEventListener('click',()=>{
-    window.location.href="https://www.coursera.org/purchase/plan?billingType=1&utm_campaign=website&utm_content=new-thank-you-wes-purchase-courses&utm_medium=coursera&utm_source=enterprise"
+    window.location.href="plan.html"
 })
 buy_now.append(buy_now_button);

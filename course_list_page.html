@@ -6,15 +6,211 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/course_list_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <style>
+        #container{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: 1;
+            }
+    </style>
 </head>
 <body>
+    <div id="container">
+        <div id="navbar" style="margin-top: -1px;">
+            <div>
+                <a href="index.html"><img id="mainlogo" src="https://images.ctfassets.net/00atxywtfxvd/2MlqAOzmHjSPtssv6HlNox/1cb35b40775835a5f574ebc5509907a1/coursera-wordmark-blue.svg"></a></div>
+                <div id="explore">
+                <span id="extext1">Explore </span>
+                <span class="material-icons" id="arrow">
+                expand_more
+                </span>
+            </div>
+            <div><input id="searchinput" placeholder="What do you want to learn?" type="text" oninput="fillPreviousSearched()">
+             <button class="material-icons" id="searchicon">
+            search
+            </button>
+    </div>
+    <div id="enterPrises"><a href="Enterprises.html" >For Enterprises</a></div>
+    <div id="forStu"><a href="student.html">For Students</a></div>
+    <div id="bellsign">
+        <img src="./images/bell.png" alt="">
+    </div>
+    <div id="verticalline"></div>
+   <div id="hiddenfig"><img src="./images/dummy.png" alt="" "></div>
+    <div id="login"><a href="signin.html">Log In</a></div>
+    <div id="jff"><a href="signup.html" style="color: white;">Join for Free</a></div>
+    <!-- navbar end -->
+            </div>
+    <!-- hover menu start -->
+    <div id="blockremover"></div> 
+    <div id="hovermenuandinfodiv">
+    <div id="hovermenu">
+        <div>Goals</div>
+        <div id="tAfC">Take a free course</div>
+        <div id="eAd">Earn a Degree
+        
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+        
+    </div>
+    <div id="eAc">Earn a Certificate
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="lAyC">Launch or advance your career
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div>Subjects</div>
+    <div id="dS">Data Science
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="business">Business
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="cS">Computer Science
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="iT">Information Technology
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="lL">Language Learning
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="health">Health
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="pD">Personal Development
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="pS">Physical Sciences
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="sS">Socail Sciences
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="aAh">Art and Humanities
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="mAl">Math and Logic
+        <span class="material-icons arrows">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="bAs">Browse all subjects
+       
+    </div>
+
+    <!-- hover menu end -->
+</div> 
+<!-- <div id="infodiv">Information</div> -->
+<div id="infodiv">
+    <p id="coursename">course</p>
+    <div id="threedivs">
+        <div>
+            <p class="firsttesxt">Degrees</p>
+            <hr>
+            <p class="secTex">Breakthrough pricing on 100% online degrees<br>
+                designed to fit into your life.
+            </p>
+            <div id="degreediv"></div>
+            <div class="blueboxtex">View all degrees</div>
+        </div>
+        <div>
+            <p class="firsttesxt">Certificate programs</p>
+            <hr>
+            <p class="secTex">In 3-9 months ,gain the skills to break into a new<br>
+                career or take your career to the next level.
+            </p>
+            <div id="certificatediv"></div>
+            <div class="blueboxtex">View all Certificates</div>
+           
+        </div>
+        <div>
+            <p class="firsttesxt">Get Started</p>
+            <hr>
+            <div class="gets">Free courses</div>
+            <div class="gets">Most popular</div>
+            <div class="gets">Guided Projects under 2 hours</div>
+            <p class="firsttesxt popular">Popular Skills</p>
+            <hr>
+            <div id="popularskills"></div>
+        </div>
+    </div>
+</div>
+<!-- hovermenuandinfodiv End -->
+ </div> 
+ <div id="debounce">
+    <p class="boldP">Recently viewed</p>
+     <div id="rV">
+        
+        
+     </div>
+     <p class="boldP">Popular right now</p>
+     <div id="pRn">
+       <div>
+        <span class="material-icons pRnSi " >
+            search
+        </span>
+           <span class="lowerP">python</span>
+       
+    </div>
     <div>
+        <span class="material-icons pRnSi " >
+            search
+        </span>
+           <span class="lowerP">free</span>
+       
+    </div>
+    <div>
+        <span class="material-icons pRnSi " >
+            search
+        </span>
+           <span class="lowerP">sql</span>
+       
+    </div>
+     </div>
+ </div>
+<!-- container end -->
+    </div>
+    <div style="margin-top: 30px;">
         <div class="filter_div">
             <div class="filter_div1">
                 <form action="" id="formid1">
                     <select class="size1"  id="languages" onchange="lang_select()">
-                        <option>Languages</option>
+                        <option aria-readonly="true">Languages</option>
                         <!-- <option value="English">English(54)</option> -->
                         <option  value="English">English</option>
                         <option value="Russian">Russian</option>
@@ -28,7 +224,7 @@
             <div  class="filter_div1">
                 <form action="" id="formid2" >
                     <select class="size1"  id="level" onchange="level_select()">
-                        <option >Level</option>
+                        <option aria-readonly="true">Level</option>
                         <option value="Beginner">Beginner</option>
                         <option value="Intermediate">Intermediate</option>
                         <option value="Advanced">Advanced</option>
@@ -41,7 +237,7 @@
                 <form action="" id="formid3">
 
                 <select class="size1" id="duration" onchange="duration_select()">
-                    <option>Duration</option>
+                    <option aria-readonly="true">Duration</option>
                     <option value="90">1-3 months</option>
                     <option value="30">1-4 weeks</option>
                     <option value="2">Less than 2 hours</option>
@@ -52,15 +248,15 @@
             <div  class="filter_div1">
                 <form action="" id="formid4">
                     <select class="size1"  id="subject" onchange="subject_select()">
-                        <option value="">Subject</option>
-                        <option value="">Bussiness</option>
-                        <option value="">Computer Science</option>
-                        <option value="">Data Science</option>
-                        <option value=" ">IT</option>
-                        <option value=" ">Health</option>
-                        <option value=" ">Pysical Science</option>
-                        <option value=" ">Social Sciences</option>
-                        <option value=" ">Art And Humanities</option>
+                        <option value="" aria-readonly="true">Subject</option>
+                        <option value="Bussiness">Bussiness</option>
+                        <option value="computer Science">Computer Science</option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="IT">IT</option>
+                        <option value="Health">Health</option>
+                        <option value="Pysical Science">Pysical Science</option>
+                        <option value="Social Sciences">Social Sciences</option>
+                        <option value="Art And Humanities">Art And Humanities</option>
     
                   </select>
                 </form>
@@ -70,15 +266,15 @@
                 <form action="" id="formid5">
 
                 <select class="size1"  id="skill" onchange="skill_select()">
-                    <option value="">Skills</option>
-                    <option value=" ">Programmimg</option>
-                    <option value=" ">Communication</option>
-                    <option value=" ">Leadership</option>
-                    <option value=" ">Entrepreneurship</option>
+                    <option>Skills</option>
+                    <option value="programming">Programming</option>
+                    <option value="communication">Communication</option>
+                    <option value="leadership">Leadership</option>
+                    <option value="entrepreneurship">Entrepreneurship</option>
               </select>
               </form>
             </div>
-              <div  class="filter_div1">
+              <!-- <div  class="filter_div1">
                 <form action="" id="formid6">
 
                   <select class="size1"  id="partner" onchange="partner_select()">
@@ -89,18 +285,22 @@
                     <option value=" ">IBM</option>
                 </select>
                 </form>
-            </div>
+            </div> -->
             <div  class="filter_div1">
                 <form action="" id="formid7">
 
                 <select class="size1"  id="learning" onchange="learning_select()">
-                    <option>Learning Products</option>
-                    <option value=" ">Guided Project</option>
-                    <option value=" ">Courses</option>
-                    <option value=" ">Specialization</option>
-                    <option value=" ">Professional Certi.</option>
+                    <option aria-readonly="true">Learning Products</option>
+                    <option value="Guided Project">Guided Project</option>
+                    <option value="Courses">Courses</option>
+                    <option value="Specialization">Specialization</option>
+                    <option value="Professional Certification">Professional Certi.</option>
                   </select>
                   </form>
+            </div>
+
+            <div class="filter_div1">
+                <button class="buttonsize" onclick="clearsearch()">Clear</button>
             </div>
         </div>
     </div>
@@ -109,9 +309,29 @@
 
         </div>
     </div>
-</body>
-<script>
+
+    <!-- footer -->
+
     
+</body>
+<script >
+    if(localStorage.getItem("logindata")!=null){
+    var logindata=JSON.parse( localStorage.getItem("logindata"));
+    console.log((logindata[0].name));
+    var jff=document.getElementById("jff");
+    jff.innerHTML=logindata[0].name;
+    jff.style.color="black";
+    jff.style.backgroundColor="white"
+// hid;
+var login=document.getElementById("login");
+login.style.display="none";
+var bellsign=document.getElementById("bellsign");
+bellsign.style.display="block";
+var hiddenfig=document.getElementById("hiddenfig");
+hiddenfig.style.display="block";
+var verticalline=document.getElementById("verticalline");
+verticalline.style.display="block";
+}
 </script>
 <script src="scripts/course_list_page.js"></script>
 </html>

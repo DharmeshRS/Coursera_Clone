@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <style>
+        *{
+        font-family: 'Source Sans Pro', sans-serif;
+        
+    }
+
+        label{
+            margin: 0px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        .regdiv{
+            width:35%;
+            border: 1px solid black;
+            margin: auto;
+            border-radius: 10px;
+            height:auto;
+            
+        }
+        .text{
+            text-align: center;
+        }
+        .innerdiv{
+            text-align: justify;
+            margin-left: 100px;
+        }
+        label{
+            font-size: 12px;
+            font-weight: bold;
+        }
+        input{
+            padding-top:10px ;
+            padding-bottom:10px;
+            padding-right:150px;
+            padding-left:0px;
+            font-size: 16px;
+        }
+        .regbtn{
+            padding-top:13px ;
+            padding-bottom:13px;
+            padding-right:130px;
+            padding-left:135px;
+            background-color: #0056d2;
+            color: white;
+            font-weight: bolder;
+            border-radius: 5px;
+            font-size: 15px;
+            
+        }
+
+        .regbtn1{
+            padding-top:13px ;
+            padding-bottom:13px;
+            padding-right:100px;
+            padding-left:105px;
+            /* background-color: #0056d2; */
+            /* color: white; */
+            background-color: white;
+            font-weight: bolder;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        .regbtn2{
+            padding-top:13px ;
+            padding-bottom:13px;
+            padding-right:92px;
+            padding-left:97px;
+            /* background-color: #0056d2; */
+            /* color: white; */
+            background-color: white;
+            font-weight: bolder;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        .margint{
+            margin-top: 20px;
+        }
+        .btndiv{
+            margin-top: -85px;
+
+        }
+        .gbtn{
+            margin-top: 28px;
+            margin-bottom: 10px;
+        }
+        button:hover{
+            background-color: rgb(0, 89, 255);
+            color: white;
+        }
+        .mart{
+            margin-top: -20px;
+        }
+    </style>
+</head>
+<body>
+    
+
+
+    <div>
+        
+        <div class="regdiv">
+            <h1 class="text">Sign Up</h1>
+            <p class="text mart">Learn on Your Own Time</p>
+            <div class="innerdiv">
+                <form action="" onsubmit="register(event)" id="signup_form" autocomplete="on">
+                    <div class="margint">
+                        <label for="">FULL NAME</label><br>
+                        <input type="text" id="name" placeholder="Enter Your Full Name"><br>
+                    </div>
+                    <div class="margint">
+                        <label for="">EMAIL</label><br>
+                        <input type="email" id="email" placeholder="Enter Valid Email"><br></div>
+                    <div class="margint">
+                        <label for="">PASSWORD</label><br>
+                        <input type="password" id="password" placeholder="Enter Carefully"><br></div>
+                    <div class="margint">
+                        <label for="">USERNAME</label><br>
+                        <input type="text" id="username" placeholder="Username Must Unique"><br>
+                    </div>
+                    <div class="margint">
+                        <label for="" hidden>mobile</label><br>
+                        <input type="text" id="mobile" hidden><br>
+                    </div>
+                    <div class="margint">
+                        <label for="" hidden>Description</label><br>
+                    <input type="text" id="description" value="project" hidden><br>
+                    </div>
+                    
+                    <div class="btndiv">
+                        <button class="regbtn">Join for Free</button>
+                    </div>
+                    
+                    
+                </form>
+                <div>
+                    <div>
+                        <button class="regbtn1 gbtn">Continue With Google</button>
+                    </div>
+                    <div>
+                        <button class="regbtn2 gbtn">Continue With Facebook</button>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script>
+    function register(e){
+        e.preventDefault()
+        let form=document.getElementById("signup_form")
+        let aname=form.name.value
+        let aemail=form.email.value
+        let apass=form.password.value
+        let desc=form.description.value
+        function mobile(){
+           let no=Math.floor(Math.pow(10, 10-1) + Math.random() * 9 * Math.pow(10, 10-1))
+           return String(no)
+        }
+        
+    var user_data={
+        name:aname,
+        email:aemail,
+        password:apass,
+        username:form.username.value,
+        mobile:mobile(),
+        description:desc
+
+    };
+    console.log(user_data)
+    
+    user_data=JSON.stringify(user_data)
+    fetch("https://masai-api-mocker.herokuapp.com/auth/register",{
+        method:"POST",
+        body:user_data,
+        headers:{
+            "Content-Type":"application/json"
+        }
+    })
+
+    .then((res)=>{
+        return res.json()
+    })
+    .then((res)=>{
+        console.log(res)
+        alert(res.message)
+        if(res.error==false){
+            window.location.href="signin.html"
+        }
+        
+    })
+
+}
+</script>
+</html>

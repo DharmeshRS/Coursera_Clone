@@ -169,6 +169,9 @@ body {
   font-size: 2.125rem;
   line-height: 2.625rem;
   font-weight: bold;
+  margin-left: 0px;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
 }
 .course_searchbar,
 .popular_courses {
@@ -233,12 +236,10 @@ body {
   height: 40px;
   margin-left: 4px;
   background: transparent none repeat 0 0 scroll;
-  color: rgba(0, 0, 0, 0.87);
+  color: #4D4D4D;
   border: 0;
-  font-size: 1em;
   margin: 0;
   padding: 0;
-  text-align: left;
   text-decoration: none;
   text-indent: 0;
   min-width: 0;
@@ -262,27 +263,43 @@ body {
   line-height: 48px !important;
 }
 .tools_slides {
-  margin-top: 42px;
+  margin: 42px auto;
   display: flex;
-}
-.tools_slides {
-  margin-top: 42px;
+  width: 1176px;
 }
 #Ul_dots {
-  /* display: flex; */
+  display: flex;
+  margin: auto;
+  width: 63px;
+}
+.dot:hover {
+  background-color: #271166;
+}
+.dot {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 0 7px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  background-color: #bbb;
 }
 #slides{
   width: 1056px;
   height: 396px;
-  border: 1px solid orangered;
   align-self: center;
-
 }
 #lLeft_btn,
 #Right_btn {
+  cursor: pointer;
   width: 60px;
   height: 60px;
-  border: 1px solid green;
+  font-size: 60px;
+  margin: 168px 0px;
+}
+#Poster_image {
+  width: 100%;
 }
 #Faq_section {
   width: 88%;
@@ -319,6 +336,7 @@ body {
 .symb {
   height: 28px !important;
   width: 28px !important;
+  transform: rotate(0deg);
 }
 .quest {
   display: flex;
@@ -377,4 +395,7 @@ body {
 }
 .ans {
   display: none;
+}
+#main_div {
+  padding-top: 0px;
 }

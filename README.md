@@ -6,7 +6,7 @@
 <img src="https://p92.com/binaries/content/gallery/p92website/technologies/htmlcssjs-details.png"  title="hover text" height="100px">
 
 
-## Functionalities Of Website we are Covered :
+## Functionalities Of Website we have Covered :
 ## User Module :
 * Signup Page.
 * Login Page.

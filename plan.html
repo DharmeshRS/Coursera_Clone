@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>plan</title>
+  </head>
+  <link rel="stylesheet" href="./styles/plan.css" />
+  
+  <style>
+
+  </style>
+  <body>
+    <div class="navbox">
+      <img
+        src="https://coursera_assets.s3.amazonaws.com/teams_landing/nav/C4T_logo_new.svg"
+        class="icon"
+        alt="Coursera"
+        aria-hidden="true"
+      />
+      <div class="c1"><span class="center">
+        <svg class="u" viewBox="0 0 48 48" role="img" aria-labelledby="UserFilleddd941e0d-3900-4751-9367-f798875f262c UserFilleddd941e0d-3900-4751-9367-f798875f262cDesc" xmlns="http://www.w3.org/2000/svg"><title id="UserFilleddd941e0d-3900-4751-9367-f798875f262c">User Filled</title><path d="M33.5,10.4C33.7,5.1,29.2,1,24,1s-9.8,4.2-9.5,9.4c0.1,1.1,1.1,6.3,1.1,6.3c0.8,4.5,3.8,8.3,8.4,8.3s7.6-3.8,8.4-8.4C32.4,16.6,33.4,11.4,33.5,10.4z" role="presentation"></path><path d="M47,47H1l1.1-8.2c0.5-2.7,2.9-4.3,5.6-4.9L24,31l16.3,2.9c2.7,0.6,5.1,2.2,5.5,4.9L47,47z" role="presentation"></path></svg>
+        </div>
+    </div>
+<div class="col">
+    <p class="plan">Plan Details</p>
+
+    <div class="_15c4bezw m-b-1">
+      <h2 class="config">Configure your contract</h2>
+      <span
+        class="_rsc0bd"
+        style="
+          height: 1.875rem;
+          border-radius: 1.875rem;
+          line-height: 1.5rem;
+          font-size: 0.875rem;
+          background-color: rgb(188, 252, 221);
+          overflow: visible;
+        "
+        ><span class="_x4x75x"
+          ><span class="_1q9sh65"></span
+          ><span class="_ontdeqt"
+            ><span
+              >Join <strong><span>23,217</span></strong> teams learning on
+              Coursera!</span
+            ></span
+          ></span
+        ></span
+      >
+    </div>
+
+    <div class="sidebox2">
+      <h2 class="desktopOnly">Purchase Summary</h2>
+      <p class="item">Selected contract</p>
+
+      <p class="teamcon">Team contract (price per user per year)</p>
+      <p class="pri">$399</p>
+
+      <p class="teamcon">Number of users</p>
+
+      <p class="teamcon1">Total</p>
+      <div id="hrline"></div>
+      <hr />
+
+      <p class="item">Annual Payment</p>
+      <p class="teamcon">Annual total</p>
+    </div>
+    <div class="newbox">
+      <p class="item1">Today's Payment</p>
+      <p class="teamcon2">14-day refund guarantee</p>
+    </div>
+
+    <br />
+    <br />
+    <div class="lastbox">
+      <h2 class="desktopOnly1">Transform your talent</h2>
+      <ul>
+        <li><strong>Unlimited access</strong> to the Coursera catalog</li>
+        <li><strong>Personalized</strong> content recommendations</li>
+        <li>Learner <strong>usage and progress tracking tools</strong></li>
+        <li><strong>Industry-recognized</strong> credentials</li>
+      
+      </ul>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="boxinput">
+      <label class="user" for="learnerCount-input">Number of users</label>
+      <br />
+      <br />
+      <input
+        class="inp"
+        aria-label="Number of users"
+        aria-labelledby="learnerCount-label"
+        aria-invalid="false"
+        placeholder="eg. 10"
+        type="text"
+        data-e2e="learner-count-input"
+        value=""
+        id="noU"
+        oninput="showprice()"
+      />
+      <br /><br />
+      <label class="user" for="learnerCount-input">Payment Option</label>
+      <br />
+      <br />
+      <div class="bbox">
+        <input class="_gx2lzf" type="radio" readonly="" value="1" checked="" />
+
+        <div class="vertical-box">
+          <p class="c-radioText">Annual</p>
+          <p class="c-radioText mobile-smaller-text">Billed once a year</p>
+        </div>
+      </div>
+
+      <div class="bbox1">
+        <input
+          class="_gx2lzf"
+          type="radio"
+          readonly=""
+          value="0"
+          unchecked=""
+        />
+
+        <div class="vertical-box">
+          <p class="c-radioText">Quarterly</p>
+          <p class="c-radioText mobile-smaller-text">Billed 4 times a year</p>
+        </div>
+      </div>
+
+      <br />
+      <br />
+
+      <button class="primary" type="submit" id="cont_btn">Continue</button>
+    </div>
+  </div>
+  </body>
+</html>
+<script>
+   showprice=()=>{
+    var hrline=document.getElementById("hrline");
+    var noU=document.getElementById("noU").value;
+
+    hrline.textContent=(+noU)*399
+  }
+ 
+  var cont_btn=document.getElementById("cont_btn");
+  cont_btn.onclick=()=>{
+  
+    alert("Have a nice carrer, Thanku ");
+    window.location.href="index.html"
+  }
+</script>

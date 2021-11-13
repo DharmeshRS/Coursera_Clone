@@ -1,0 +1,215 @@
+.navbox {
+    width: 100%;
+    height: 54px;
+   
+  }
+
+  img.icon {
+    width: 200px;
+    padding: 16px;
+  }
+
+  .plan {
+    font-weight: 800;
+    color: #333;
+    margin-left: 240px;
+    padding: 6px;
+  }
+
+  h2.config {
+    font-size: 24px;
+    line-height: 24px;
+    font-family: OpenSans-light, Arial, sans-serif;
+    font-weight: normal;
+    color: #373a3c;
+    margin-left: 240px;
+    float: left;
+    margin-top: 1px;
+  }
+
+  span {
+    float: left;
+  }
+
+  .user {
+    font-weight: 700;
+    font-size: 12px;
+    margin-left: 240px;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+  }
+
+  .inp {
+    width: 39%;
+    height: 22px;
+    margin-left: 240px;
+    padding: 0.75rem;
+    font-size: 1.25rem;
+    border: 1px solid rgb(204, 209, 217);
+  }
+
+  .bbox {
+    width: 252px;
+    height: 73px;
+    margin-left: 240px;
+    border: 1px solid #2a73cc;
+    display: inline-block;
+  }
+  .bbox1 {
+    width: 252px;
+    height: 73px;
+    margin-left: 28px;
+    border: 1px
+solid #2a73cc;
+    display: inline-block;
+  }
+  input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+    vertical-align: super;
+  }
+
+  .vertical-box {
+    display: inline-block;
+  }
+
+  p.c-radioText {
+    margin-top: 21px;
+    line-height: 1px;
+  }
+
+  .primary {
+    padding: 24px 72px;
+    font-size: 20px !important;
+    font-family: OpenSans, Arial, sans-serif;
+    font-weight: 700;
+  }
+
+  button.primary {
+    background-color: #2073d4;
+    color: white;
+    margin-left: 240px;
+  }
+
+  .sidebox2 {
+    display: inline-block;
+    border: 1px
+solid #EFEBE9;
+background-color: white;
+    width: 332px;
+    height: 400px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 103px;
+    align-items: center;
+  }
+
+  .boxinput {
+    width: 790px;
+    height: 400px;
+  
+    margin-top: -393px;
+  }
+
+  .desktopOnly {
+    margin-bottom: 1.5rem;
+    font-size: 26px;
+    font-weight: 100;
+  }
+  .desktopOnly1 {
+    margin-bottom: 1.5rem;
+    font-size: 22px;
+    font-weight: 100;
+    margin-left: 34px;
+  }
+  .item {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  li {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 5px;
+    font-family: OpenSans, Arial, sans-serif;
+  }
+  .teamcon {
+    width: 143px;
+    height: 16px;
+  
+    display: inline-block;
+  }
+
+  .teamcon1 {
+    width: 143px;
+    height: 16px;
+  
+  }
+  .pri {
+    display: inline-block;
+   
+    margin-left: 122px;
+  }
+
+  hr {
+    width: 290px;
+  }
+
+  .newbox {
+    width: 395px;
+   
+    float: right;
+    margin-right: 120px;
+    height: 100px;
+    background-color: #e1ebf9;
+  }
+
+  .item1 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 35px;
+  }
+
+  .teamcon2 {
+    width: 170px;
+    height: 16px;
+ 
+    display: inline-block;
+    margin-left: 35px;
+  }
+
+  .lastbox {
+    width: 293px;
+
+    height: 217px;
+    float: right;
+    margin-right: -296px;
+    margin-top: 95px;
+  }
+
+  .col {
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 839px;
+  }
+
+  .u {
+fill: #fff;
+height: 24px;
+width: 24px;
+padding: 7px;
+}
+.c1 {
+background-color: #3bafda;
+
+border-radius: 50%;
+width: 40px;
+height: 40px;
+float: right;
+margin-right: 170px;
+margin-top: 5px;
+}
+#hrline{
+  width: 200px;
+ text-align: center;
+  
+}

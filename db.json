@@ -249,7 +249,7 @@
   "data": [
     {
       "id": 100,
-      "coursename": "Machine Learning",
+      "coursename": "Machine Learning With Pandas",
       "institute": "Standford University",
       "category": "Course",
       "rating": 5,
@@ -274,10 +274,10 @@
       "student_enroll": "4.5m",
       "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera/topics/ml/large-icon.png?auto=format%2Ccompress&dpr=1&w=150&h=150&fit=fill&bg=FFF&q=25",
       "level": "Mixed",
-      "Language1": "English",
+      "Language1": "Arabic",
       "duration":90,
       "duration1":"1-4 Months",
-      "subject":"computer Science",
+      "subject":"Data Science",
       "skill":"programming",
       "partner":"coursera Project",
       "learning product":"Courses"
@@ -294,7 +294,7 @@
       "Language1": "English",
       "duration":90,
       "duration1":"1-4 Months",
-      "subject":"computer Science",
+      "subject":"Data Science",
       "skill":"programming",
       "partner":"coursera Project",
       "learning product":"Courses"
@@ -313,7 +313,7 @@
       "duration1":"1-4 Week",
       "subject":"computer Science",
       "skill":"programming",
-      "partner":"coursera Project",
+      "partner":"Data Science",
       "learning product":"Courses"
     },
     {
@@ -328,7 +328,7 @@
       "Language1": "English",
       "duration":90,
       "duration1":"1-4 Months",
-      "subject":"computer Science",
+      "subject":"Data Science",
       "skill":"programming",
       "partner":"coursera Project",
       "learning product":"Courses"
@@ -348,7 +348,7 @@
       "subject":"computer Science",
       "skill":"programming",
       "partner":"coursera Project",
-      "learning product":"Courses"
+      "learning":"Courses"
     },
     {
       "id": 105,
@@ -365,7 +365,7 @@
       "subject":"computer Science",
       "skill":"programming",
       "partner":"coursera Project",
-      "learning product":"Courses"
+      "learning":"Courses"
     },
     {
       "id": 107,
@@ -382,7 +382,7 @@
       "subject":"computer Science",
       "skill":"programming",
       "partner":"coursera Project",
-      "learning product":"Courses"
+      "learning":"Courses"
     },
     {
       "id": 108,
@@ -399,7 +399,7 @@
       "subject":"computer Science",
       "skill":"programming",
       "partner":"coursera Project",
-      "learning product":"Courses"
+      "learning":"Courses"
     },
     {
       "id": 109,
@@ -416,7 +416,7 @@
       "subject":"computer Science",
       "skill":"programming",
       "partner":"coursera Project",
-      "learning product":"Courses"
+      "learning":"Courses"
     },
     {
       "id": 110,
@@ -433,7 +433,7 @@
       "subject":"computer Science",
       "skill":"programming",
       "partner":"coursera Project",
-      "learning product":"Courses"
+      "learning":"Courses"
     },
     {
       "id": 111,
@@ -450,7 +450,7 @@
       "subject":"computer Science",
       "skill":"programming",
       "partner":"coursera Project",
-      "learning product":"Courses"
+      "learning":"Courses"
     },
     {
       "id": 112,
@@ -467,7 +467,7 @@
       "subject":"computer Science",
       "skill":"programming",
       "partner":"coursera Project",
-      "learning product":"Courses"
+      "learning":"Professional Certification"
     },
     {
       "id": 113,
@@ -484,7 +484,7 @@
       "subject":"computer Science",
       "skill":"programming",
       "partner":"coursera Project",
-      "learning product":"Courses"
+      "learning":"Courses"
     },
     {
       "id": 114,
@@ -501,7 +501,7 @@
       "subject":"computer Science",
       "skill":"programming",
       "partner":"coursera Project",
-      "learning product":"Courses"
+      "learning":"Professional Certification"
     },
     {
       "id": 115,
@@ -518,7 +518,7 @@
       "subject":"computer Science",
       "skill":"programming",
       "partner":"coursera Project",
-      "learning product":"Courses"
+      "learning":"Courses"
     },
     {
       "id": 116,
@@ -535,7 +535,7 @@
       "subject":"computer Science",
       "skill":"programming",
       "partner":"coursera Project",
-      "learning product":"Courses"
+      "learning":"Courses"
     },
     {
       "id": 117,
@@ -552,7 +552,7 @@
       "subject":"computer Science",
       "skill":"programming",
       "partner":"coursera Project",
-      "learning product":"Courses"
+      "learning":"Courses"
     },
     {
       "id": 118,
@@ -569,16 +569,16 @@
       "subject":"computer Science",
       "skill":"programming",
       "partner":"coursera Project",
-      "learning product":"Courses"
+      "learning":"Professional Certification"
     },
     {
       "id": 119,
-      "coursename": "Web Developement For Everyone:Basics Of Web Developement And Coding",
+      "coursename": "Web Developement In React:Basics Of Web Developement And Coding",
       "institute": "University Of Michigen",
       "category": "Specialization",
       "rating": 5,
       "student_enroll": "30k",
-      "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d2j5ihb19pt1hq.cloudfront.net/sdp_page/s12n_logos/webdesign.jpg?auto=format%2Ccompress&dpr=1&w=150&h=150&fit=fill&bg=FFF&q=25",
+      "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/eb/cab7f07dd411e8991ff71ead974a6c/Slide1.png?auto=format%2Ccompress&dpr=1&w=150&h=150&fit=fill&bg=FFF&q=25",
       "level": "Beginner",
       "Language1": "Russian",
       "duration":90,
@@ -586,7 +586,7 @@
       "subject":"computer Science",
       "skill":"programming",
       "partner":"coursera Project",
-      "learning product":"Courses"
+      "learning":"Courses"
     },
     {
       "id": 120,
@@ -603,7 +603,7 @@
       "subject":"computer Science",
       "skill":"programming",
       "partner":"coursera Project",
-      "learning product":"Courses"
+      "learning":"Professional Certification"
     },
     {
       "id": 121,
@@ -620,7 +620,7 @@
       "subject":"computer Science",
       "skill":"programming",
       "partner":"coursera Project",
-      "learning product":"Courses"
+      "learning":"Courses"
     },
     {
       "id": 122,
@@ -637,7 +637,7 @@
       "subject":"computer Science",
       "skill":"programming",
       "partner":"coursera Project",
-      "learning product":"Courses"
+      "learning":"Courses"
     },
     {
       "id": 123,
@@ -654,7 +654,7 @@
       "subject":"computer Science",
       "skill":"programming",
       "partner":"coursera Project",
-      "learning product":"Courses"
+      "learning":"Courses"
     },
     {
       "id": 124,
@@ -690,7 +690,7 @@
       "subject":"computer Science",
       "skill":"programming",
       "partner":"coursera Project",
-      "learning product":"Courses"
+      "learning product":"Professional Certification"
     },
     {
       "id": 126,
@@ -707,7 +707,7 @@
       "subject":"computer Science",
       "skill":"programming",
       "partner":"coursera Project",
-      "learning product":"Courses"
+      "learning":"Courses"
     },
     {
       "id": 127,
@@ -724,7 +724,7 @@
       "subject":"computer Science",
       "skill":"programming",
       "partner":"coursera Project",
-      "learning product":"Courses"
+      "learning":"Courses"
     }
   ]
 }
