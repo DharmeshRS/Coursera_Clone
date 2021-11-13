@@ -584,3 +584,13 @@ font-size: 16px;
   color: #656565;
   margin-left: 27px;
 }
+/* adding css to fix the images */
+.logo_line {
+  max-width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.imga {
+  width: 100%;
+}
