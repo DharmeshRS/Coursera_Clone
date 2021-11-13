@@ -25,7 +25,12 @@ let dash_line1=document.createElement('a')
 dash_line1.innerText=" |"
 let product=document.createElement('a');
 product.innerText="Products";
-product.href="teams.html"
+// product.href="teams.html";
+product.onclick=()=>{
+    window.location.href="teams.html";
+    
+    }
+
 //product.href="https://www.coursera.org/business/learn-more/?utm_campaign=website&utm_content=navbar-contact-sales&utm_medium=coursera&utm_source=enterpri"
 product.setAttribute('id','pro')
 product.addEventListener('mouseover',()=>{
@@ -39,7 +44,7 @@ dash_line2.innerText=" |"
 let content=document.createElement('a');
 content.setAttribute('id','drop_down_content');
 content.innerText="Content"
-content.href="https://www.coursera.org/business/content";
+// content.href="https://www.coursera.org/business/content";
 content.addEventListener('mouseover',()=>{
     content_list();
 })
@@ -62,7 +67,7 @@ resorces.addEventListener('mouseover',()=>{
 resorces.addEventListener('mouseleave',()=>{
     resources_leave();
 })
-resorces.href="https://www.coursera.org/business/resources";
+// resorces.href="https://www.coursera.org/business/resources";
 let dash_line5=document.createElement('a')
 dash_line5.innerText=" |"
 let Blog=document.createElement('a')
@@ -90,6 +95,10 @@ function product_list(){
     for_interprises.innerText="For_interprises";
     let for_team=document.createElement('li');
     for_team.innerText="For Team";
+    for_team.onclick=()=>{
+        window.location.href="teams.html";
+        
+        }
     // for_team.addEventListener('click',()=>{
     //     window.location.href="teams.html"
     // })
@@ -208,7 +217,7 @@ link.addEventListener('mouseover',()=>{
 link.addEventListener('mouseleave',()=>{
     link.style.textDecoration="none"
 })
-link.href="https://www.coursera.org/business/teams?utm_campaign=c4b&utm_content=teams-cta-below-hero&utm_medium=website&utm_source=enterprise"
+// link.href="https://www.coursera.org/business/teams?utm_campaign=c4b&utm_content=teams-cta-below-hero&utm_medium=website&utm_source=enterprise"
 link.innerText="Check out Coursera for Teams."
 upskill_link.append(link);
 link_div.append(upskill,upskill_link);
