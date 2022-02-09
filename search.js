@@ -10,7 +10,7 @@ if(localStorage.getItem("coursera_search")===null){
 
     // alert("searchdata")
     let search=document.getElementById("searchinput").value;
-    alert(search)
+    // alert(search)
     if(search==""|| search==" "){
         alert("please Enter Valid Course-name")
     }else if(search!=""){
