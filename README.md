@@ -42,7 +42,7 @@
 ## Contributors :
 * [Dharmesh Sonar](https://github.com/DharmeshRS)
 * [Anmol Kumar](https://github.com/Anmolroan)
+* [Vishwaraj Patil](https://github.com/PatilVishwaraj)
 * [Surendra Yadav](https://github.com/Surendra9129)
 * [aishwarya Jadhav](https://github.com/aishwaryaj20)
-* [Vishwaraj Patil](https://github.com/PatilVishwaraj)
 * [Abhishek Silawat](https://github.com/abhishek-0607)
