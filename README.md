@@ -1,4 +1,4 @@
-# Coursera_Clone 
+# Clone of Coursera.org 
 ## https://www.coursera.org/in
 ### [for Learning Purpose]
 
